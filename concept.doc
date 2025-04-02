@@ -46,3 +46,4 @@ In the post game phase, we should do a handful of things.
 other ideas for categories:
 - other cc ability context (hasNoCC, hasSlows, hasExactlyOneCC, hasGround, hasRoot, hasStun, hasSilence, etc.)
 - has no secondary class (i.e. only figher, only assassin)
+- other ability notes (hasDamageOverTime, hasAreaOfEffectUltimate, etc.)

@@ -224,6 +224,16 @@ async def create_champion_template(session: aiohttp.ClientSession, champ_data: D
     detailed_data = await get_detailed_champion_data(session, champ_id)
     wiki_data = await get_wiki_data(champ_data["name"])
     
+    # Extract skin line information
+    skin_lines = set()
+    for skin in detailed_data.get("skins", []):
+        skin_name = skin.get("name", "")
+        if skin_name and skin_name != "default":
+            # Extract skin line from skin name (e.g., "Blood Moon Aatrox" -> "Blood Moon")
+            skin_line = " ".join(skin_name.split()[:-1])
+            if skin_line:
+                skin_lines.add(skin_line)
+    
     return {
         "name": champ_data["name"],
         "region": wiki_data["region"],
@@ -235,6 +245,7 @@ async def create_champion_template(session: aiohttp.ClientSession, champ_data: D
         "baseMovespeed": int(champ_data.get("stats", {}).get("movespeed", 0)),
         "releaseSeason": wiki_data["release_season"],
         "modelSize": int(champ_data.get("stats", {}).get("collision_radius", 0) * 100),  # Approximate from collision radius
+        "skinLines": sorted(list(skin_lines)),  # Add skin lines as a sorted list
         "abilities": {
             "hasPassiveE": False,  # To be filled manually
             "isShapeshifter": "TransformationChampion" in detailed_data.get("allytips", []),
