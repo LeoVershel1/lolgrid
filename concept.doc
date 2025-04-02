@@ -47,3 +47,6 @@ other ideas for categories:
 - other cc ability context (hasNoCC, hasSlows, hasExactlyOneCC, hasGround, hasRoot, hasStun, hasSilence, etc.)
 - has no secondary class (i.e. only figher, only assassin)
 - other ability notes (hasDamageOverTime, hasAreaOfEffectUltimate, etc.)
+- hasPrestigeSkin
+- skin counts (has 2 or less skins, has 6+ skins, etc.)
+- has gun, has swords, etc.
