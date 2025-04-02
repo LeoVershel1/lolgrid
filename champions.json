@@ -1,0 +1,3944 @@
+{
+  "champions": [
+    {
+      "name": "Aatrox",
+      "region": "Runeterra",
+      "role": [
+        "Fighter",
+        "Tank"
+      ],
+      "resource": "Blood Well",
+      "species": "Darkin",
+      "primaryDamageType": "AD",
+      "range": 175,
+      "baseMovespeed": 345,
+      "releaseSeason": 3,
+      "modelSize": 0,
+      "abilities": {
+        "hasPassiveE": false,
+        "isShapeshifter": false,
+        "hasThreeHitPassive": false,
+        "hasAutoAttackReset": false,
+        "hasAbilityCharges": false,
+        "hasMultipleHardCC": false,
+        "hasChangingAbilities": false
+      }
+    },
+    {
+      "name": "Ahri",
+      "region": "Ionia",
+      "role": [
+        "Mage",
+        "Assassin"
+      ],
+      "resource": "Mana",
+      "species": "Unknown",
+      "primaryDamageType": "AP",
+      "range": 550,
+      "baseMovespeed": 330,
+      "releaseSeason": 2,
+      "modelSize": 0,
+      "abilities": {
+        "hasPassiveE": false,
+        "isShapeshifter": false,
+        "hasThreeHitPassive": false,
+        "hasAutoAttackReset": false,
+        "hasAbilityCharges": false,
+        "hasMultipleHardCC": false,
+        "hasChangingAbilities": false
+      }
+    },
+    {
+      "name": "Akali",
+      "region": "Ionia",
+      "role": [
+        "Assassin"
+      ],
+      "resource": "Energy",
+      "species": "Human",
+      "primaryDamageType": "AD",
+      "range": 125,
+      "baseMovespeed": 345,
+      "releaseSeason": 1,
+      "modelSize": 0,
+      "abilities": {
+        "hasPassiveE": false,
+        "isShapeshifter": false,
+        "hasThreeHitPassive": false,
+        "hasAutoAttackReset": false,
+        "hasAbilityCharges": false,
+        "hasMultipleHardCC": false,
+        "hasChangingAbilities": false
+      }
+    },
+    {
+      "name": "Akshan",
+      "region": "Shurima",
+      "role": [
+        "Marksman",
+        "Assassin"
+      ],
+      "resource": "Mana",
+      "species": "Human",
+      "primaryDamageType": "AD",
+      "range": 500,
+      "baseMovespeed": 330,
+      "releaseSeason": 11,
+      "modelSize": 0,
+      "abilities": {
+        "hasPassiveE": false,
+        "isShapeshifter": false,
+        "hasThreeHitPassive": false,
+        "hasAutoAttackReset": false,
+        "hasAbilityCharges": false,
+        "hasMultipleHardCC": false,
+        "hasChangingAbilities": false
+      }
+    },
+    {
+      "name": "Alistar",
+      "region": "Runeterra",
+      "role": [
+        "Tank",
+        "Support"
+      ],
+      "resource": "Mana",
+      "species": "Minotaur",
+      "primaryDamageType": "AD",
+      "range": 125,
+      "baseMovespeed": 330,
+      "releaseSeason": 1,
+      "modelSize": 0,
+      "abilities": {
+        "hasPassiveE": false,
+        "isShapeshifter": false,
+        "hasThreeHitPassive": false,
+        "hasAutoAttackReset": false,
+        "hasAbilityCharges": false,
+        "hasMultipleHardCC": true,
+        "hasChangingAbilities": false
+      }
+    },
+    {
+      "name": "Amumu",
+      "region": "Shurima",
+      "role": [
+        "Tank",
+        "Mage"
+      ],
+      "resource": "Mana",
+      "species": "Yordle",
+      "primaryDamageType": "AP",
+      "range": 125,
+      "baseMovespeed": 335,
+      "releaseSeason": 1,
+      "modelSize": 0,
+      "abilities": {
+        "hasPassiveE": false,
+        "isShapeshifter": false,
+        "hasThreeHitPassive": false,
+        "hasAutoAttackReset": false,
+        "hasAbilityCharges": false,
+        "hasMultipleHardCC": true,
+        "hasChangingAbilities": false
+      }
+    },
+    {
+      "name": "Anivia",
+      "region": "Freljord",
+      "role": [
+        "Mage",
+        "Support"
+      ],
+      "resource": "Mana",
+      "species": "Spirit God",
+      "primaryDamageType": "AP",
+      "range": 600,
+      "baseMovespeed": 325,
+      "releaseSeason": 1,
+      "modelSize": 0,
+      "abilities": {
+        "hasPassiveE": false,
+        "isShapeshifter": false,
+        "hasThreeHitPassive": false,
+        "hasAutoAttackReset": false,
+        "hasAbilityCharges": false,
+        "hasMultipleHardCC": false,
+        "hasChangingAbilities": false
+      }
+    },
+    {
+      "name": "Annie",
+      "region": "Runeterra",
+      "role": [
+        "Mage"
+      ],
+      "resource": "Mana",
+      "species": "Human",
+      "primaryDamageType": "AP",
+      "range": 625,
+      "baseMovespeed": 335,
+      "releaseSeason": 1,
+      "modelSize": 0,
+      "abilities": {
+        "hasPassiveE": false,
+        "isShapeshifter": false,
+        "hasThreeHitPassive": false,
+        "hasAutoAttackReset": false,
+        "hasAbilityCharges": false,
+        "hasMultipleHardCC": false,
+        "hasChangingAbilities": false
+      }
+    },
+    {
+      "name": "Aphelios",
+      "region": "Targon",
+      "role": [
+        "Marksman"
+      ],
+      "resource": "Mana",
+      "species": "Human",
+      "primaryDamageType": "AD",
+      "range": 550,
+      "baseMovespeed": 325,
+      "releaseSeason": 10,
+      "modelSize": 0,
+      "abilities": {
+        "hasPassiveE": false,
+        "isShapeshifter": false,
+        "hasThreeHitPassive": false,
+        "hasAutoAttackReset": false,
+        "hasAbilityCharges": false,
+        "hasMultipleHardCC": false,
+        "hasChangingAbilities": false
+      }
+    },
+    {
+      "name": "Ashe",
+      "region": "Freljord",
+      "role": [
+        "Marksman",
+        "Support"
+      ],
+      "resource": "Mana",
+      "species": "Iceborn",
+      "primaryDamageType": "AD",
+      "range": 600,
+      "baseMovespeed": 325,
+      "releaseSeason": 1,
+      "modelSize": 0,
+      "abilities": {
+        "hasPassiveE": false,
+        "isShapeshifter": false,
+        "hasThreeHitPassive": false,
+        "hasAutoAttackReset": false,
+        "hasAbilityCharges": false,
+        "hasMultipleHardCC": false,
+        "hasChangingAbilities": true
+      }
+    },
+    {
+      "name": "Aurelion Sol",
+      "region": "Targon",
+      "role": [
+        "Mage"
+      ],
+      "resource": "Mana",
+      "species": "Celestial Dragon",
+      "primaryDamageType": "AP",
+      "range": 550,
+      "baseMovespeed": 335,
+      "releaseSeason": 6,
+      "modelSize": 0,
+      "abilities": {
+        "hasPassiveE": false,
+        "isShapeshifter": false,
+        "hasThreeHitPassive": false,
+        "hasAutoAttackReset": false,
+        "hasAbilityCharges": false,
+        "hasMultipleHardCC": false,
+        "hasChangingAbilities": true
+      }
+    },
+    {
+      "name": "Azir",
+      "region": "Shurima",
+      "role": [
+        "Mage",
+        "Marksman"
+      ],
+      "resource": "Mana",
+      "species": "God-Warrior",
+      "primaryDamageType": "AD",
+      "range": 525,
+      "baseMovespeed": 335,
+      "releaseSeason": 4,
+      "modelSize": 0,
+      "abilities": {
+        "hasPassiveE": false,
+        "isShapeshifter": false,
+        "hasThreeHitPassive": false,
+        "hasAutoAttackReset": false,
+        "hasAbilityCharges": true,
+        "hasMultipleHardCC": false,
+        "hasChangingAbilities": false
+      }
+    },
+    {
+      "name": "Bard",
+      "region": "Runeterra",
+      "role": [
+        "Support",
+        "Mage"
+      ],
+      "resource": "Mana",
+      "species": "Celestial",
+      "primaryDamageType": "AP",
+      "range": 500,
+      "baseMovespeed": 330,
+      "releaseSeason": 5,
+      "modelSize": 0,
+      "abilities": {
+        "hasPassiveE": false,
+        "isShapeshifter": false,
+        "hasThreeHitPassive": false,
+        "hasAutoAttackReset": false,
+        "hasAbilityCharges": false,
+        "hasMultipleHardCC": false,
+        "hasChangingAbilities": false
+      }
+    },
+    {
+      "name": "Bel'Veth",
+      "region": "Void",
+      "role": [
+        "Fighter"
+      ],
+      "resource": "",
+      "species": "Voidborn",
+      "primaryDamageType": "AD",
+      "range": 175,
+      "baseMovespeed": 340,
+      "releaseSeason": 12,
+      "modelSize": 0,
+      "abilities": {
+        "hasPassiveE": false,
+        "isShapeshifter": false,
+        "hasThreeHitPassive": false,
+        "hasAutoAttackReset": false,
+        "hasAbilityCharges": false,
+        "hasMultipleHardCC": true,
+        "hasChangingAbilities": true
+      }
+    },
+    {
+      "name": "Blitzcrank",
+      "region": "Zaun",
+      "role": [
+        "Tank",
+        "Fighter"
+      ],
+      "resource": "Mana",
+      "species": "Unknown",
+      "primaryDamageType": "AD",
+      "range": 125,
+      "baseMovespeed": 325,
+      "releaseSeason": 1,
+      "modelSize": 0,
+      "abilities": {
+        "hasPassiveE": false,
+        "isShapeshifter": false,
+        "hasThreeHitPassive": false,
+        "hasAutoAttackReset": false,
+        "hasAbilityCharges": true,
+        "hasMultipleHardCC": false,
+        "hasChangingAbilities": false
+      }
+    },
+    {
+      "name": "Brand",
+      "region": "Runeterra",
+      "role": [
+        "Mage"
+      ],
+      "resource": "Mana",
+      "species": "Human",
+      "primaryDamageType": "AP",
+      "range": 550,
+      "baseMovespeed": 340,
+      "releaseSeason": 1,
+      "modelSize": 0,
+      "abilities": {
+        "hasPassiveE": false,
+        "isShapeshifter": false,
+        "hasThreeHitPassive": false,
+        "hasAutoAttackReset": false,
+        "hasAbilityCharges": false,
+        "hasMultipleHardCC": false,
+        "hasChangingAbilities": false
+      }
+    },
+    {
+      "name": "Braum",
+      "region": "Freljord",
+      "role": [
+        "Support",
+        "Tank"
+      ],
+      "resource": "Mana",
+      "species": "Iceborn",
+      "primaryDamageType": "AD",
+      "range": 125,
+      "baseMovespeed": 335,
+      "releaseSeason": 4,
+      "modelSize": 0,
+      "abilities": {
+        "hasPassiveE": false,
+        "isShapeshifter": false,
+        "hasThreeHitPassive": false,
+        "hasAutoAttackReset": false,
+        "hasAbilityCharges": false,
+        "hasMultipleHardCC": false,
+        "hasChangingAbilities": false
+      }
+    },
+    {
+      "name": "Briar",
+      "region": "Noxus",
+      "role": [
+        "Fighter",
+        "Assassin"
+      ],
+      "resource": "Fury",
+      "species": "Unknown",
+      "primaryDamageType": "AD",
+      "range": 125,
+      "baseMovespeed": 340,
+      "releaseSeason": 13,
+      "modelSize": 0,
+      "abilities": {
+        "hasPassiveE": false,
+        "isShapeshifter": false,
+        "hasThreeHitPassive": false,
+        "hasAutoAttackReset": false,
+        "hasAbilityCharges": true,
+        "hasMultipleHardCC": true,
+        "hasChangingAbilities": false
+      }
+    },
+    {
+      "name": "Caitlyn",
+      "region": "Piltover",
+      "role": [
+        "Marksman"
+      ],
+      "resource": "Mana",
+      "species": "Human",
+      "primaryDamageType": "AD",
+      "range": 650,
+      "baseMovespeed": 325,
+      "releaseSeason": 1,
+      "modelSize": 0,
+      "abilities": {
+        "hasPassiveE": false,
+        "isShapeshifter": false,
+        "hasThreeHitPassive": false,
+        "hasAutoAttackReset": false,
+        "hasAbilityCharges": false,
+        "hasMultipleHardCC": false,
+        "hasChangingAbilities": false
+      }
+    },
+    {
+      "name": "Camille",
+      "region": "Piltover",
+      "role": [
+        "Fighter",
+        "Tank"
+      ],
+      "resource": "Mana",
+      "species": "Human",
+      "primaryDamageType": "AD",
+      "range": 125,
+      "baseMovespeed": 340,
+      "releaseSeason": 7,
+      "modelSize": 0,
+      "abilities": {
+        "hasPassiveE": false,
+        "isShapeshifter": false,
+        "hasThreeHitPassive": false,
+        "hasAutoAttackReset": false,
+        "hasAbilityCharges": false,
+        "hasMultipleHardCC": false,
+        "hasChangingAbilities": false
+      }
+    },
+    {
+      "name": "Cassiopeia",
+      "region": "Noxus",
+      "role": [
+        "Mage"
+      ],
+      "resource": "Mana",
+      "species": "Human",
+      "primaryDamageType": "AP",
+      "range": 550,
+      "baseMovespeed": 328,
+      "releaseSeason": 1,
+      "modelSize": 0,
+      "abilities": {
+        "hasPassiveE": false,
+        "isShapeshifter": false,
+        "hasThreeHitPassive": false,
+        "hasAutoAttackReset": false,
+        "hasAbilityCharges": false,
+        "hasMultipleHardCC": false,
+        "hasChangingAbilities": false
+      }
+    },
+    {
+      "name": "Cho'Gath",
+      "region": "Void",
+      "role": [
+        "Tank",
+        "Mage"
+      ],
+      "resource": "Mana",
+      "species": "Voidborn",
+      "primaryDamageType": "AP",
+      "range": 125,
+      "baseMovespeed": 345,
+      "releaseSeason": 1,
+      "modelSize": 0,
+      "abilities": {
+        "hasPassiveE": false,
+        "isShapeshifter": false,
+        "hasThreeHitPassive": false,
+        "hasAutoAttackReset": false,
+        "hasAbilityCharges": false,
+        "hasMultipleHardCC": false,
+        "hasChangingAbilities": false
+      }
+    },
+    {
+      "name": "Corki",
+      "region": "Bandle City",
+      "role": [
+        "Marksman"
+      ],
+      "resource": "Mana",
+      "species": "Yordle",
+      "primaryDamageType": "AD",
+      "range": 550,
+      "baseMovespeed": 325,
+      "releaseSeason": 1,
+      "modelSize": 0,
+      "abilities": {
+        "hasPassiveE": false,
+        "isShapeshifter": false,
+        "hasThreeHitPassive": false,
+        "hasAutoAttackReset": false,
+        "hasAbilityCharges": false,
+        "hasMultipleHardCC": false,
+        "hasChangingAbilities": false
+      }
+    },
+    {
+      "name": "Darius",
+      "region": "Noxus",
+      "role": [
+        "Fighter",
+        "Tank"
+      ],
+      "resource": "Mana",
+      "species": "Human",
+      "primaryDamageType": "AD",
+      "range": 175,
+      "baseMovespeed": 340,
+      "releaseSeason": 2,
+      "modelSize": 0,
+      "abilities": {
+        "hasPassiveE": false,
+        "isShapeshifter": false,
+        "hasThreeHitPassive": false,
+        "hasAutoAttackReset": false,
+        "hasAbilityCharges": false,
+        "hasMultipleHardCC": false,
+        "hasChangingAbilities": false
+      }
+    },
+    {
+      "name": "Diana",
+      "region": "Targon",
+      "role": [
+        "Fighter",
+        "Mage"
+      ],
+      "resource": "Mana",
+      "species": "Human",
+      "primaryDamageType": "AP",
+      "range": 150,
+      "baseMovespeed": 345,
+      "releaseSeason": 2,
+      "modelSize": 0,
+      "abilities": {
+        "hasPassiveE": false,
+        "isShapeshifter": false,
+        "hasThreeHitPassive": false,
+        "hasAutoAttackReset": false,
+        "hasAbilityCharges": false,
+        "hasMultipleHardCC": false,
+        "hasChangingAbilities": false
+      }
+    },
+    {
+      "name": "Draven",
+      "region": "Noxus",
+      "role": [
+        "Marksman"
+      ],
+      "resource": "Mana",
+      "species": "Human",
+      "primaryDamageType": "AD",
+      "range": 550,
+      "baseMovespeed": 330,
+      "releaseSeason": 2,
+      "modelSize": 0,
+      "abilities": {
+        "hasPassiveE": false,
+        "isShapeshifter": false,
+        "hasThreeHitPassive": false,
+        "hasAutoAttackReset": false,
+        "hasAbilityCharges": false,
+        "hasMultipleHardCC": false,
+        "hasChangingAbilities": false
+      }
+    },
+    {
+      "name": "Dr. Mundo",
+      "region": "Zaun",
+      "role": [
+        "Fighter",
+        "Tank"
+      ],
+      "resource": "None",
+      "species": "Human",
+      "primaryDamageType": "AD",
+      "range": 125,
+      "baseMovespeed": 345,
+      "releaseSeason": 1,
+      "modelSize": 0,
+      "abilities": {
+        "hasPassiveE": false,
+        "isShapeshifter": false,
+        "hasThreeHitPassive": false,
+        "hasAutoAttackReset": false,
+        "hasAbilityCharges": false,
+        "hasMultipleHardCC": false,
+        "hasChangingAbilities": false
+      }
+    },
+    {
+      "name": "Ekko",
+      "region": "Unknown",
+      "role": [
+        "Assassin",
+        "Fighter"
+      ],
+      "resource": "Mana",
+      "species": "Unknown",
+      "primaryDamageType": "AD",
+      "range": 125,
+      "baseMovespeed": 340,
+      "releaseSeason": 5,
+      "modelSize": 0,
+      "abilities": {
+        "hasPassiveE": false,
+        "isShapeshifter": false,
+        "hasThreeHitPassive": false,
+        "hasAutoAttackReset": false,
+        "hasAbilityCharges": false,
+        "hasMultipleHardCC": false,
+        "hasChangingAbilities": false
+      }
+    },
+    {
+      "name": "Elise",
+      "region": "Shadow Isles",
+      "role": [
+        "Mage",
+        "Fighter"
+      ],
+      "resource": "Mana",
+      "species": "Human",
+      "primaryDamageType": "AP",
+      "range": 550,
+      "baseMovespeed": 330,
+      "releaseSeason": 3,
+      "modelSize": 0,
+      "abilities": {
+        "hasPassiveE": false,
+        "isShapeshifter": false,
+        "hasThreeHitPassive": false,
+        "hasAutoAttackReset": false,
+        "hasAbilityCharges": false,
+        "hasMultipleHardCC": false,
+        "hasChangingAbilities": true
+      }
+    },
+    {
+      "name": "Evelynn",
+      "region": "Runeterra",
+      "role": [
+        "Assassin",
+        "Mage"
+      ],
+      "resource": "Mana",
+      "species": "Unknown",
+      "primaryDamageType": "AP",
+      "range": 125,
+      "baseMovespeed": 335,
+      "releaseSeason": 1,
+      "modelSize": 0,
+      "abilities": {
+        "hasPassiveE": false,
+        "isShapeshifter": false,
+        "hasThreeHitPassive": false,
+        "hasAutoAttackReset": false,
+        "hasAbilityCharges": false,
+        "hasMultipleHardCC": false,
+        "hasChangingAbilities": false
+      }
+    },
+    {
+      "name": "Ezreal",
+      "region": "Piltover",
+      "role": [
+        "Marksman",
+        "Mage"
+      ],
+      "resource": "Mana",
+      "species": "Human",
+      "primaryDamageType": "AD",
+      "range": 550,
+      "baseMovespeed": 325,
+      "releaseSeason": 1,
+      "modelSize": 0,
+      "abilities": {
+        "hasPassiveE": false,
+        "isShapeshifter": false,
+        "hasThreeHitPassive": false,
+        "hasAutoAttackReset": false,
+        "hasAbilityCharges": false,
+        "hasMultipleHardCC": false,
+        "hasChangingAbilities": false
+      }
+    },
+    {
+      "name": "Fiddlesticks",
+      "region": "Runeterra",
+      "role": [
+        "Mage",
+        "Support"
+      ],
+      "resource": "Mana",
+      "species": "Unknown",
+      "primaryDamageType": "AP",
+      "range": 480,
+      "baseMovespeed": 335,
+      "releaseSeason": 1,
+      "modelSize": 0,
+      "abilities": {
+        "hasPassiveE": false,
+        "isShapeshifter": false,
+        "hasThreeHitPassive": false,
+        "hasAutoAttackReset": false,
+        "hasAbilityCharges": false,
+        "hasMultipleHardCC": false,
+        "hasChangingAbilities": false
+      }
+    },
+    {
+      "name": "Fiora",
+      "region": "Demacia",
+      "role": [
+        "Fighter",
+        "Assassin"
+      ],
+      "resource": "Mana",
+      "species": "Human",
+      "primaryDamageType": "AD",
+      "range": 150,
+      "baseMovespeed": 345,
+      "releaseSeason": 2,
+      "modelSize": 0,
+      "abilities": {
+        "hasPassiveE": false,
+        "isShapeshifter": false,
+        "hasThreeHitPassive": false,
+        "hasAutoAttackReset": false,
+        "hasAbilityCharges": false,
+        "hasMultipleHardCC": false,
+        "hasChangingAbilities": false
+      }
+    },
+    {
+      "name": "Fizz",
+      "region": "Bilgewater",
+      "role": [
+        "Assassin",
+        "Fighter"
+      ],
+      "resource": "Mana",
+      "species": "Yordle",
+      "primaryDamageType": "AD",
+      "range": 175,
+      "baseMovespeed": 335,
+      "releaseSeason": 2,
+      "modelSize": 0,
+      "abilities": {
+        "hasPassiveE": false,
+        "isShapeshifter": false,
+        "hasThreeHitPassive": false,
+        "hasAutoAttackReset": false,
+        "hasAbilityCharges": false,
+        "hasMultipleHardCC": false,
+        "hasChangingAbilities": false
+      }
+    },
+    {
+      "name": "Galio",
+      "region": "Demacia",
+      "role": [
+        "Tank",
+        "Mage"
+      ],
+      "resource": "Mana",
+      "species": "Unknown",
+      "primaryDamageType": "AP",
+      "range": 150,
+      "baseMovespeed": 335,
+      "releaseSeason": 1,
+      "modelSize": 0,
+      "abilities": {
+        "hasPassiveE": false,
+        "isShapeshifter": false,
+        "hasThreeHitPassive": false,
+        "hasAutoAttackReset": false,
+        "hasAbilityCharges": true,
+        "hasMultipleHardCC": true,
+        "hasChangingAbilities": false
+      }
+    },
+    {
+      "name": "Gangplank",
+      "region": "Bilgewater",
+      "role": [
+        "Fighter"
+      ],
+      "resource": "Mana",
+      "species": "Human",
+      "primaryDamageType": "AD",
+      "range": 125,
+      "baseMovespeed": 345,
+      "releaseSeason": 1,
+      "modelSize": 0,
+      "abilities": {
+        "hasPassiveE": false,
+        "isShapeshifter": false,
+        "hasThreeHitPassive": false,
+        "hasAutoAttackReset": false,
+        "hasAbilityCharges": false,
+        "hasMultipleHardCC": false,
+        "hasChangingAbilities": false
+      }
+    },
+    {
+      "name": "Garen",
+      "region": "Demacia",
+      "role": [
+        "Fighter",
+        "Tank"
+      ],
+      "resource": "None",
+      "species": "Human",
+      "primaryDamageType": "AD",
+      "range": 175,
+      "baseMovespeed": 340,
+      "releaseSeason": 1,
+      "modelSize": 0,
+      "abilities": {
+        "hasPassiveE": false,
+        "isShapeshifter": false,
+        "hasThreeHitPassive": false,
+        "hasAutoAttackReset": false,
+        "hasAbilityCharges": false,
+        "hasMultipleHardCC": false,
+        "hasChangingAbilities": false
+      }
+    },
+    {
+      "name": "Gnar",
+      "region": "Freljord",
+      "role": [
+        "Fighter",
+        "Tank"
+      ],
+      "resource": "Rage",
+      "species": "Yordle",
+      "primaryDamageType": "AD",
+      "range": 175,
+      "baseMovespeed": 335,
+      "releaseSeason": 4,
+      "modelSize": 0,
+      "abilities": {
+        "hasPassiveE": false,
+        "isShapeshifter": false,
+        "hasThreeHitPassive": false,
+        "hasAutoAttackReset": false,
+        "hasAbilityCharges": false,
+        "hasMultipleHardCC": true,
+        "hasChangingAbilities": false
+      }
+    },
+    {
+      "name": "Gragas",
+      "region": "Freljord",
+      "role": [
+        "Fighter",
+        "Mage"
+      ],
+      "resource": "Mana",
+      "species": "Iceborn",
+      "primaryDamageType": "AP",
+      "range": 125,
+      "baseMovespeed": 330,
+      "releaseSeason": 1,
+      "modelSize": 0,
+      "abilities": {
+        "hasPassiveE": false,
+        "isShapeshifter": false,
+        "hasThreeHitPassive": false,
+        "hasAutoAttackReset": false,
+        "hasAbilityCharges": true,
+        "hasMultipleHardCC": true,
+        "hasChangingAbilities": false
+      }
+    },
+    {
+      "name": "Graves",
+      "region": "Bilgewater",
+      "role": [
+        "Marksman"
+      ],
+      "resource": "Mana",
+      "species": "Human",
+      "primaryDamageType": "AD",
+      "range": 425,
+      "baseMovespeed": 340,
+      "releaseSeason": 2,
+      "modelSize": 0,
+      "abilities": {
+        "hasPassiveE": false,
+        "isShapeshifter": false,
+        "hasThreeHitPassive": false,
+        "hasAutoAttackReset": false,
+        "hasAbilityCharges": false,
+        "hasMultipleHardCC": false,
+        "hasChangingAbilities": false
+      }
+    },
+    {
+      "name": "Gwen",
+      "region": "Shadow Isles",
+      "role": [
+        "Fighter",
+        "Assassin"
+      ],
+      "resource": "Mana",
+      "species": "Human",
+      "primaryDamageType": "AD",
+      "range": 150,
+      "baseMovespeed": 340,
+      "releaseSeason": 11,
+      "modelSize": 0,
+      "abilities": {
+        "hasPassiveE": false,
+        "isShapeshifter": false,
+        "hasThreeHitPassive": false,
+        "hasAutoAttackReset": false,
+        "hasAbilityCharges": false,
+        "hasMultipleHardCC": false,
+        "hasChangingAbilities": false
+      }
+    },
+    {
+      "name": "Hecarim",
+      "region": "Shadow Isles",
+      "role": [
+        "Fighter",
+        "Tank"
+      ],
+      "resource": "Mana",
+      "species": "Unknown",
+      "primaryDamageType": "AD",
+      "range": 175,
+      "baseMovespeed": 345,
+      "releaseSeason": 2,
+      "modelSize": 0,
+      "abilities": {
+        "hasPassiveE": false,
+        "isShapeshifter": false,
+        "hasThreeHitPassive": false,
+        "hasAutoAttackReset": false,
+        "hasAbilityCharges": true,
+        "hasMultipleHardCC": false,
+        "hasChangingAbilities": false
+      }
+    },
+    {
+      "name": "Heimerdinger",
+      "region": "Piltover",
+      "role": [
+        "Mage",
+        "Support"
+      ],
+      "resource": "Mana",
+      "species": "Yordle",
+      "primaryDamageType": "AP",
+      "range": 550,
+      "baseMovespeed": 340,
+      "releaseSeason": 1,
+      "modelSize": 0,
+      "abilities": {
+        "hasPassiveE": false,
+        "isShapeshifter": false,
+        "hasThreeHitPassive": false,
+        "hasAutoAttackReset": false,
+        "hasAbilityCharges": false,
+        "hasMultipleHardCC": false,
+        "hasChangingAbilities": false
+      }
+    },
+    {
+      "name": "Hwei",
+      "region": "Ionia",
+      "role": [
+        "Mage"
+      ],
+      "resource": "Mana",
+      "species": "Human",
+      "primaryDamageType": "AP",
+      "range": 550,
+      "baseMovespeed": 325,
+      "releaseSeason": 14,
+      "modelSize": 0,
+      "abilities": {
+        "hasPassiveE": false,
+        "isShapeshifter": false,
+        "hasThreeHitPassive": false,
+        "hasAutoAttackReset": false,
+        "hasAbilityCharges": false,
+        "hasMultipleHardCC": false,
+        "hasChangingAbilities": false
+      }
+    },
+    {
+      "name": "Illaoi",
+      "region": "Bilgewater",
+      "role": [
+        "Fighter",
+        "Tank"
+      ],
+      "resource": "Mana",
+      "species": "Human",
+      "primaryDamageType": "AD",
+      "range": 125,
+      "baseMovespeed": 350,
+      "releaseSeason": 6,
+      "modelSize": 0,
+      "abilities": {
+        "hasPassiveE": false,
+        "isShapeshifter": false,
+        "hasThreeHitPassive": false,
+        "hasAutoAttackReset": false,
+        "hasAbilityCharges": false,
+        "hasMultipleHardCC": false,
+        "hasChangingAbilities": false
+      }
+    },
+    {
+      "name": "Irelia",
+      "region": "Ionia",
+      "role": [
+        "Fighter",
+        "Assassin"
+      ],
+      "resource": "Mana",
+      "species": "Human",
+      "primaryDamageType": "AD",
+      "range": 200,
+      "baseMovespeed": 335,
+      "releaseSeason": 1,
+      "modelSize": 0,
+      "abilities": {
+        "hasPassiveE": false,
+        "isShapeshifter": false,
+        "hasThreeHitPassive": false,
+        "hasAutoAttackReset": false,
+        "hasAbilityCharges": true,
+        "hasMultipleHardCC": false,
+        "hasChangingAbilities": false
+      }
+    },
+    {
+      "name": "Ivern",
+      "region": "Ionia",
+      "role": [
+        "Support",
+        "Mage"
+      ],
+      "resource": "Mana",
+      "species": "Human",
+      "primaryDamageType": "AP",
+      "range": 475,
+      "baseMovespeed": 330,
+      "releaseSeason": 6,
+      "modelSize": 0,
+      "abilities": {
+        "hasPassiveE": false,
+        "isShapeshifter": false,
+        "hasThreeHitPassive": false,
+        "hasAutoAttackReset": false,
+        "hasAbilityCharges": false,
+        "hasMultipleHardCC": false,
+        "hasChangingAbilities": false
+      }
+    },
+    {
+      "name": "Janna",
+      "region": "Zaun",
+      "role": [
+        "Support",
+        "Mage"
+      ],
+      "resource": "Mana",
+      "species": "Spirit God",
+      "primaryDamageType": "AP",
+      "range": 550,
+      "baseMovespeed": 325,
+      "releaseSeason": 1,
+      "modelSize": 0,
+      "abilities": {
+        "hasPassiveE": false,
+        "isShapeshifter": false,
+        "hasThreeHitPassive": false,
+        "hasAutoAttackReset": false,
+        "hasAbilityCharges": false,
+        "hasMultipleHardCC": false,
+        "hasChangingAbilities": false
+      }
+    },
+    {
+      "name": "Jarvan IV",
+      "region": "Demacia",
+      "role": [
+        "Tank",
+        "Fighter"
+      ],
+      "resource": "Mana",
+      "species": "Human",
+      "primaryDamageType": "AD",
+      "range": 175,
+      "baseMovespeed": 340,
+      "releaseSeason": 1,
+      "modelSize": 0,
+      "abilities": {
+        "hasPassiveE": false,
+        "isShapeshifter": false,
+        "hasThreeHitPassive": false,
+        "hasAutoAttackReset": false,
+        "hasAbilityCharges": false,
+        "hasMultipleHardCC": false,
+        "hasChangingAbilities": false
+      }
+    },
+    {
+      "name": "Jax",
+      "region": "Runeterra",
+      "role": [
+        "Fighter",
+        "Assassin"
+      ],
+      "resource": "Mana",
+      "species": "Unknown",
+      "primaryDamageType": "AD",
+      "range": 125,
+      "baseMovespeed": 350,
+      "releaseSeason": 1,
+      "modelSize": 0,
+      "abilities": {
+        "hasPassiveE": false,
+        "isShapeshifter": false,
+        "hasThreeHitPassive": false,
+        "hasAutoAttackReset": false,
+        "hasAbilityCharges": true,
+        "hasMultipleHardCC": false,
+        "hasChangingAbilities": false
+      }
+    },
+    {
+      "name": "Jayce",
+      "region": "Piltover",
+      "role": [
+        "Fighter",
+        "Marksman"
+      ],
+      "resource": "Mana",
+      "species": "Human",
+      "primaryDamageType": "AD",
+      "range": 125,
+      "baseMovespeed": 335,
+      "releaseSeason": 2,
+      "modelSize": 0,
+      "abilities": {
+        "hasPassiveE": false,
+        "isShapeshifter": false,
+        "hasThreeHitPassive": false,
+        "hasAutoAttackReset": false,
+        "hasAbilityCharges": false,
+        "hasMultipleHardCC": false,
+        "hasChangingAbilities": true
+      }
+    },
+    {
+      "name": "Jhin",
+      "region": "Ionia",
+      "role": [
+        "Marksman",
+        "Mage"
+      ],
+      "resource": "Mana",
+      "species": "Human",
+      "primaryDamageType": "AD",
+      "range": 550,
+      "baseMovespeed": 330,
+      "releaseSeason": 6,
+      "modelSize": 0,
+      "abilities": {
+        "hasPassiveE": false,
+        "isShapeshifter": false,
+        "hasThreeHitPassive": false,
+        "hasAutoAttackReset": false,
+        "hasAbilityCharges": false,
+        "hasMultipleHardCC": false,
+        "hasChangingAbilities": true
+      }
+    },
+    {
+      "name": "Jinx",
+      "region": "Zaun",
+      "role": [
+        "Marksman"
+      ],
+      "resource": "Mana",
+      "species": "Human",
+      "primaryDamageType": "AD",
+      "range": 525,
+      "baseMovespeed": 325,
+      "releaseSeason": 4,
+      "modelSize": 0,
+      "abilities": {
+        "hasPassiveE": false,
+        "isShapeshifter": false,
+        "hasThreeHitPassive": false,
+        "hasAutoAttackReset": false,
+        "hasAbilityCharges": false,
+        "hasMultipleHardCC": false,
+        "hasChangingAbilities": false
+      }
+    },
+    {
+      "name": "Kai'Sa",
+      "region": "Void",
+      "role": [
+        "Marksman"
+      ],
+      "resource": "Mana",
+      "species": "Human",
+      "primaryDamageType": "AD",
+      "range": 525,
+      "baseMovespeed": 335,
+      "releaseSeason": 8,
+      "modelSize": 0,
+      "abilities": {
+        "hasPassiveE": false,
+        "isShapeshifter": false,
+        "hasThreeHitPassive": false,
+        "hasAutoAttackReset": false,
+        "hasAbilityCharges": true,
+        "hasMultipleHardCC": false,
+        "hasChangingAbilities": false
+      }
+    },
+    {
+      "name": "Kalista",
+      "region": "Shadow Isles",
+      "role": [
+        "Marksman"
+      ],
+      "resource": "Mana",
+      "species": "Unknown",
+      "primaryDamageType": "AD",
+      "range": 525,
+      "baseMovespeed": 330,
+      "releaseSeason": 5,
+      "modelSize": 0,
+      "abilities": {
+        "hasPassiveE": false,
+        "isShapeshifter": false,
+        "hasThreeHitPassive": false,
+        "hasAutoAttackReset": false,
+        "hasAbilityCharges": false,
+        "hasMultipleHardCC": false,
+        "hasChangingAbilities": false
+      }
+    },
+    {
+      "name": "Karma",
+      "region": "Ionia",
+      "role": [
+        "Mage",
+        "Support"
+      ],
+      "resource": "Mana",
+      "species": "Human",
+      "primaryDamageType": "AP",
+      "range": 525,
+      "baseMovespeed": 335,
+      "releaseSeason": 1,
+      "modelSize": 0,
+      "abilities": {
+        "hasPassiveE": false,
+        "isShapeshifter": false,
+        "hasThreeHitPassive": false,
+        "hasAutoAttackReset": false,
+        "hasAbilityCharges": false,
+        "hasMultipleHardCC": false,
+        "hasChangingAbilities": false
+      }
+    },
+    {
+      "name": "Karthus",
+      "region": "Shadow Isles",
+      "role": [
+        "Mage"
+      ],
+      "resource": "Mana",
+      "species": "Unknown",
+      "primaryDamageType": "AP",
+      "range": 450,
+      "baseMovespeed": 335,
+      "releaseSeason": 1,
+      "modelSize": 0,
+      "abilities": {
+        "hasPassiveE": false,
+        "isShapeshifter": false,
+        "hasThreeHitPassive": false,
+        "hasAutoAttackReset": false,
+        "hasAbilityCharges": false,
+        "hasMultipleHardCC": false,
+        "hasChangingAbilities": false
+      }
+    },
+    {
+      "name": "Kassadin",
+      "region": "Void",
+      "role": [
+        "Assassin",
+        "Mage"
+      ],
+      "resource": "Mana",
+      "species": "Human",
+      "primaryDamageType": "AP",
+      "range": 150,
+      "baseMovespeed": 335,
+      "releaseSeason": 1,
+      "modelSize": 0,
+      "abilities": {
+        "hasPassiveE": false,
+        "isShapeshifter": false,
+        "hasThreeHitPassive": false,
+        "hasAutoAttackReset": false,
+        "hasAbilityCharges": false,
+        "hasMultipleHardCC": false,
+        "hasChangingAbilities": false
+      }
+    },
+    {
+      "name": "Katarina",
+      "region": "Noxus",
+      "role": [
+        "Assassin",
+        "Mage"
+      ],
+      "resource": "None",
+      "species": "Human",
+      "primaryDamageType": "AP",
+      "range": 125,
+      "baseMovespeed": 335,
+      "releaseSeason": 1,
+      "modelSize": 0,
+      "abilities": {
+        "hasPassiveE": false,
+        "isShapeshifter": false,
+        "hasThreeHitPassive": false,
+        "hasAutoAttackReset": false,
+        "hasAbilityCharges": false,
+        "hasMultipleHardCC": false,
+        "hasChangingAbilities": false
+      }
+    },
+    {
+      "name": "Kayle",
+      "region": "Demacia",
+      "role": [
+        "Fighter",
+        "Support"
+      ],
+      "resource": "Mana",
+      "species": "Human",
+      "primaryDamageType": "AD",
+      "range": 175,
+      "baseMovespeed": 335,
+      "releaseSeason": 1,
+      "modelSize": 0,
+      "abilities": {
+        "hasPassiveE": false,
+        "isShapeshifter": false,
+        "hasThreeHitPassive": false,
+        "hasAutoAttackReset": false,
+        "hasAbilityCharges": false,
+        "hasMultipleHardCC": false,
+        "hasChangingAbilities": false
+      }
+    },
+    {
+      "name": "Kayn",
+      "region": "Ionia",
+      "role": [
+        "Fighter",
+        "Assassin"
+      ],
+      "resource": "Mana",
+      "species": "God-Warrior",
+      "primaryDamageType": "AD",
+      "range": 175,
+      "baseMovespeed": 340,
+      "releaseSeason": 7,
+      "modelSize": 0,
+      "abilities": {
+        "hasPassiveE": false,
+        "isShapeshifter": false,
+        "hasThreeHitPassive": false,
+        "hasAutoAttackReset": false,
+        "hasAbilityCharges": false,
+        "hasMultipleHardCC": false,
+        "hasChangingAbilities": false
+      }
+    },
+    {
+      "name": "Kennen",
+      "region": "Ionia",
+      "role": [
+        "Mage",
+        "Marksman"
+      ],
+      "resource": "Energy",
+      "species": "Yordle",
+      "primaryDamageType": "AD",
+      "range": 550,
+      "baseMovespeed": 335,
+      "releaseSeason": 1,
+      "modelSize": 0,
+      "abilities": {
+        "hasPassiveE": false,
+        "isShapeshifter": false,
+        "hasThreeHitPassive": false,
+        "hasAutoAttackReset": false,
+        "hasAbilityCharges": false,
+        "hasMultipleHardCC": false,
+        "hasChangingAbilities": false
+      }
+    },
+    {
+      "name": "Kha'Zix",
+      "region": "Void",
+      "role": [
+        "Assassin"
+      ],
+      "resource": "Mana",
+      "species": "Voidborn",
+      "primaryDamageType": "AD",
+      "range": 125,
+      "baseMovespeed": 350,
+      "releaseSeason": 2,
+      "modelSize": 0,
+      "abilities": {
+        "hasPassiveE": false,
+        "isShapeshifter": false,
+        "hasThreeHitPassive": false,
+        "hasAutoAttackReset": false,
+        "hasAbilityCharges": false,
+        "hasMultipleHardCC": false,
+        "hasChangingAbilities": true
+      }
+    },
+    {
+      "name": "Kindred",
+      "region": "Runeterra",
+      "role": [
+        "Marksman"
+      ],
+      "resource": "Mana",
+      "species": "Spirit God",
+      "primaryDamageType": "AD",
+      "range": 500,
+      "baseMovespeed": 325,
+      "releaseSeason": 5,
+      "modelSize": 0,
+      "abilities": {
+        "hasPassiveE": false,
+        "isShapeshifter": false,
+        "hasThreeHitPassive": false,
+        "hasAutoAttackReset": false,
+        "hasAbilityCharges": true,
+        "hasMultipleHardCC": false,
+        "hasChangingAbilities": false
+      }
+    },
+    {
+      "name": "Kled",
+      "region": "Noxus",
+      "role": [
+        "Fighter",
+        "Tank"
+      ],
+      "resource": "Courage",
+      "species": "Yordle",
+      "primaryDamageType": "AD",
+      "range": 125,
+      "baseMovespeed": 345,
+      "releaseSeason": 6,
+      "modelSize": 0,
+      "abilities": {
+        "hasPassiveE": false,
+        "isShapeshifter": false,
+        "hasThreeHitPassive": false,
+        "hasAutoAttackReset": false,
+        "hasAbilityCharges": true,
+        "hasMultipleHardCC": false,
+        "hasChangingAbilities": false
+      }
+    },
+    {
+      "name": "Kog'Maw",
+      "region": "Void",
+      "role": [
+        "Marksman",
+        "Mage"
+      ],
+      "resource": "Mana",
+      "species": "Voidborn",
+      "primaryDamageType": "AD",
+      "range": 500,
+      "baseMovespeed": 330,
+      "releaseSeason": 1,
+      "modelSize": 0,
+      "abilities": {
+        "hasPassiveE": false,
+        "isShapeshifter": false,
+        "hasThreeHitPassive": false,
+        "hasAutoAttackReset": false,
+        "hasAbilityCharges": false,
+        "hasMultipleHardCC": false,
+        "hasChangingAbilities": false
+      }
+    },
+    {
+      "name": "K'Sante",
+      "region": "Shurima",
+      "role": [
+        "Tank",
+        "Fighter"
+      ],
+      "resource": "Mana",
+      "species": "Human",
+      "primaryDamageType": "AD",
+      "range": 175,
+      "baseMovespeed": 330,
+      "releaseSeason": 13,
+      "modelSize": 0,
+      "abilities": {
+        "hasPassiveE": false,
+        "isShapeshifter": false,
+        "hasThreeHitPassive": false,
+        "hasAutoAttackReset": false,
+        "hasAbilityCharges": true,
+        "hasMultipleHardCC": false,
+        "hasChangingAbilities": false
+      }
+    },
+    {
+      "name": "LeBlanc",
+      "region": "Noxus",
+      "role": [
+        "Assassin",
+        "Mage"
+      ],
+      "resource": "Mana",
+      "species": "Human",
+      "primaryDamageType": "AP",
+      "range": 525,
+      "baseMovespeed": 340,
+      "releaseSeason": 1,
+      "modelSize": 0,
+      "abilities": {
+        "hasPassiveE": false,
+        "isShapeshifter": false,
+        "hasThreeHitPassive": false,
+        "hasAutoAttackReset": false,
+        "hasAbilityCharges": false,
+        "hasMultipleHardCC": false,
+        "hasChangingAbilities": false
+      }
+    },
+    {
+      "name": "Lee Sin",
+      "region": "Ionia",
+      "role": [
+        "Fighter",
+        "Assassin"
+      ],
+      "resource": "Energy",
+      "species": "Human",
+      "primaryDamageType": "AD",
+      "range": 125,
+      "baseMovespeed": 345,
+      "releaseSeason": 1,
+      "modelSize": 0,
+      "abilities": {
+        "hasPassiveE": false,
+        "isShapeshifter": false,
+        "hasThreeHitPassive": false,
+        "hasAutoAttackReset": false,
+        "hasAbilityCharges": false,
+        "hasMultipleHardCC": false,
+        "hasChangingAbilities": false
+      }
+    },
+    {
+      "name": "Leona",
+      "region": "Targon",
+      "role": [
+        "Tank",
+        "Support"
+      ],
+      "resource": "Mana",
+      "species": "Human",
+      "primaryDamageType": "AD",
+      "range": 125,
+      "baseMovespeed": 335,
+      "releaseSeason": 1,
+      "modelSize": 0,
+      "abilities": {
+        "hasPassiveE": false,
+        "isShapeshifter": false,
+        "hasThreeHitPassive": false,
+        "hasAutoAttackReset": false,
+        "hasAbilityCharges": false,
+        "hasMultipleHardCC": true,
+        "hasChangingAbilities": false
+      }
+    },
+    {
+      "name": "Lillia",
+      "region": "Ionia",
+      "role": [
+        "Fighter",
+        "Mage"
+      ],
+      "resource": "Mana",
+      "species": "Unknown",
+      "primaryDamageType": "AP",
+      "range": 325,
+      "baseMovespeed": 330,
+      "releaseSeason": 10,
+      "modelSize": 0,
+      "abilities": {
+        "hasPassiveE": false,
+        "isShapeshifter": false,
+        "hasThreeHitPassive": false,
+        "hasAutoAttackReset": false,
+        "hasAbilityCharges": false,
+        "hasMultipleHardCC": false,
+        "hasChangingAbilities": false
+      }
+    },
+    {
+      "name": "Lissandra",
+      "region": "Freljord",
+      "role": [
+        "Mage"
+      ],
+      "resource": "Mana",
+      "species": "Iceborn",
+      "primaryDamageType": "AP",
+      "range": 550,
+      "baseMovespeed": 325,
+      "releaseSeason": 3,
+      "modelSize": 0,
+      "abilities": {
+        "hasPassiveE": false,
+        "isShapeshifter": false,
+        "hasThreeHitPassive": false,
+        "hasAutoAttackReset": false,
+        "hasAbilityCharges": false,
+        "hasMultipleHardCC": true,
+        "hasChangingAbilities": false
+      }
+    },
+    {
+      "name": "Lucian",
+      "region": "Demacia",
+      "role": [
+        "Marksman"
+      ],
+      "resource": "Mana",
+      "species": "Human",
+      "primaryDamageType": "AD",
+      "range": 500,
+      "baseMovespeed": 335,
+      "releaseSeason": 3,
+      "modelSize": 0,
+      "abilities": {
+        "hasPassiveE": false,
+        "isShapeshifter": false,
+        "hasThreeHitPassive": false,
+        "hasAutoAttackReset": false,
+        "hasAbilityCharges": false,
+        "hasMultipleHardCC": false,
+        "hasChangingAbilities": false
+      }
+    },
+    {
+      "name": "Lulu",
+      "region": "Bandle City",
+      "role": [
+        "Support",
+        "Mage"
+      ],
+      "resource": "Mana",
+      "species": "Yordle",
+      "primaryDamageType": "AP",
+      "range": 550,
+      "baseMovespeed": 330,
+      "releaseSeason": 2,
+      "modelSize": 0,
+      "abilities": {
+        "hasPassiveE": false,
+        "isShapeshifter": false,
+        "hasThreeHitPassive": false,
+        "hasAutoAttackReset": false,
+        "hasAbilityCharges": false,
+        "hasMultipleHardCC": false,
+        "hasChangingAbilities": false
+      }
+    },
+    {
+      "name": "Lux",
+      "region": "Demacia",
+      "role": [
+        "Mage",
+        "Support"
+      ],
+      "resource": "Mana",
+      "species": "Human",
+      "primaryDamageType": "AP",
+      "range": 550,
+      "baseMovespeed": 330,
+      "releaseSeason": 1,
+      "modelSize": 0,
+      "abilities": {
+        "hasPassiveE": false,
+        "isShapeshifter": false,
+        "hasThreeHitPassive": false,
+        "hasAutoAttackReset": false,
+        "hasAbilityCharges": false,
+        "hasMultipleHardCC": false,
+        "hasChangingAbilities": false
+      }
+    },
+    {
+      "name": "Malphite",
+      "region": "Ixtal",
+      "role": [
+        "Tank",
+        "Fighter"
+      ],
+      "resource": "Mana",
+      "species": "Unknown",
+      "primaryDamageType": "AD",
+      "range": 125,
+      "baseMovespeed": 335,
+      "releaseSeason": 1,
+      "modelSize": 0,
+      "abilities": {
+        "hasPassiveE": false,
+        "isShapeshifter": false,
+        "hasThreeHitPassive": false,
+        "hasAutoAttackReset": false,
+        "hasAbilityCharges": false,
+        "hasMultipleHardCC": false,
+        "hasChangingAbilities": false
+      }
+    },
+    {
+      "name": "Malzahar",
+      "region": "Void",
+      "role": [
+        "Mage",
+        "Assassin"
+      ],
+      "resource": "Mana",
+      "species": "Human",
+      "primaryDamageType": "AP",
+      "range": 500,
+      "baseMovespeed": 335,
+      "releaseSeason": 1,
+      "modelSize": 0,
+      "abilities": {
+        "hasPassiveE": false,
+        "isShapeshifter": false,
+        "hasThreeHitPassive": false,
+        "hasAutoAttackReset": false,
+        "hasAbilityCharges": false,
+        "hasMultipleHardCC": false,
+        "hasChangingAbilities": false
+      }
+    },
+    {
+      "name": "Maokai",
+      "region": "Shadow Isles",
+      "role": [
+        "Tank",
+        "Mage"
+      ],
+      "resource": "Mana",
+      "species": "Unknown",
+      "primaryDamageType": "AP",
+      "range": 125,
+      "baseMovespeed": 335,
+      "releaseSeason": 1,
+      "modelSize": 0,
+      "abilities": {
+        "hasPassiveE": false,
+        "isShapeshifter": false,
+        "hasThreeHitPassive": false,
+        "hasAutoAttackReset": false,
+        "hasAbilityCharges": false,
+        "hasMultipleHardCC": true,
+        "hasChangingAbilities": false
+      }
+    },
+    {
+      "name": "Master Yi",
+      "region": "Ionia",
+      "role": [
+        "Assassin",
+        "Fighter"
+      ],
+      "resource": "Mana",
+      "species": "Human",
+      "primaryDamageType": "AD",
+      "range": 175,
+      "baseMovespeed": 355,
+      "releaseSeason": 1,
+      "modelSize": 0,
+      "abilities": {
+        "hasPassiveE": false,
+        "isShapeshifter": false,
+        "hasThreeHitPassive": false,
+        "hasAutoAttackReset": false,
+        "hasAbilityCharges": false,
+        "hasMultipleHardCC": false,
+        "hasChangingAbilities": false
+      }
+    },
+    {
+      "name": "Milio",
+      "region": "Ixtal",
+      "role": [
+        "Support"
+      ],
+      "resource": "Mana",
+      "species": "Human",
+      "primaryDamageType": "AD",
+      "range": 525,
+      "baseMovespeed": 330,
+      "releaseSeason": 13,
+      "modelSize": 0,
+      "abilities": {
+        "hasPassiveE": false,
+        "isShapeshifter": false,
+        "hasThreeHitPassive": false,
+        "hasAutoAttackReset": false,
+        "hasAbilityCharges": true,
+        "hasMultipleHardCC": false,
+        "hasChangingAbilities": false
+      }
+    },
+    {
+      "name": "Miss Fortune",
+      "region": "Bilgewater",
+      "role": [
+        "Marksman"
+      ],
+      "resource": "Mana",
+      "species": "Human",
+      "primaryDamageType": "AD",
+      "range": 550,
+      "baseMovespeed": 325,
+      "releaseSeason": 1,
+      "modelSize": 0,
+      "abilities": {
+        "hasPassiveE": false,
+        "isShapeshifter": false,
+        "hasThreeHitPassive": false,
+        "hasAutoAttackReset": false,
+        "hasAbilityCharges": false,
+        "hasMultipleHardCC": false,
+        "hasChangingAbilities": false
+      }
+    },
+    {
+      "name": "Wukong",
+      "region": "Ionia",
+      "role": [
+        "Fighter",
+        "Tank"
+      ],
+      "resource": "Mana",
+      "species": "Unknown",
+      "primaryDamageType": "AD",
+      "range": 175,
+      "baseMovespeed": 340,
+      "releaseSeason": 1,
+      "modelSize": 0,
+      "abilities": {
+        "hasPassiveE": false,
+        "isShapeshifter": false,
+        "hasThreeHitPassive": false,
+        "hasAutoAttackReset": false,
+        "hasAbilityCharges": false,
+        "hasMultipleHardCC": false,
+        "hasChangingAbilities": false
+      }
+    },
+    {
+      "name": "Mordekaiser",
+      "region": "Noxus",
+      "role": [
+        "Fighter"
+      ],
+      "resource": "Shield",
+      "species": "Unknown",
+      "primaryDamageType": "AD",
+      "range": 175,
+      "baseMovespeed": 335,
+      "releaseSeason": 1,
+      "modelSize": 0,
+      "abilities": {
+        "hasPassiveE": false,
+        "isShapeshifter": false,
+        "hasThreeHitPassive": false,
+        "hasAutoAttackReset": false,
+        "hasAbilityCharges": false,
+        "hasMultipleHardCC": false,
+        "hasChangingAbilities": false
+      }
+    },
+    {
+      "name": "Morgana",
+      "region": "Demacia",
+      "role": [
+        "Mage",
+        "Support"
+      ],
+      "resource": "Mana",
+      "species": "Human",
+      "primaryDamageType": "AP",
+      "range": 450,
+      "baseMovespeed": 335,
+      "releaseSeason": 1,
+      "modelSize": 0,
+      "abilities": {
+        "hasPassiveE": false,
+        "isShapeshifter": false,
+        "hasThreeHitPassive": false,
+        "hasAutoAttackReset": false,
+        "hasAbilityCharges": false,
+        "hasMultipleHardCC": false,
+        "hasChangingAbilities": false
+      }
+    },
+    {
+      "name": "Naafiri",
+      "region": "Shurima",
+      "role": [
+        "Assassin"
+      ],
+      "resource": "Mana",
+      "species": "Darkin",
+      "primaryDamageType": "AD",
+      "range": 125,
+      "baseMovespeed": 335,
+      "releaseSeason": 13,
+      "modelSize": 0,
+      "abilities": {
+        "hasPassiveE": false,
+        "isShapeshifter": false,
+        "hasThreeHitPassive": false,
+        "hasAutoAttackReset": false,
+        "hasAbilityCharges": false,
+        "hasMultipleHardCC": false,
+        "hasChangingAbilities": false
+      }
+    },
+    {
+      "name": "Nami",
+      "region": "Runeterra",
+      "role": [
+        "Support",
+        "Mage"
+      ],
+      "resource": "Mana",
+      "species": "Unknown",
+      "primaryDamageType": "AP",
+      "range": 550,
+      "baseMovespeed": 335,
+      "releaseSeason": 3,
+      "modelSize": 0,
+      "abilities": {
+        "hasPassiveE": false,
+        "isShapeshifter": false,
+        "hasThreeHitPassive": false,
+        "hasAutoAttackReset": false,
+        "hasAbilityCharges": false,
+        "hasMultipleHardCC": true,
+        "hasChangingAbilities": false
+      }
+    },
+    {
+      "name": "Nasus",
+      "region": "Shurima",
+      "role": [
+        "Fighter",
+        "Tank"
+      ],
+      "resource": "Mana",
+      "species": "God-Warrior",
+      "primaryDamageType": "AD",
+      "range": 125,
+      "baseMovespeed": 350,
+      "releaseSeason": 1,
+      "modelSize": 0,
+      "abilities": {
+        "hasPassiveE": false,
+        "isShapeshifter": false,
+        "hasThreeHitPassive": false,
+        "hasAutoAttackReset": false,
+        "hasAbilityCharges": false,
+        "hasMultipleHardCC": false,
+        "hasChangingAbilities": false
+      }
+    },
+    {
+      "name": "Nautilus",
+      "region": "Bilgewater",
+      "role": [
+        "Tank",
+        "Support"
+      ],
+      "resource": "Mana",
+      "species": "Unknown",
+      "primaryDamageType": "AD",
+      "range": 175,
+      "baseMovespeed": 325,
+      "releaseSeason": 2,
+      "modelSize": 0,
+      "abilities": {
+        "hasPassiveE": false,
+        "isShapeshifter": false,
+        "hasThreeHitPassive": false,
+        "hasAutoAttackReset": false,
+        "hasAbilityCharges": false,
+        "hasMultipleHardCC": false,
+        "hasChangingAbilities": false
+      }
+    },
+    {
+      "name": "Neeko",
+      "region": "Ixtal",
+      "role": [
+        "Mage",
+        "Support"
+      ],
+      "resource": "Mana",
+      "species": "Unknown",
+      "primaryDamageType": "AP",
+      "range": 550,
+      "baseMovespeed": 340,
+      "releaseSeason": 9,
+      "modelSize": 0,
+      "abilities": {
+        "hasPassiveE": false,
+        "isShapeshifter": false,
+        "hasThreeHitPassive": false,
+        "hasAutoAttackReset": false,
+        "hasAbilityCharges": false,
+        "hasMultipleHardCC": true,
+        "hasChangingAbilities": false
+      }
+    },
+    {
+      "name": "Nidalee",
+      "region": "Ixtal",
+      "role": [
+        "Assassin",
+        "Mage"
+      ],
+      "resource": "Mana",
+      "species": "Vastaya",
+      "primaryDamageType": "AP",
+      "range": 525,
+      "baseMovespeed": 340,
+      "releaseSeason": 1,
+      "modelSize": 0,
+      "abilities": {
+        "hasPassiveE": false,
+        "isShapeshifter": false,
+        "hasThreeHitPassive": false,
+        "hasAutoAttackReset": false,
+        "hasAbilityCharges": false,
+        "hasMultipleHardCC": false,
+        "hasChangingAbilities": true
+      }
+    },
+    {
+      "name": "Nilah",
+      "region": "Bilgewater",
+      "role": [
+        "Fighter",
+        "Assassin"
+      ],
+      "resource": "Mana",
+      "species": "Human",
+      "primaryDamageType": "AD",
+      "range": 225,
+      "baseMovespeed": 340,
+      "releaseSeason": 12,
+      "modelSize": 0,
+      "abilities": {
+        "hasPassiveE": false,
+        "isShapeshifter": false,
+        "hasThreeHitPassive": false,
+        "hasAutoAttackReset": false,
+        "hasAbilityCharges": false,
+        "hasMultipleHardCC": false,
+        "hasChangingAbilities": false
+      }
+    },
+    {
+      "name": "Nocturne",
+      "region": "Runeterra",
+      "role": [
+        "Assassin",
+        "Fighter"
+      ],
+      "resource": "Mana",
+      "species": "Unknown",
+      "primaryDamageType": "AD",
+      "range": 125,
+      "baseMovespeed": 345,
+      "releaseSeason": 1,
+      "modelSize": 0,
+      "abilities": {
+        "hasPassiveE": false,
+        "isShapeshifter": false,
+        "hasThreeHitPassive": false,
+        "hasAutoAttackReset": false,
+        "hasAbilityCharges": false,
+        "hasMultipleHardCC": false,
+        "hasChangingAbilities": false
+      }
+    },
+    {
+      "name": "Nunu & Willump",
+      "region": "Freljord",
+      "role": [
+        "Tank",
+        "Fighter"
+      ],
+      "resource": "Mana",
+      "species": "Human",
+      "primaryDamageType": "AD",
+      "range": 125,
+      "baseMovespeed": 345,
+      "releaseSeason": 1,
+      "modelSize": 0,
+      "abilities": {
+        "hasPassiveE": false,
+        "isShapeshifter": false,
+        "hasThreeHitPassive": false,
+        "hasAutoAttackReset": false,
+        "hasAbilityCharges": false,
+        "hasMultipleHardCC": true,
+        "hasChangingAbilities": false
+      }
+    },
+    {
+      "name": "Olaf",
+      "region": "Freljord",
+      "role": [
+        "Fighter",
+        "Tank"
+      ],
+      "resource": "Mana",
+      "species": "Iceborn",
+      "primaryDamageType": "AD",
+      "range": 125,
+      "baseMovespeed": 350,
+      "releaseSeason": 1,
+      "modelSize": 0,
+      "abilities": {
+        "hasPassiveE": false,
+        "isShapeshifter": false,
+        "hasThreeHitPassive": false,
+        "hasAutoAttackReset": false,
+        "hasAbilityCharges": false,
+        "hasMultipleHardCC": false,
+        "hasChangingAbilities": false
+      }
+    },
+    {
+      "name": "Orianna",
+      "region": "Piltover",
+      "role": [
+        "Mage",
+        "Support"
+      ],
+      "resource": "Mana",
+      "species": "Unknown",
+      "primaryDamageType": "AP",
+      "range": 525,
+      "baseMovespeed": 325,
+      "releaseSeason": 1,
+      "modelSize": 0,
+      "abilities": {
+        "hasPassiveE": false,
+        "isShapeshifter": false,
+        "hasThreeHitPassive": false,
+        "hasAutoAttackReset": false,
+        "hasAbilityCharges": false,
+        "hasMultipleHardCC": false,
+        "hasChangingAbilities": false
+      }
+    },
+    {
+      "name": "Ornn",
+      "region": "Freljord",
+      "role": [
+        "Tank",
+        "Fighter"
+      ],
+      "resource": "Mana",
+      "species": "Spirit God",
+      "primaryDamageType": "AD",
+      "range": 175,
+      "baseMovespeed": 335,
+      "releaseSeason": 7,
+      "modelSize": 0,
+      "abilities": {
+        "hasPassiveE": false,
+        "isShapeshifter": false,
+        "hasThreeHitPassive": false,
+        "hasAutoAttackReset": false,
+        "hasAbilityCharges": true,
+        "hasMultipleHardCC": true,
+        "hasChangingAbilities": false
+      }
+    },
+    {
+      "name": "Pantheon",
+      "region": "Targon",
+      "role": [
+        "Fighter",
+        "Assassin"
+      ],
+      "resource": "Mana",
+      "species": "Human",
+      "primaryDamageType": "AD",
+      "range": 175,
+      "baseMovespeed": 345,
+      "releaseSeason": 1,
+      "modelSize": 0,
+      "abilities": {
+        "hasPassiveE": false,
+        "isShapeshifter": false,
+        "hasThreeHitPassive": false,
+        "hasAutoAttackReset": false,
+        "hasAbilityCharges": false,
+        "hasMultipleHardCC": false,
+        "hasChangingAbilities": false
+      }
+    },
+    {
+      "name": "Poppy",
+      "region": "Demacia",
+      "role": [
+        "Tank",
+        "Fighter"
+      ],
+      "resource": "Mana",
+      "species": "Yordle",
+      "primaryDamageType": "AD",
+      "range": 125,
+      "baseMovespeed": 345,
+      "releaseSeason": 1,
+      "modelSize": 0,
+      "abilities": {
+        "hasPassiveE": false,
+        "isShapeshifter": false,
+        "hasThreeHitPassive": false,
+        "hasAutoAttackReset": false,
+        "hasAbilityCharges": false,
+        "hasMultipleHardCC": true,
+        "hasChangingAbilities": false
+      }
+    },
+    {
+      "name": "Pyke",
+      "region": "Bilgewater",
+      "role": [
+        "Support",
+        "Assassin"
+      ],
+      "resource": "Mana",
+      "species": "Unknown",
+      "primaryDamageType": "AD",
+      "range": 150,
+      "baseMovespeed": 330,
+      "releaseSeason": 8,
+      "modelSize": 0,
+      "abilities": {
+        "hasPassiveE": false,
+        "isShapeshifter": false,
+        "hasThreeHitPassive": false,
+        "hasAutoAttackReset": false,
+        "hasAbilityCharges": false,
+        "hasMultipleHardCC": false,
+        "hasChangingAbilities": false
+      }
+    },
+    {
+      "name": "Qiyana",
+      "region": "Ixtal",
+      "role": [
+        "Assassin",
+        "Fighter"
+      ],
+      "resource": "Mana",
+      "species": "Human",
+      "primaryDamageType": "AD",
+      "range": 150,
+      "baseMovespeed": 335,
+      "releaseSeason": 9,
+      "modelSize": 0,
+      "abilities": {
+        "hasPassiveE": false,
+        "isShapeshifter": false,
+        "hasThreeHitPassive": false,
+        "hasAutoAttackReset": false,
+        "hasAbilityCharges": false,
+        "hasMultipleHardCC": false,
+        "hasChangingAbilities": false
+      }
+    },
+    {
+      "name": "Quinn",
+      "region": "Demacia",
+      "role": [
+        "Marksman",
+        "Assassin"
+      ],
+      "resource": "Mana",
+      "species": "Human",
+      "primaryDamageType": "AD",
+      "range": 525,
+      "baseMovespeed": 330,
+      "releaseSeason": 3,
+      "modelSize": 0,
+      "abilities": {
+        "hasPassiveE": false,
+        "isShapeshifter": false,
+        "hasThreeHitPassive": false,
+        "hasAutoAttackReset": false,
+        "hasAbilityCharges": false,
+        "hasMultipleHardCC": false,
+        "hasChangingAbilities": false
+      }
+    },
+    {
+      "name": "Rakan",
+      "region": "Ionia",
+      "role": [
+        "Support"
+      ],
+      "resource": "Mana",
+      "species": "Unknown",
+      "primaryDamageType": "AD",
+      "range": 300,
+      "baseMovespeed": 335,
+      "releaseSeason": 7,
+      "modelSize": 0,
+      "abilities": {
+        "hasPassiveE": false,
+        "isShapeshifter": false,
+        "hasThreeHitPassive": false,
+        "hasAutoAttackReset": false,
+        "hasAbilityCharges": false,
+        "hasMultipleHardCC": false,
+        "hasChangingAbilities": false
+      }
+    },
+    {
+      "name": "Rammus",
+      "region": "Shurima",
+      "role": [
+        "Tank",
+        "Fighter"
+      ],
+      "resource": "Mana",
+      "species": "Unknown",
+      "primaryDamageType": "AD",
+      "range": 125,
+      "baseMovespeed": 335,
+      "releaseSeason": 1,
+      "modelSize": 0,
+      "abilities": {
+        "hasPassiveE": false,
+        "isShapeshifter": false,
+        "hasThreeHitPassive": false,
+        "hasAutoAttackReset": false,
+        "hasAbilityCharges": false,
+        "hasMultipleHardCC": false,
+        "hasChangingAbilities": false
+      }
+    },
+    {
+      "name": "Rek'Sai",
+      "region": "Void",
+      "role": [
+        "Fighter"
+      ],
+      "resource": "Rage",
+      "species": "Unknown",
+      "primaryDamageType": "AD",
+      "range": 175,
+      "baseMovespeed": 335,
+      "releaseSeason": 5,
+      "modelSize": 0,
+      "abilities": {
+        "hasPassiveE": false,
+        "isShapeshifter": false,
+        "hasThreeHitPassive": false,
+        "hasAutoAttackReset": false,
+        "hasAbilityCharges": true,
+        "hasMultipleHardCC": false,
+        "hasChangingAbilities": false
+      }
+    },
+    {
+      "name": "Rell",
+      "region": "Noxus",
+      "role": [
+        "Tank",
+        "Support"
+      ],
+      "resource": "Mana",
+      "species": "Human",
+      "primaryDamageType": "AD",
+      "range": 175,
+      "baseMovespeed": 330,
+      "releaseSeason": 11,
+      "modelSize": 0,
+      "abilities": {
+        "hasPassiveE": false,
+        "isShapeshifter": false,
+        "hasThreeHitPassive": false,
+        "hasAutoAttackReset": false,
+        "hasAbilityCharges": false,
+        "hasMultipleHardCC": true,
+        "hasChangingAbilities": false
+      }
+    },
+    {
+      "name": "Renata Glasc",
+      "region": "Zaun",
+      "role": [
+        "Support",
+        "Mage"
+      ],
+      "resource": "Mana",
+      "species": "Human",
+      "primaryDamageType": "AP",
+      "range": 550,
+      "baseMovespeed": 330,
+      "releaseSeason": 12,
+      "modelSize": 0,
+      "abilities": {
+        "hasPassiveE": false,
+        "isShapeshifter": false,
+        "hasThreeHitPassive": false,
+        "hasAutoAttackReset": false,
+        "hasAbilityCharges": false,
+        "hasMultipleHardCC": false,
+        "hasChangingAbilities": false
+      }
+    },
+    {
+      "name": "Renekton",
+      "region": "Shurima",
+      "role": [
+        "Fighter",
+        "Tank"
+      ],
+      "resource": "Fury",
+      "species": "God-Warrior",
+      "primaryDamageType": "AD",
+      "range": 125,
+      "baseMovespeed": 345,
+      "releaseSeason": 1,
+      "modelSize": 0,
+      "abilities": {
+        "hasPassiveE": false,
+        "isShapeshifter": false,
+        "hasThreeHitPassive": false,
+        "hasAutoAttackReset": false,
+        "hasAbilityCharges": false,
+        "hasMultipleHardCC": false,
+        "hasChangingAbilities": true
+      }
+    },
+    {
+      "name": "Rengar",
+      "region": "Ixtal",
+      "role": [
+        "Assassin",
+        "Fighter"
+      ],
+      "resource": "Ferocity",
+      "species": "Unknown",
+      "primaryDamageType": "AD",
+      "range": 125,
+      "baseMovespeed": 345,
+      "releaseSeason": 2,
+      "modelSize": 0,
+      "abilities": {
+        "hasPassiveE": false,
+        "isShapeshifter": false,
+        "hasThreeHitPassive": false,
+        "hasAutoAttackReset": false,
+        "hasAbilityCharges": false,
+        "hasMultipleHardCC": false,
+        "hasChangingAbilities": false
+      }
+    },
+    {
+      "name": "Riven",
+      "region": "Noxus",
+      "role": [
+        "Fighter",
+        "Assassin"
+      ],
+      "resource": "None",
+      "species": "Human",
+      "primaryDamageType": "AD",
+      "range": 125,
+      "baseMovespeed": 340,
+      "releaseSeason": 2,
+      "modelSize": 0,
+      "abilities": {
+        "hasPassiveE": false,
+        "isShapeshifter": false,
+        "hasThreeHitPassive": false,
+        "hasAutoAttackReset": false,
+        "hasAbilityCharges": false,
+        "hasMultipleHardCC": true,
+        "hasChangingAbilities": false
+      }
+    },
+    {
+      "name": "Rumble",
+      "region": "Bandle City",
+      "role": [
+        "Fighter",
+        "Mage"
+      ],
+      "resource": "Heat",
+      "species": "Yordle",
+      "primaryDamageType": "AP",
+      "range": 125,
+      "baseMovespeed": 345,
+      "releaseSeason": 1,
+      "modelSize": 0,
+      "abilities": {
+        "hasPassiveE": false,
+        "isShapeshifter": false,
+        "hasThreeHitPassive": false,
+        "hasAutoAttackReset": false,
+        "hasAbilityCharges": false,
+        "hasMultipleHardCC": false,
+        "hasChangingAbilities": false
+      }
+    },
+    {
+      "name": "Ryze",
+      "region": "Runeterra",
+      "role": [
+        "Mage",
+        "Fighter"
+      ],
+      "resource": "Mana",
+      "species": "Human",
+      "primaryDamageType": "AP",
+      "range": 550,
+      "baseMovespeed": 340,
+      "releaseSeason": 1,
+      "modelSize": 0,
+      "abilities": {
+        "hasPassiveE": false,
+        "isShapeshifter": false,
+        "hasThreeHitPassive": false,
+        "hasAutoAttackReset": false,
+        "hasAbilityCharges": true,
+        "hasMultipleHardCC": false,
+        "hasChangingAbilities": false
+      }
+    },
+    {
+      "name": "Samira",
+      "region": "Noxus",
+      "role": [
+        "Marksman"
+      ],
+      "resource": "Mana",
+      "species": "Human",
+      "primaryDamageType": "AD",
+      "range": 500,
+      "baseMovespeed": 335,
+      "releaseSeason": 10,
+      "modelSize": 0,
+      "abilities": {
+        "hasPassiveE": false,
+        "isShapeshifter": false,
+        "hasThreeHitPassive": false,
+        "hasAutoAttackReset": false,
+        "hasAbilityCharges": false,
+        "hasMultipleHardCC": false,
+        "hasChangingAbilities": false
+      }
+    },
+    {
+      "name": "Sejuani",
+      "region": "Freljord",
+      "role": [
+        "Tank",
+        "Fighter"
+      ],
+      "resource": "Mana",
+      "species": "Iceborn",
+      "primaryDamageType": "AD",
+      "range": 150,
+      "baseMovespeed": 340,
+      "releaseSeason": 2,
+      "modelSize": 0,
+      "abilities": {
+        "hasPassiveE": false,
+        "isShapeshifter": false,
+        "hasThreeHitPassive": false,
+        "hasAutoAttackReset": false,
+        "hasAbilityCharges": true,
+        "hasMultipleHardCC": true,
+        "hasChangingAbilities": false
+      }
+    },
+    {
+      "name": "Senna",
+      "region": "Unknown",
+      "role": [
+        "Marksman",
+        "Support"
+      ],
+      "resource": "Mana",
+      "species": "Unknown",
+      "primaryDamageType": "AD",
+      "range": 600,
+      "baseMovespeed": 330,
+      "releaseSeason": 10,
+      "modelSize": 0,
+      "abilities": {
+        "hasPassiveE": false,
+        "isShapeshifter": false,
+        "hasThreeHitPassive": false,
+        "hasAutoAttackReset": false,
+        "hasAbilityCharges": false,
+        "hasMultipleHardCC": false,
+        "hasChangingAbilities": false
+      }
+    },
+    {
+      "name": "Seraphine",
+      "region": "Zaun",
+      "role": [
+        "Mage",
+        "Support"
+      ],
+      "resource": "Mana",
+      "species": "Human",
+      "primaryDamageType": "AP",
+      "range": 525,
+      "baseMovespeed": 325,
+      "releaseSeason": 10,
+      "modelSize": 0,
+      "abilities": {
+        "hasPassiveE": false,
+        "isShapeshifter": false,
+        "hasThreeHitPassive": false,
+        "hasAutoAttackReset": false,
+        "hasAbilityCharges": false,
+        "hasMultipleHardCC": false,
+        "hasChangingAbilities": false
+      }
+    },
+    {
+      "name": "Sett",
+      "region": "Ionia",
+      "role": [
+        "Fighter",
+        "Tank"
+      ],
+      "resource": "Grit",
+      "species": "Vastaya",
+      "primaryDamageType": "AD",
+      "range": 125,
+      "baseMovespeed": 340,
+      "releaseSeason": 10,
+      "modelSize": 0,
+      "abilities": {
+        "hasPassiveE": false,
+        "isShapeshifter": false,
+        "hasThreeHitPassive": false,
+        "hasAutoAttackReset": false,
+        "hasAbilityCharges": false,
+        "hasMultipleHardCC": false,
+        "hasChangingAbilities": false
+      }
+    },
+    {
+      "name": "Shaco",
+      "region": "Runeterra",
+      "role": [
+        "Assassin"
+      ],
+      "resource": "Mana",
+      "species": "Unknown",
+      "primaryDamageType": "AD",
+      "range": 125,
+      "baseMovespeed": 345,
+      "releaseSeason": 1,
+      "modelSize": 0,
+      "abilities": {
+        "hasPassiveE": false,
+        "isShapeshifter": false,
+        "hasThreeHitPassive": false,
+        "hasAutoAttackReset": false,
+        "hasAbilityCharges": false,
+        "hasMultipleHardCC": false,
+        "hasChangingAbilities": false
+      }
+    },
+    {
+      "name": "Shen",
+      "region": "Ionia",
+      "role": [
+        "Tank"
+      ],
+      "resource": "Energy",
+      "species": "Human",
+      "primaryDamageType": "AD",
+      "range": 125,
+      "baseMovespeed": 340,
+      "releaseSeason": 1,
+      "modelSize": 0,
+      "abilities": {
+        "hasPassiveE": false,
+        "isShapeshifter": false,
+        "hasThreeHitPassive": false,
+        "hasAutoAttackReset": false,
+        "hasAbilityCharges": false,
+        "hasMultipleHardCC": false,
+        "hasChangingAbilities": false
+      }
+    },
+    {
+      "name": "Shyvana",
+      "region": "Demacia",
+      "role": [
+        "Fighter",
+        "Tank"
+      ],
+      "resource": "Fury",
+      "species": "Terrestrial Dragon",
+      "primaryDamageType": "AD",
+      "range": 125,
+      "baseMovespeed": 350,
+      "releaseSeason": 2,
+      "modelSize": 0,
+      "abilities": {
+        "hasPassiveE": false,
+        "isShapeshifter": false,
+        "hasThreeHitPassive": false,
+        "hasAutoAttackReset": false,
+        "hasAbilityCharges": false,
+        "hasMultipleHardCC": false,
+        "hasChangingAbilities": true
+      }
+    },
+    {
+      "name": "Singed",
+      "region": "Zaun",
+      "role": [
+        "Tank",
+        "Fighter"
+      ],
+      "resource": "Mana",
+      "species": "Human",
+      "primaryDamageType": "AD",
+      "range": 125,
+      "baseMovespeed": 345,
+      "releaseSeason": 1,
+      "modelSize": 0,
+      "abilities": {
+        "hasPassiveE": false,
+        "isShapeshifter": false,
+        "hasThreeHitPassive": false,
+        "hasAutoAttackReset": false,
+        "hasAbilityCharges": false,
+        "hasMultipleHardCC": false,
+        "hasChangingAbilities": false
+      }
+    },
+    {
+      "name": "Sion",
+      "region": "Noxus",
+      "role": [
+        "Tank",
+        "Fighter"
+      ],
+      "resource": "Mana",
+      "species": "Unknown",
+      "primaryDamageType": "AD",
+      "range": 175,
+      "baseMovespeed": 345,
+      "releaseSeason": 1,
+      "modelSize": 0,
+      "abilities": {
+        "hasPassiveE": false,
+        "isShapeshifter": false,
+        "hasThreeHitPassive": false,
+        "hasAutoAttackReset": false,
+        "hasAbilityCharges": true,
+        "hasMultipleHardCC": true,
+        "hasChangingAbilities": false
+      }
+    },
+    {
+      "name": "Sivir",
+      "region": "Shurima",
+      "role": [
+        "Marksman"
+      ],
+      "resource": "Mana",
+      "species": "Human",
+      "primaryDamageType": "AD",
+      "range": 500,
+      "baseMovespeed": 335,
+      "releaseSeason": 1,
+      "modelSize": 0,
+      "abilities": {
+        "hasPassiveE": false,
+        "isShapeshifter": false,
+        "hasThreeHitPassive": false,
+        "hasAutoAttackReset": false,
+        "hasAbilityCharges": false,
+        "hasMultipleHardCC": false,
+        "hasChangingAbilities": false
+      }
+    },
+    {
+      "name": "Skarner",
+      "region": "Ixtal",
+      "role": [
+        "Fighter",
+        "Tank"
+      ],
+      "resource": "Mana",
+      "species": "Brackern",
+      "primaryDamageType": "AD",
+      "range": 125,
+      "baseMovespeed": 335,
+      "releaseSeason": 2,
+      "modelSize": 0,
+      "abilities": {
+        "hasPassiveE": false,
+        "isShapeshifter": false,
+        "hasThreeHitPassive": false,
+        "hasAutoAttackReset": false,
+        "hasAbilityCharges": false,
+        "hasMultipleHardCC": true,
+        "hasChangingAbilities": false
+      }
+    },
+    {
+      "name": "Sona",
+      "region": "Demacia",
+      "role": [
+        "Support",
+        "Mage"
+      ],
+      "resource": "Mana",
+      "species": "Human",
+      "primaryDamageType": "AP",
+      "range": 550,
+      "baseMovespeed": 325,
+      "releaseSeason": 1,
+      "modelSize": 0,
+      "abilities": {
+        "hasPassiveE": false,
+        "isShapeshifter": false,
+        "hasThreeHitPassive": false,
+        "hasAutoAttackReset": false,
+        "hasAbilityCharges": false,
+        "hasMultipleHardCC": false,
+        "hasChangingAbilities": false
+      }
+    },
+    {
+      "name": "Soraka",
+      "region": "Ionia",
+      "role": [
+        "Support",
+        "Mage"
+      ],
+      "resource": "Mana",
+      "species": "Celestial",
+      "primaryDamageType": "AP",
+      "range": 550,
+      "baseMovespeed": 325,
+      "releaseSeason": 1,
+      "modelSize": 0,
+      "abilities": {
+        "hasPassiveE": false,
+        "isShapeshifter": false,
+        "hasThreeHitPassive": false,
+        "hasAutoAttackReset": false,
+        "hasAbilityCharges": false,
+        "hasMultipleHardCC": false,
+        "hasChangingAbilities": false
+      }
+    },
+    {
+      "name": "Swain",
+      "region": "Noxus",
+      "role": [
+        "Mage",
+        "Fighter"
+      ],
+      "resource": "Mana",
+      "species": "Human",
+      "primaryDamageType": "AP",
+      "range": 525,
+      "baseMovespeed": 330,
+      "releaseSeason": 1,
+      "modelSize": 0,
+      "abilities": {
+        "hasPassiveE": false,
+        "isShapeshifter": false,
+        "hasThreeHitPassive": false,
+        "hasAutoAttackReset": false,
+        "hasAbilityCharges": false,
+        "hasMultipleHardCC": false,
+        "hasChangingAbilities": true
+      }
+    },
+    {
+      "name": "Sylas",
+      "region": "Freljord",
+      "role": [
+        "Mage",
+        "Assassin"
+      ],
+      "resource": "Mana",
+      "species": "Human",
+      "primaryDamageType": "AP",
+      "range": 175,
+      "baseMovespeed": 340,
+      "releaseSeason": 9,
+      "modelSize": 0,
+      "abilities": {
+        "hasPassiveE": false,
+        "isShapeshifter": false,
+        "hasThreeHitPassive": false,
+        "hasAutoAttackReset": false,
+        "hasAbilityCharges": false,
+        "hasMultipleHardCC": false,
+        "hasChangingAbilities": false
+      }
+    },
+    {
+      "name": "Syndra",
+      "region": "Ionia",
+      "role": [
+        "Mage"
+      ],
+      "resource": "Mana",
+      "species": "Human",
+      "primaryDamageType": "AP",
+      "range": 550,
+      "baseMovespeed": 330,
+      "releaseSeason": 2,
+      "modelSize": 0,
+      "abilities": {
+        "hasPassiveE": false,
+        "isShapeshifter": false,
+        "hasThreeHitPassive": false,
+        "hasAutoAttackReset": false,
+        "hasAbilityCharges": false,
+        "hasMultipleHardCC": false,
+        "hasChangingAbilities": false
+      }
+    },
+    {
+      "name": "Tahm Kench",
+      "region": "Runeterra",
+      "role": [
+        "Support",
+        "Tank"
+      ],
+      "resource": "Mana",
+      "species": "Unknown",
+      "primaryDamageType": "AD",
+      "range": 175,
+      "baseMovespeed": 335,
+      "releaseSeason": 5,
+      "modelSize": 0,
+      "abilities": {
+        "hasPassiveE": false,
+        "isShapeshifter": false,
+        "hasThreeHitPassive": false,
+        "hasAutoAttackReset": false,
+        "hasAbilityCharges": false,
+        "hasMultipleHardCC": true,
+        "hasChangingAbilities": false
+      }
+    },
+    {
+      "name": "Taliyah",
+      "region": "Shurima",
+      "role": [
+        "Mage",
+        "Support"
+      ],
+      "resource": "Mana",
+      "species": "Human",
+      "primaryDamageType": "AP",
+      "range": 525,
+      "baseMovespeed": 330,
+      "releaseSeason": 6,
+      "modelSize": 0,
+      "abilities": {
+        "hasPassiveE": false,
+        "isShapeshifter": false,
+        "hasThreeHitPassive": false,
+        "hasAutoAttackReset": false,
+        "hasAbilityCharges": false,
+        "hasMultipleHardCC": false,
+        "hasChangingAbilities": false
+      }
+    },
+    {
+      "name": "Talon",
+      "region": "Noxus",
+      "role": [
+        "Assassin"
+      ],
+      "resource": "Mana",
+      "species": "Human",
+      "primaryDamageType": "AD",
+      "range": 125,
+      "baseMovespeed": 335,
+      "releaseSeason": 2,
+      "modelSize": 0,
+      "abilities": {
+        "hasPassiveE": false,
+        "isShapeshifter": false,
+        "hasThreeHitPassive": false,
+        "hasAutoAttackReset": false,
+        "hasAbilityCharges": false,
+        "hasMultipleHardCC": false,
+        "hasChangingAbilities": false
+      }
+    },
+    {
+      "name": "Taric",
+      "region": "Targon",
+      "role": [
+        "Support",
+        "Fighter"
+      ],
+      "resource": "Mana",
+      "species": "Human",
+      "primaryDamageType": "AD",
+      "range": 150,
+      "baseMovespeed": 340,
+      "releaseSeason": 1,
+      "modelSize": 0,
+      "abilities": {
+        "hasPassiveE": false,
+        "isShapeshifter": false,
+        "hasThreeHitPassive": false,
+        "hasAutoAttackReset": false,
+        "hasAbilityCharges": true,
+        "hasMultipleHardCC": false,
+        "hasChangingAbilities": false
+      }
+    },
+    {
+      "name": "Teemo",
+      "region": "Bandle City",
+      "role": [
+        "Marksman",
+        "Assassin"
+      ],
+      "resource": "Mana",
+      "species": "Yordle",
+      "primaryDamageType": "AD",
+      "range": 500,
+      "baseMovespeed": 330,
+      "releaseSeason": 1,
+      "modelSize": 0,
+      "abilities": {
+        "hasPassiveE": false,
+        "isShapeshifter": false,
+        "hasThreeHitPassive": false,
+        "hasAutoAttackReset": false,
+        "hasAbilityCharges": false,
+        "hasMultipleHardCC": false,
+        "hasChangingAbilities": false
+      }
+    },
+    {
+      "name": "Thresh",
+      "region": "Shadow Isles",
+      "role": [
+        "Support",
+        "Fighter"
+      ],
+      "resource": "Mana",
+      "species": "Unknown",
+      "primaryDamageType": "AD",
+      "range": 450,
+      "baseMovespeed": 330,
+      "releaseSeason": 3,
+      "modelSize": 0,
+      "abilities": {
+        "hasPassiveE": false,
+        "isShapeshifter": false,
+        "hasThreeHitPassive": false,
+        "hasAutoAttackReset": false,
+        "hasAbilityCharges": false,
+        "hasMultipleHardCC": false,
+        "hasChangingAbilities": false
+      }
+    },
+    {
+      "name": "Tristana",
+      "region": "Bandle City",
+      "role": [
+        "Marksman",
+        "Assassin"
+      ],
+      "resource": "Mana",
+      "species": "Yordle",
+      "primaryDamageType": "AD",
+      "range": 525,
+      "baseMovespeed": 325,
+      "releaseSeason": 1,
+      "modelSize": 0,
+      "abilities": {
+        "hasPassiveE": false,
+        "isShapeshifter": false,
+        "hasThreeHitPassive": false,
+        "hasAutoAttackReset": false,
+        "hasAbilityCharges": true,
+        "hasMultipleHardCC": false,
+        "hasChangingAbilities": false
+      }
+    },
+    {
+      "name": "Trundle",
+      "region": "Freljord",
+      "role": [
+        "Fighter",
+        "Tank"
+      ],
+      "resource": "Mana",
+      "species": "Iceborn",
+      "primaryDamageType": "AD",
+      "range": 175,
+      "baseMovespeed": 350,
+      "releaseSeason": 1,
+      "modelSize": 0,
+      "abilities": {
+        "hasPassiveE": false,
+        "isShapeshifter": false,
+        "hasThreeHitPassive": false,
+        "hasAutoAttackReset": false,
+        "hasAbilityCharges": false,
+        "hasMultipleHardCC": false,
+        "hasChangingAbilities": false
+      }
+    },
+    {
+      "name": "Tryndamere",
+      "region": "Freljord",
+      "role": [
+        "Fighter",
+        "Assassin"
+      ],
+      "resource": "Fury",
+      "species": "Human",
+      "primaryDamageType": "AD",
+      "range": 175,
+      "baseMovespeed": 345,
+      "releaseSeason": 1,
+      "modelSize": 0,
+      "abilities": {
+        "hasPassiveE": false,
+        "isShapeshifter": false,
+        "hasThreeHitPassive": false,
+        "hasAutoAttackReset": false,
+        "hasAbilityCharges": false,
+        "hasMultipleHardCC": false,
+        "hasChangingAbilities": false
+      }
+    },
+    {
+      "name": "Twisted Fate",
+      "region": "Bilgewater",
+      "role": [
+        "Mage"
+      ],
+      "resource": "Mana",
+      "species": "Human",
+      "primaryDamageType": "AP",
+      "range": 525,
+      "baseMovespeed": 330,
+      "releaseSeason": 1,
+      "modelSize": 0,
+      "abilities": {
+        "hasPassiveE": false,
+        "isShapeshifter": false,
+        "hasThreeHitPassive": false,
+        "hasAutoAttackReset": false,
+        "hasAbilityCharges": false,
+        "hasMultipleHardCC": false,
+        "hasChangingAbilities": false
+      }
+    },
+    {
+      "name": "Twitch",
+      "region": "Zaun",
+      "role": [
+        "Marksman",
+        "Assassin"
+      ],
+      "resource": "Mana",
+      "species": "Unknown",
+      "primaryDamageType": "AD",
+      "range": 550,
+      "baseMovespeed": 330,
+      "releaseSeason": 1,
+      "modelSize": 0,
+      "abilities": {
+        "hasPassiveE": false,
+        "isShapeshifter": false,
+        "hasThreeHitPassive": false,
+        "hasAutoAttackReset": false,
+        "hasAbilityCharges": false,
+        "hasMultipleHardCC": false,
+        "hasChangingAbilities": false
+      }
+    },
+    {
+      "name": "Udyr",
+      "region": "Ionia",
+      "role": [
+        "Fighter",
+        "Tank"
+      ],
+      "resource": "Mana",
+      "species": "Vastaya",
+      "primaryDamageType": "AD",
+      "range": 125,
+      "baseMovespeed": 350,
+      "releaseSeason": 1,
+      "modelSize": 0,
+      "abilities": {
+        "hasPassiveE": false,
+        "isShapeshifter": false,
+        "hasThreeHitPassive": false,
+        "hasAutoAttackReset": false,
+        "hasAbilityCharges": false,
+        "hasMultipleHardCC": false,
+        "hasChangingAbilities": false
+      }
+    },
+    {
+      "name": "Urgot",
+      "region": "Zaun",
+      "role": [
+        "Fighter",
+        "Tank"
+      ],
+      "resource": "Mana",
+      "species": "Human",
+      "primaryDamageType": "AD",
+      "range": 350,
+      "baseMovespeed": 330,
+      "releaseSeason": 1,
+      "modelSize": 0,
+      "abilities": {
+        "hasPassiveE": false,
+        "isShapeshifter": false,
+        "hasThreeHitPassive": false,
+        "hasAutoAttackReset": false,
+        "hasAbilityCharges": true,
+        "hasMultipleHardCC": false,
+        "hasChangingAbilities": false
+      }
+    },
+    {
+      "name": "Varus",
+      "region": "Ionia",
+      "role": [
+        "Marksman",
+        "Mage"
+      ],
+      "resource": "Mana",
+      "species": "Human",
+      "primaryDamageType": "AD",
+      "range": 575,
+      "baseMovespeed": 330,
+      "releaseSeason": 2,
+      "modelSize": 0,
+      "abilities": {
+        "hasPassiveE": false,
+        "isShapeshifter": false,
+        "hasThreeHitPassive": false,
+        "hasAutoAttackReset": false,
+        "hasAbilityCharges": false,
+        "hasMultipleHardCC": false,
+        "hasChangingAbilities": false
+      }
+    },
+    {
+      "name": "Vayne",
+      "region": "Demacia",
+      "role": [
+        "Marksman",
+        "Assassin"
+      ],
+      "resource": "Mana",
+      "species": "Human",
+      "primaryDamageType": "AD",
+      "range": 550,
+      "baseMovespeed": 330,
+      "releaseSeason": 1,
+      "modelSize": 0,
+      "abilities": {
+        "hasPassiveE": false,
+        "isShapeshifter": false,
+        "hasThreeHitPassive": false,
+        "hasAutoAttackReset": false,
+        "hasAbilityCharges": false,
+        "hasMultipleHardCC": false,
+        "hasChangingAbilities": false
+      }
+    },
+    {
+      "name": "Veigar",
+      "region": "Bandle City",
+      "role": [
+        "Mage"
+      ],
+      "resource": "Mana",
+      "species": "Yordle",
+      "primaryDamageType": "AP",
+      "range": 550,
+      "baseMovespeed": 340,
+      "releaseSeason": 1,
+      "modelSize": 0,
+      "abilities": {
+        "hasPassiveE": false,
+        "isShapeshifter": false,
+        "hasThreeHitPassive": false,
+        "hasAutoAttackReset": false,
+        "hasAbilityCharges": false,
+        "hasMultipleHardCC": false,
+        "hasChangingAbilities": false
+      }
+    },
+    {
+      "name": "Vel'Koz",
+      "region": "Void",
+      "role": [
+        "Mage"
+      ],
+      "resource": "Mana",
+      "species": "Voidborn",
+      "primaryDamageType": "AP",
+      "range": 525,
+      "baseMovespeed": 340,
+      "releaseSeason": 4,
+      "modelSize": 0,
+      "abilities": {
+        "hasPassiveE": false,
+        "isShapeshifter": false,
+        "hasThreeHitPassive": false,
+        "hasAutoAttackReset": false,
+        "hasAbilityCharges": false,
+        "hasMultipleHardCC": false,
+        "hasChangingAbilities": false
+      }
+    },
+    {
+      "name": "Vex",
+      "region": "Bandle City",
+      "role": [
+        "Mage"
+      ],
+      "resource": "Mana",
+      "species": "Yordle",
+      "primaryDamageType": "AP",
+      "range": 550,
+      "baseMovespeed": 335,
+      "releaseSeason": 11,
+      "modelSize": 0,
+      "abilities": {
+        "hasPassiveE": false,
+        "isShapeshifter": false,
+        "hasThreeHitPassive": false,
+        "hasAutoAttackReset": false,
+        "hasAbilityCharges": false,
+        "hasMultipleHardCC": false,
+        "hasChangingAbilities": false
+      }
+    },
+    {
+      "name": "Vi",
+      "region": "Piltover",
+      "role": [
+        "Fighter",
+        "Assassin"
+      ],
+      "resource": "Mana",
+      "species": "Human",
+      "primaryDamageType": "AD",
+      "range": 125,
+      "baseMovespeed": 340,
+      "releaseSeason": 3,
+      "modelSize": 0,
+      "abilities": {
+        "hasPassiveE": false,
+        "isShapeshifter": false,
+        "hasThreeHitPassive": false,
+        "hasAutoAttackReset": false,
+        "hasAbilityCharges": true,
+        "hasMultipleHardCC": true,
+        "hasChangingAbilities": false
+      }
+    },
+    {
+      "name": "Viego",
+      "region": "Shadow Isles",
+      "role": [
+        "Assassin",
+        "Fighter"
+      ],
+      "resource": "None",
+      "species": "Unknown",
+      "primaryDamageType": "AD",
+      "range": 200,
+      "baseMovespeed": 345,
+      "releaseSeason": 11,
+      "modelSize": 0,
+      "abilities": {
+        "hasPassiveE": false,
+        "isShapeshifter": false,
+        "hasThreeHitPassive": false,
+        "hasAutoAttackReset": false,
+        "hasAbilityCharges": true,
+        "hasMultipleHardCC": true,
+        "hasChangingAbilities": false
+      }
+    },
+    {
+      "name": "Viktor",
+      "region": "Zaun",
+      "role": [
+        "Mage"
+      ],
+      "resource": "Mana",
+      "species": "Human",
+      "primaryDamageType": "AP",
+      "range": 525,
+      "baseMovespeed": 335,
+      "releaseSeason": 2,
+      "modelSize": 0,
+      "abilities": {
+        "hasPassiveE": false,
+        "isShapeshifter": false,
+        "hasThreeHitPassive": false,
+        "hasAutoAttackReset": false,
+        "hasAbilityCharges": false,
+        "hasMultipleHardCC": false,
+        "hasChangingAbilities": false
+      }
+    },
+    {
+      "name": "Vladimir",
+      "region": "Noxus",
+      "role": [
+        "Mage"
+      ],
+      "resource": "Crimson Rush",
+      "species": "Human",
+      "primaryDamageType": "AP",
+      "range": 450,
+      "baseMovespeed": 330,
+      "releaseSeason": 1,
+      "modelSize": 0,
+      "abilities": {
+        "hasPassiveE": false,
+        "isShapeshifter": false,
+        "hasThreeHitPassive": false,
+        "hasAutoAttackReset": false,
+        "hasAbilityCharges": true,
+        "hasMultipleHardCC": false,
+        "hasChangingAbilities": false
+      }
+    },
+    {
+      "name": "Volibear",
+      "region": "Freljord",
+      "role": [
+        "Fighter",
+        "Tank"
+      ],
+      "resource": "Mana",
+      "species": "Spirit God",
+      "primaryDamageType": "AD",
+      "range": 150,
+      "baseMovespeed": 340,
+      "releaseSeason": 2,
+      "modelSize": 0,
+      "abilities": {
+        "hasPassiveE": false,
+        "isShapeshifter": false,
+        "hasThreeHitPassive": false,
+        "hasAutoAttackReset": false,
+        "hasAbilityCharges": false,
+        "hasMultipleHardCC": false,
+        "hasChangingAbilities": false
+      }
+    },
+    {
+      "name": "Warwick",
+      "region": "Zaun",
+      "role": [
+        "Fighter",
+        "Tank"
+      ],
+      "resource": "Mana",
+      "species": "Human",
+      "primaryDamageType": "AD",
+      "range": 125,
+      "baseMovespeed": 335,
+      "releaseSeason": 1,
+      "modelSize": 0,
+      "abilities": {
+        "hasPassiveE": false,
+        "isShapeshifter": false,
+        "hasThreeHitPassive": false,
+        "hasAutoAttackReset": false,
+        "hasAbilityCharges": false,
+        "hasMultipleHardCC": false,
+        "hasChangingAbilities": false
+      }
+    },
+    {
+      "name": "Xayah",
+      "region": "Ionia",
+      "role": [
+        "Marksman"
+      ],
+      "resource": "Mana",
+      "species": "Unknown",
+      "primaryDamageType": "AD",
+      "range": 525,
+      "baseMovespeed": 330,
+      "releaseSeason": 7,
+      "modelSize": 0,
+      "abilities": {
+        "hasPassiveE": false,
+        "isShapeshifter": false,
+        "hasThreeHitPassive": false,
+        "hasAutoAttackReset": false,
+        "hasAbilityCharges": false,
+        "hasMultipleHardCC": false,
+        "hasChangingAbilities": false
+      }
+    },
+    {
+      "name": "Xerath",
+      "region": "Shurima",
+      "role": [
+        "Mage"
+      ],
+      "resource": "Mana",
+      "species": "Human",
+      "primaryDamageType": "AP",
+      "range": 525,
+      "baseMovespeed": 340,
+      "releaseSeason": 2,
+      "modelSize": 0,
+      "abilities": {
+        "hasPassiveE": false,
+        "isShapeshifter": false,
+        "hasThreeHitPassive": false,
+        "hasAutoAttackReset": false,
+        "hasAbilityCharges": false,
+        "hasMultipleHardCC": false,
+        "hasChangingAbilities": false
+      }
+    },
+    {
+      "name": "Xin Zhao",
+      "region": "Ionia",
+      "role": [
+        "Fighter",
+        "Assassin"
+      ],
+      "resource": "Mana",
+      "species": "Human",
+      "primaryDamageType": "AD",
+      "range": 175,
+      "baseMovespeed": 345,
+      "releaseSeason": 1,
+      "modelSize": 0,
+      "abilities": {
+        "hasPassiveE": false,
+        "isShapeshifter": false,
+        "hasThreeHitPassive": false,
+        "hasAutoAttackReset": false,
+        "hasAbilityCharges": true,
+        "hasMultipleHardCC": true,
+        "hasChangingAbilities": false
+      }
+    },
+    {
+      "name": "Yasuo",
+      "region": "Ionia",
+      "role": [
+        "Fighter",
+        "Assassin"
+      ],
+      "resource": "Flow",
+      "species": "Human",
+      "primaryDamageType": "AD",
+      "range": 175,
+      "baseMovespeed": 345,
+      "releaseSeason": 4,
+      "modelSize": 0,
+      "abilities": {
+        "hasPassiveE": false,
+        "isShapeshifter": false,
+        "hasThreeHitPassive": false,
+        "hasAutoAttackReset": false,
+        "hasAbilityCharges": false,
+        "hasMultipleHardCC": false,
+        "hasChangingAbilities": false
+      }
+    },
+    {
+      "name": "Yone",
+      "region": "Ionia",
+      "role": [
+        "Assassin",
+        "Fighter"
+      ],
+      "resource": "Flow",
+      "species": "Human",
+      "primaryDamageType": "AD",
+      "range": 175,
+      "baseMovespeed": 345,
+      "releaseSeason": 10,
+      "modelSize": 0,
+      "abilities": {
+        "hasPassiveE": false,
+        "isShapeshifter": false,
+        "hasThreeHitPassive": false,
+        "hasAutoAttackReset": false,
+        "hasAbilityCharges": false,
+        "hasMultipleHardCC": false,
+        "hasChangingAbilities": false
+      }
+    },
+    {
+      "name": "Yorick",
+      "region": "Shadow Isles",
+      "role": [
+        "Fighter",
+        "Tank"
+      ],
+      "resource": "Mana",
+      "species": "Human",
+      "primaryDamageType": "AD",
+      "range": 175,
+      "baseMovespeed": 340,
+      "releaseSeason": 1,
+      "modelSize": 0,
+      "abilities": {
+        "hasPassiveE": false,
+        "isShapeshifter": false,
+        "hasThreeHitPassive": false,
+        "hasAutoAttackReset": false,
+        "hasAbilityCharges": false,
+        "hasMultipleHardCC": false,
+        "hasChangingAbilities": false
+      }
+    },
+    {
+      "name": "Yuumi",
+      "region": "Bandle City",
+      "role": [
+        "Support",
+        "Mage"
+      ],
+      "resource": "Mana",
+      "species": "Unknown",
+      "primaryDamageType": "AP",
+      "range": 425,
+      "baseMovespeed": 330,
+      "releaseSeason": 9,
+      "modelSize": 0,
+      "abilities": {
+        "hasPassiveE": false,
+        "isShapeshifter": false,
+        "hasThreeHitPassive": false,
+        "hasAutoAttackReset": false,
+        "hasAbilityCharges": false,
+        "hasMultipleHardCC": false,
+        "hasChangingAbilities": false
+      }
+    },
+    {
+      "name": "Zac",
+      "region": "Zaun",
+      "role": [
+        "Tank",
+        "Fighter"
+      ],
+      "resource": "None",
+      "species": "Unknown",
+      "primaryDamageType": "AD",
+      "range": 175,
+      "baseMovespeed": 340,
+      "releaseSeason": 3,
+      "modelSize": 0,
+      "abilities": {
+        "hasPassiveE": false,
+        "isShapeshifter": false,
+        "hasThreeHitPassive": false,
+        "hasAutoAttackReset": false,
+        "hasAbilityCharges": false,
+        "hasMultipleHardCC": false,
+        "hasChangingAbilities": false
+      }
+    },
+    {
+      "name": "Zed",
+      "region": "Ionia",
+      "role": [
+        "Assassin"
+      ],
+      "resource": "Energy",
+      "species": "Human",
+      "primaryDamageType": "AD",
+      "range": 125,
+      "baseMovespeed": 345,
+      "releaseSeason": 3,
+      "modelSize": 0,
+      "abilities": {
+        "hasPassiveE": false,
+        "isShapeshifter": false,
+        "hasThreeHitPassive": false,
+        "hasAutoAttackReset": false,
+        "hasAbilityCharges": false,
+        "hasMultipleHardCC": false,
+        "hasChangingAbilities": false
+      }
+    },
+    {
+      "name": "Zeri",
+      "region": "Zaun",
+      "role": [
+        "Marksman"
+      ],
+      "resource": "Mana",
+      "species": "Human",
+      "primaryDamageType": "AD",
+      "range": 500,
+      "baseMovespeed": 330,
+      "releaseSeason": 12,
+      "modelSize": 0,
+      "abilities": {
+        "hasPassiveE": false,
+        "isShapeshifter": false,
+        "hasThreeHitPassive": false,
+        "hasAutoAttackReset": false,
+        "hasAbilityCharges": true,
+        "hasMultipleHardCC": false,
+        "hasChangingAbilities": false
+      }
+    },
+    {
+      "name": "Ziggs",
+      "region": "Zaun",
+      "role": [
+        "Mage"
+      ],
+      "resource": "Mana",
+      "species": "Yordle",
+      "primaryDamageType": "AP",
+      "range": 550,
+      "baseMovespeed": 325,
+      "releaseSeason": 2,
+      "modelSize": 0,
+      "abilities": {
+        "hasPassiveE": false,
+        "isShapeshifter": false,
+        "hasThreeHitPassive": false,
+        "hasAutoAttackReset": false,
+        "hasAbilityCharges": true,
+        "hasMultipleHardCC": false,
+        "hasChangingAbilities": false
+      }
+    },
+    {
+      "name": "Zilean",
+      "region": "Runeterra",
+      "role": [
+        "Support",
+        "Mage"
+      ],
+      "resource": "Mana",
+      "species": "Human",
+      "primaryDamageType": "AP",
+      "range": 550,
+      "baseMovespeed": 335,
+      "releaseSeason": 1,
+      "modelSize": 0,
+      "abilities": {
+        "hasPassiveE": false,
+        "isShapeshifter": false,
+        "hasThreeHitPassive": false,
+        "hasAutoAttackReset": false,
+        "hasAbilityCharges": false,
+        "hasMultipleHardCC": false,
+        "hasChangingAbilities": false
+      }
+    },
+    {
+      "name": "Zoe",
+      "region": "Targon",
+      "role": [
+        "Mage",
+        "Support"
+      ],
+      "resource": "Mana",
+      "species": "Unknown",
+      "primaryDamageType": "AP",
+      "range": 550,
+      "baseMovespeed": 340,
+      "releaseSeason": 8,
+      "modelSize": 0,
+      "abilities": {
+        "hasPassiveE": false,
+        "isShapeshifter": false,
+        "hasThreeHitPassive": false,
+        "hasAutoAttackReset": false,
+        "hasAbilityCharges": false,
+        "hasMultipleHardCC": false,
+        "hasChangingAbilities": false
+      }
+    },
+    {
+      "name": "Zyra",
+      "region": "Ixtal",
+      "role": [
+        "Mage",
+        "Support"
+      ],
+      "resource": "Mana",
+      "species": "Unknown",
+      "primaryDamageType": "AP",
+      "range": 575,
+      "baseMovespeed": 340,
+      "releaseSeason": 2,
+      "modelSize": 0,
+      "abilities": {
+        "hasPassiveE": false,
+        "isShapeshifter": false,
+        "hasThreeHitPassive": false,
+        "hasAutoAttackReset": false,
+        "hasAbilityCharges": true,
+        "hasMultipleHardCC": true,
+        "hasChangingAbilities": false
+      }
+    }
+  ]
+}

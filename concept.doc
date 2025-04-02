@@ -1,0 +1,48 @@
+Goal is to create a dle-type grid game like pokedle or NBA grid for league of legends.
+
+Each time the code is run, we should generate a 3x3 grid.
+There are a total of six categories for every game.
+Each box on the grid should have two cateogries, one from the x-axis and one from the y-axis.
+The goal is the guess a league of legends champion that fits the two categories the correspond to a specific box.
+Any box could have multiple legal answers, and some could have only one. A box should never have no legal answers.
+
+Some potential categories:
+- Region: (Ionia, Demacia, Piltover, etc.)
+- Role: (Top, Mid, Support, Multi-role etc.)
+- Skin Lines: (High Noon, Arcade, Project, etc.)
+- Ability Questions: 
+    - E is a Passive Ability, i.e. Vayne, Teemo, etc.
+    - Shapeshifter, i.e. Jayce, Nidalee, Gnar, etc.
+    - 3-hit Passive, i.e. Akshan, Auroroa, etc.
+    - Auto-Attack reset, i.e. Darius, Nasus, etc.
+    - Ability has charges, i.e. Rumble, Nilah, etc.
+    - Has 2 or more Hard-CC abilities, i.e. Thresh, Alistar, Blitzcrank, etc.
+    - Abilities can Change, i.e. Syndra, Viktor, Hwei, Qiyana, etc.
+- Resource: (Mana, Energy, Rage, etc.)
+- Champion 'class': (Tank, Juggernaut, Enchanter, etc.)
+- Species: (Yordle, Human, Void-being, Cat, etc.)
+- Primary Damage Type: (AD, AP, Hybrid)
+- Range: (less than 250, 250 to 499, 500 or more )
+- Starting Base Movespeed: (325, 330, 335, 340, etc.)
+- Release Season: (Before Season 1, Season 4, Season 7, etc.)
+- Model Size/Gameplay Radius: (55-64, 65-79, 80 or more)
+
+First, cateogires should be picked and a list of correct champions for each cateogry pair should be generated.
+Then, the player should be presented with an empty grid that only has the categories.
+The player should get nine total guesses. 
+- If they get a guess correct for any given square, we should fill in that square with a green-tinted picture of the champion they guessed.
+- If they get a guess incorrect for any given square, we should fill in that square with a red-tinted picture of the champion they guessed.
+There should also be a 'give-up' button if the player can't think of anything else to guess.
+
+After all nine guesses or the give up button is pressed, we can enter the 'post-game' phase.
+In the post game phase, we should do a handful of things.
+- Show the player their score.
+- Allow the player to click on any individual box to see potential champions that would fit that box's category pair.
+- Allow the player to generate a new grid.
+
+
+
+
+other ideas for categories:
+- other cc ability context (hasNoCC, hasSlows, hasExactlyOneCC, hasGround, hasRoot, hasStun, hasSilence, etc.)
+- has no secondary class (i.e. only figher, only assassin)
