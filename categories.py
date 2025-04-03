@@ -89,17 +89,6 @@ CATEGORY_TYPES = {
             "Long Range (500+)"
         ]
     },
-    "movespeed": {
-        "name": "Movespeed",
-        "description": "Base movement speed categories",
-        "categories": [
-            "325",
-            "330",
-            "335",
-            "340",
-            "345"
-        ]
-    },
     "release": {
         "name": "Release",
         "description": "Champion release timing",
@@ -216,4 +205,81 @@ def get_category_type(category):
     for type_name, type_data in CATEGORY_TYPES.items():
         if category in type_data["categories"]:
             return type_name
-    return None 
+    return None
+
+def get_champions_for_category(champions_data, category):
+    """
+    Returns a list of champion names that belong to a specific category.
+    This function helps validate that our categories are properly supported by the data.
+    """
+    category_type = get_category_type(category)
+    if not category_type:
+        return []
+
+    matching_champions = []
+    
+    for champion in champions_data:
+        if category_type == "location" and champion["region"] == category:
+            matching_champions.append(champion["name"])
+        elif category_type == "role" and category in champion["role"]:
+            matching_champions.append(champion["name"])
+        elif category_type == "resource" and champion["resource"] == category:
+            matching_champions.append(champion["name"])
+        elif category_type == "species" and champion["species"] == category:
+            matching_champions.append(champion["name"])
+        elif category_type == "damage_type":
+            if category == "AD" and champion["primaryDamageType"] == "AD":
+                matching_champions.append(champion["name"])
+            elif category == "AP" and champion["primaryDamageType"] == "AP":
+                matching_champions.append(champion["name"])
+            elif category == "Hybrid" and champion["primaryDamageType"] == "Hybrid":
+                matching_champions.append(champion["name"])
+            elif category == "Has True Damage" and champion.get("hasTrueDamage", False):
+                matching_champions.append(champion["name"])
+        elif category_type == "range":
+            range_value = champion["range"]
+            if category == "Melee (< 250)" and range_value < 250:
+                matching_champions.append(champion["name"])
+            elif category == "Short Range (250-499)" and 250 <= range_value < 500:
+                matching_champions.append(champion["name"])
+            elif category == "Long Range (500+)" and range_value >= 500:
+                matching_champions.append(champion["name"])
+        elif category_type == "release":
+            season_num = int(category.split()[-1]) if category != "Pre-Season" else 0
+            if champion["releaseSeason"] == season_num:
+                matching_champions.append(champion["name"])
+        elif category_type == "model_size":
+            size = champion["modelSize"]
+            if category == "Small (55-64)" and 55 <= size <= 64:
+                matching_champions.append(champion["name"])
+            elif category == "Medium (65-79)" and 65 <= size <= 79:
+                matching_champions.append(champion["name"])
+            elif category == "Large (80+)" and size >= 80:
+                matching_champions.append(champion["name"])
+        elif category_type == "abilities":
+            ability_key = category.lower().replace(" ", "").replace("-", "")
+            if ability_key in champion["abilities"] and champion["abilities"][ability_key]:
+                matching_champions.append(champion["name"])
+        elif category_type == "skins":
+            if category in champion["skinLines"]:
+                matching_champions.append(champion["name"])
+        elif category_type == "weapons":
+            if category in champion.get("weapons", []):
+                matching_champions.append(champion["name"])
+
+    return matching_champions
+
+def validate_categories(champions_data):
+    """
+    Validates that each category has at least one champion and no category is empty.
+    Returns a dictionary of empty categories if any are found.
+    """
+    empty_categories = {}
+    
+    for category_type, type_data in CATEGORY_TYPES.items():
+        for category in type_data["categories"]:
+            matching_champions = get_champions_for_category(champions_data, category)
+            if not matching_champions:
+                empty_categories[category] = category_type
+    
+    return empty_categories 
