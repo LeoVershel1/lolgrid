@@ -129,12 +129,12 @@ const ChampionSelector: React.FC<ChampionSelectorProps> = ({ onSelect, onClose }
               }`}
             >
               <img
-                src={`${CHAMPION_ICONS_URL}/${champion.name}.png`}
+                src={`${CHAMPION_ICONS_URL}/${champion.name.replace(/\s+/g, '')}.png`}
                 alt={champion.name}
                 className="w-8 h-8 rounded-full mr-3"
                 onError={(e) => {
                   // Fallback if image fails to load
-                  (e.target as HTMLImageElement).src = '/placeholder-champion.png';
+                  (e.target as HTMLImageElement).src = 'https://ddragon.leagueoflegends.com/cdn/13.24.1/img/champion/Aatrox.png';
                 }}
               />
               <span className="text-gray-900 font-medium">{champion.name}</span>
