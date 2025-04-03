@@ -2,6 +2,7 @@
 
 import React, { useState, useEffect, useRef } from 'react';
 import { CHAMPION_ICONS_URL } from '../config';
+import type { Champion } from '../types/index';
 
 interface ChampionSelectorProps {
   onSelect: (champion: string) => void;
@@ -9,23 +10,31 @@ interface ChampionSelectorProps {
 }
 
 const ChampionSelector: React.FC<ChampionSelectorProps> = ({ onSelect, onClose }) => {
-  const [searchTerm, setSearchTerm] = useState('');
-  const [champions, setChampions] = useState<string[]>([]);
-  const [filteredChampions, setFilteredChampions] = useState<string[]>([]);
+  const [champions, setChampions] = useState<Champion[]>([]);
+  const [filteredChampions, setFilteredChampions] = useState<Champion[]>([]);
+  const [search, setSearch] = useState('');
   const [selectedIndex, setSelectedIndex] = useState(0);
   const inputRef = useRef<HTMLInputElement>(null);
   const containerRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
-    // Fetch champions list when component mounts
-    fetch('/api/champions')
-      .then(res => res.json())
-      .then(data => {
-        const sortedChampions = data.sort();
-        setChampions(sortedChampions);
-        setFilteredChampions(sortedChampions);
-      })
-      .catch(error => console.error('Error fetching champions:', error));
+    const fetchChampions = async () => {
+      try {
+        const response = await fetch('/api/champions/details');
+        const data = await response.json();
+        // Ensure data is an array before setting state
+        const championsArray = Array.isArray(data) ? data : [];
+        setChampions(championsArray);
+        setFilteredChampions(championsArray);
+      } catch (error) {
+        console.error('Error fetching champions:', error);
+        // Set empty arrays on error
+        setChampions([]);
+        setFilteredChampions([]);
+      }
+    };
+
+    fetchChampions();
   }, []);
 
   useEffect(() => {
@@ -37,12 +46,13 @@ const ChampionSelector: React.FC<ChampionSelectorProps> = ({ onSelect, onClose }
 
   useEffect(() => {
     // Filter champions based on search term
-    const filtered = champions.filter(champion =>
-      champion.toLowerCase().includes(searchTerm.toLowerCase())
-    );
+    const filtered = champions.filter((champion) => {
+      const searchTerm = search.toLowerCase();
+      return champion.name.toLowerCase().includes(searchTerm);
+    });
     setFilteredChampions(filtered);
     setSelectedIndex(0); // Reset selection when filtering
-  }, [searchTerm, champions]);
+  }, [search, champions]);
 
   useEffect(() => {
     const handleClickOutside = (event: MouseEvent) => {
@@ -63,7 +73,7 @@ const ChampionSelector: React.FC<ChampionSelectorProps> = ({ onSelect, onClose }
     } else if (e.key === 'Enter' && filteredChampions.length > 0) {
       e.preventDefault();
       const selectedChampion = filteredChampions[selectedIndex];
-      onSelect(selectedChampion);
+      onSelect(selectedChampion.name);
       onClose();
     } else if (e.key === 'ArrowDown') {
       e.preventDefault();
@@ -74,10 +84,10 @@ const ChampionSelector: React.FC<ChampionSelectorProps> = ({ onSelect, onClose }
     }
   };
 
-  const handleChampionClick = (e: React.MouseEvent, champion: string) => {
+  const handleChampionClick = (e: React.MouseEvent, champion: Champion) => {
     e.preventDefault();
     e.stopPropagation();
-    onSelect(champion);
+    onSelect(champion.name);
     onClose();
   };
 
@@ -96,15 +106,15 @@ const ChampionSelector: React.FC<ChampionSelectorProps> = ({ onSelect, onClose }
         <input
           ref={inputRef}
           type="text"
-          value={searchTerm}
-          onChange={(e) => setSearchTerm(e.target.value)}
+          value={search}
+          onChange={(e) => setSearch(e.target.value)}
           onKeyDown={handleKeyDown}
-          placeholder="Search champion..."
+          placeholder="Search champion by name..."
           className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 bg-white"
           onClick={(e) => e.stopPropagation()}
         />
       </div>
-      <div className="mt-2 max-h-[300px] overflow-y-auto bg-white rounded-lg shadow-inner">
+      <div className="mt-2 max-h-[400px] overflow-y-auto bg-white rounded-lg shadow-inner">
         {filteredChampions.length === 0 ? (
           <div className="px-4 py-2 text-gray-500 text-center">
             No champions found
@@ -112,22 +122,22 @@ const ChampionSelector: React.FC<ChampionSelectorProps> = ({ onSelect, onClose }
         ) : (
           filteredChampions.map((champion, index) => (
             <button
-              key={champion}
+              key={champion.name}
               onClick={(e) => handleChampionClick(e, champion)}
               className={`w-full flex items-center px-4 py-2 hover:bg-gray-50 text-left border-b border-gray-100 last:border-0 ${
                 index === selectedIndex ? 'bg-blue-50' : ''
               }`}
             >
               <img
-                src={`${CHAMPION_ICONS_URL}/${champion}.png`}
-                alt={champion}
-                className="w-6 h-6 rounded-full mr-3"
+                src={`${CHAMPION_ICONS_URL}/${champion.name}.png`}
+                alt={champion.name}
+                className="w-8 h-8 rounded-full mr-3"
                 onError={(e) => {
                   // Fallback if image fails to load
                   (e.target as HTMLImageElement).src = '/placeholder-champion.png';
                 }}
               />
-              <span className="text-gray-700">{champion}</span>
+              <span className="text-gray-900 font-medium">{champion.name}</span>
             </button>
           ))
         )}
