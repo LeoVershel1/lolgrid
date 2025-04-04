@@ -4,8 +4,8 @@ import path from 'path';
 
 export async function GET() {
   try {
-    // Read the champions.json file from the root of the frontend directory
-    const championsPath = path.join(process.cwd(), 'champions.json');
+    // Read the champions.json file from the root directory
+    const championsPath = path.join(process.cwd(), '..', 'champions.json');
     console.log('Reading champions from:', championsPath);
     
     const data = JSON.parse(fs.readFileSync(championsPath, 'utf8'));
