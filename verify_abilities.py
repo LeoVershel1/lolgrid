@@ -71,7 +71,7 @@ def analyze_ability(ability: Dict) -> Dict[str, bool]:
         'hasSilence': ['silence', 'silenced', 'silencing'],
         'hasGround': ['ground', 'grounded', 'grounding'],
         'hasKnockup': ['knockup', 'knock up', 'knocking up', 'into the air', 'airborne'],
-        'hasKnockback': ['knockback', 'knock back', 'knocking back', 'push back', 'pushing back'],
+        'hasKnockback': ['knockback', 'knock back', 'knocking back', 'push back', 'pushing back', 'dragged'],
         'hasFear': ['fear', 'feared', 'fearing', 'flee', 'fleeing'],
         'hasCharm': ['charm', 'charmed', 'charming'],
         'hasSleep': ['sleep', 'asleep', 'sleeping'],
@@ -97,7 +97,7 @@ def analyze_ability(ability: Dict) -> Dict[str, bool]:
 
     # Check for DoT
     dot_indicators = [
-        'damage over time', 'dot', 'burn', 'bleed', 'poison', 'ignite'
+        'damage over time', 'dot', 'burn', 'bleed', 'poison', 'ignite', 'each second', 'per second'
     ]
     if any(indicator in description for indicator in dot_indicators):
         flags['hasDamageOverTime'] = True
@@ -106,7 +106,8 @@ def analyze_ability(ability: Dict) -> Dict[str, bool]:
     aoe_indicators = [
         'area', 'aoe', 'radius', 'circle', 'cone', 'line', 'wave',
         'blast', 'explosion', 'burst', 'nova', 'storm', 'field',
-        'zone', 'aura', 'pulse', 'shockwave', 'subsequent targets'
+        'zone', 'aura', 'pulse', 'shockwave', 'subsequent targets',
+        'surrounding enemies', 'enemies around'
     ]
     if any(indicator in description for indicator in aoe_indicators):
         flags['hasAreaOfEffect'] = True

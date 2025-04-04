@@ -3,25 +3,30 @@
     {
       "name": "Aatrox",
       "region": "Runeterra",
-      "role": [
+      "class": [
         "Fighter",
         "Tank"
       ],
+      "position": "Unknown",
       "resource": "Blood Well",
       "species": "Darkin",
       "primaryDamageType": "AD",
       "range": 175,
       "baseMovespeed": 345,
       "releaseSeason": 3,
-      "modelSize": 80,
+      "modelSize": 0,
       "skinLines": [
-        "Justicar",
-        "Mecha",
-        "Victorious",
         "Blood Moon",
+        "DRX",
+        "Justicar",
+        "Lunar Eclipse",
+        "Mecha",
         "Odyssey",
-        "Prestige",
-        "Worlds 2023"
+        "Prestige Blood Moon",
+        "Prestige Blood Moon Aatrox",
+        "Prestige DRX",
+        "Sea Hunter",
+        "Victorious"
       ],
       "abilities": {
         "passive": {
@@ -43,6 +48,7 @@
           "description": "Aatrox smashes the ground, dealing damage to the first enemy hit. Champions and large monsters have to leave the impact area quickly or they will be dragged to the center and take the damage again.",
           "flags": {
             "hasGround": true,
+            "hasKnockback": true,
             "hasAreaOfEffect": true
           }
         },
@@ -67,29 +73,36 @@
     {
       "name": "Ahri",
       "region": "Ionia",
-      "role": [
+      "class": [
         "Mage",
         "Assassin"
       ],
+      "position": "Unknown",
       "resource": "Mana",
-      "species": "Vastaya",
+      "species": "Unknown",
       "primaryDamageType": "AP",
       "range": 550,
       "baseMovespeed": 330,
       "releaseSeason": 2,
-      "modelSize": 65,
+      "modelSize": 0,
       "skinLines": [
-        "Dynasty",
-        "Midnight",
-        "Foxfire",
-        "Popstar",
-        "Challenger",
+        "Academy",
         "Arcade",
-        "Star Guardian",
-        "K/DA",
-        "Spirit Blossom",
+        "Arcana",
+        "Challenger",
         "Coven",
-        "Prestige"
+        "Dynasty",
+        "Elderwood",
+        "Foxfire",
+        "K/DA",
+        "K/DA ALL OUT",
+        "Midnight",
+        "Popstar",
+        "Prestige K/DA",
+        "Prestige K/DA Ahri",
+        "Snow Moon",
+        "Spirit Blossom",
+        "Star Guardian"
       ],
       "abilities": {
         "passive": {
@@ -125,17 +138,15 @@
             "hasMobility": true
           }
         }
-      },
-      "weapons": [
-        "Magic"
-      ]
+      }
     },
     {
       "name": "Akali",
       "region": "Ionia",
-      "role": [
+      "class": [
         "Assassin"
       ],
+      "position": "Unknown",
       "resource": "Energy",
       "species": "Human",
       "primaryDamageType": "AD",
@@ -211,10 +222,11 @@
     {
       "name": "Akshan",
       "region": "Shurima",
-      "role": [
+      "class": [
         "Marksman",
         "Assassin"
       ],
+      "position": "Unknown",
       "resource": "Mana",
       "species": "Human",
       "primaryDamageType": "AD",
@@ -269,10 +281,11 @@
     {
       "name": "Alistar",
       "region": "Runeterra",
-      "role": [
+      "class": [
         "Tank",
         "Support"
       ],
+      "position": "Unknown",
       "resource": "Mana",
       "species": "Minotaur",
       "primaryDamageType": "AD",
@@ -337,10 +350,11 @@
     {
       "name": "Amumu",
       "region": "Shurima",
-      "role": [
+      "class": [
         "Tank",
         "Mage"
       ],
+      "position": "Unknown",
       "resource": "Mana",
       "species": "Yordle",
       "primaryDamageType": "AP",
@@ -400,10 +414,11 @@
     {
       "name": "Anivia",
       "region": "Freljord",
-      "role": [
+      "class": [
         "Mage",
         "Support"
       ],
+      "position": "Unknown",
       "resource": "Mana",
       "species": "Spirit God",
       "primaryDamageType": "AP",
@@ -466,9 +481,10 @@
     {
       "name": "Annie",
       "region": "Runeterra",
-      "role": [
+      "class": [
         "Mage"
       ],
+      "position": "Unknown",
       "resource": "Mana",
       "species": "Human",
       "primaryDamageType": "AP",
@@ -535,9 +551,10 @@
     {
       "name": "Aphelios",
       "region": "Targon",
-      "role": [
+      "class": [
         "Marksman"
       ],
+      "position": "Unknown",
       "resource": "Mana",
       "species": "Human",
       "primaryDamageType": "AD",
@@ -589,10 +606,11 @@
     {
       "name": "Ashe",
       "region": "Freljord",
-      "role": [
+      "class": [
         "Marksman",
         "Support"
       ],
+      "position": "Unknown",
       "resource": "Mana",
       "species": "Iceborn",
       "primaryDamageType": "AD",
@@ -661,9 +679,10 @@
     {
       "name": "Aurelion Sol",
       "region": "Targon",
-      "role": [
+      "class": [
         "Mage"
       ],
+      "position": "Unknown",
       "resource": "Mana",
       "species": "Celestial Dragon",
       "primaryDamageType": "AP",
@@ -718,10 +737,11 @@
     {
       "name": "Azir",
       "region": "Shurima",
-      "role": [
+      "class": [
         "Mage",
         "Marksman"
       ],
+      "position": "Unknown",
       "resource": "Mana",
       "species": "God-Warrior",
       "primaryDamageType": "AD",
@@ -781,10 +801,11 @@
     {
       "name": "Bard",
       "region": "Runeterra",
-      "role": [
+      "class": [
         "Support",
         "Mage"
       ],
+      "position": "Unknown",
       "resource": "Mana",
       "species": "Celestial",
       "primaryDamageType": "AP",
@@ -840,9 +861,10 @@
     {
       "name": "Bel'Veth",
       "region": "Void",
-      "role": [
+      "class": [
         "Fighter"
       ],
+      "position": "Unknown",
       "resource": "",
       "species": "Voidborn",
       "primaryDamageType": "AD",
@@ -895,10 +917,11 @@
     {
       "name": "Blitzcrank",
       "region": "Zaun",
-      "role": [
+      "class": [
         "Tank",
         "Fighter"
       ],
+      "position": "Unknown",
       "resource": "Mana",
       "species": "Unknown",
       "primaryDamageType": "AD",
@@ -961,9 +984,10 @@
     {
       "name": "Brand",
       "region": "Runeterra",
-      "role": [
+      "class": [
         "Mage"
       ],
+      "position": "Unknown",
       "resource": "Mana",
       "species": "Human",
       "primaryDamageType": "AP",
@@ -1026,10 +1050,11 @@
     {
       "name": "Braum",
       "region": "Freljord",
-      "role": [
+      "class": [
         "Support",
         "Tank"
       ],
+      "position": "Unknown",
       "resource": "Mana",
       "species": "Iceborn",
       "primaryDamageType": "AD",
@@ -1093,10 +1118,11 @@
     {
       "name": "Briar",
       "region": "Noxus",
-      "role": [
+      "class": [
         "Fighter",
         "Assassin"
       ],
+      "position": "Unknown",
       "resource": "Fury",
       "species": "Unknown",
       "primaryDamageType": "AD",
@@ -1158,9 +1184,10 @@
     {
       "name": "Caitlyn",
       "region": "Piltover",
-      "role": [
+      "class": [
         "Marksman"
       ],
+      "position": "Unknown",
       "resource": "Mana",
       "species": "Human",
       "primaryDamageType": "AD",
@@ -1227,10 +1254,11 @@
     {
       "name": "Camille",
       "region": "Piltover",
-      "role": [
+      "class": [
         "Fighter",
         "Tank"
       ],
+      "position": "Unknown",
       "resource": "Mana",
       "species": "Human",
       "primaryDamageType": "AD",
@@ -1293,9 +1321,10 @@
     {
       "name": "Cassiopeia",
       "region": "Noxus",
-      "role": [
+      "class": [
         "Mage"
       ],
+      "position": "Unknown",
       "resource": "Mana",
       "species": "Human",
       "primaryDamageType": "AP",
@@ -1362,10 +1391,11 @@
     {
       "name": "Cho'Gath",
       "region": "Void",
-      "role": [
+      "class": [
         "Tank",
         "Mage"
       ],
+      "position": "Unknown",
       "resource": "Mana",
       "species": "Voidborn",
       "primaryDamageType": "AP",
@@ -1424,9 +1454,10 @@
     {
       "name": "Corki",
       "region": "Bandle City",
-      "role": [
+      "class": [
         "Marksman"
       ],
+      "position": "Unknown",
       "resource": "Mana",
       "species": "Yordle",
       "primaryDamageType": "AD",
@@ -1486,10 +1517,11 @@
     {
       "name": "Darius",
       "region": "Noxus",
-      "role": [
+      "class": [
         "Fighter",
         "Tank"
       ],
+      "position": "Unknown",
       "resource": "Mana",
       "species": "Human",
       "primaryDamageType": "AD",
@@ -1552,10 +1584,11 @@
     {
       "name": "Diana",
       "region": "Targon",
-      "role": [
+      "class": [
         "Fighter",
         "Mage"
       ],
+      "position": "Unknown",
       "resource": "Mana",
       "species": "Human",
       "primaryDamageType": "AP",
@@ -1616,9 +1649,10 @@
     {
       "name": "Draven",
       "region": "Noxus",
-      "role": [
+      "class": [
         "Marksman"
       ],
+      "position": "Unknown",
       "resource": "Mana",
       "species": "Human",
       "primaryDamageType": "AD",
@@ -1679,10 +1713,11 @@
     {
       "name": "Dr. Mundo",
       "region": "Zaun",
-      "role": [
+      "class": [
         "Fighter",
         "Tank"
       ],
+      "position": "Unknown",
       "resource": "None",
       "species": "Human",
       "primaryDamageType": "AD",
@@ -1744,10 +1779,11 @@
     {
       "name": "Ekko",
       "region": "Unknown",
-      "role": [
+      "class": [
         "Assassin",
         "Fighter"
       ],
+      "position": "Unknown",
       "resource": "Mana",
       "species": "Unknown",
       "primaryDamageType": "AD",
@@ -1818,10 +1854,11 @@
     {
       "name": "Elise",
       "region": "Shadow Isles",
-      "role": [
+      "class": [
         "Mage",
         "Fighter"
       ],
+      "position": "Unknown",
       "resource": "Mana",
       "species": "Human",
       "primaryDamageType": "AP",
@@ -1876,10 +1913,11 @@
     {
       "name": "Evelynn",
       "region": "Runeterra",
-      "role": [
+      "class": [
         "Assassin",
         "Mage"
       ],
+      "position": "Unknown",
       "resource": "Mana",
       "species": "Unknown",
       "primaryDamageType": "AP",
@@ -1949,10 +1987,11 @@
     {
       "name": "Ezreal",
       "region": "Piltover",
-      "role": [
+      "class": [
         "Marksman",
         "Mage"
       ],
+      "position": "Unknown",
       "resource": "Mana",
       "species": "Human",
       "primaryDamageType": "AD",
@@ -2014,10 +2053,11 @@
     {
       "name": "Fiddlesticks",
       "region": "Runeterra",
-      "role": [
+      "class": [
         "Mage",
         "Support"
       ],
+      "position": "Unknown",
       "resource": "Mana",
       "species": "Unknown",
       "primaryDamageType": "AP",
@@ -2077,10 +2117,11 @@
     {
       "name": "Fiora",
       "region": "Demacia",
-      "role": [
+      "class": [
         "Fighter",
         "Assassin"
       ],
+      "position": "Unknown",
       "resource": "Mana",
       "species": "Human",
       "primaryDamageType": "AD",
@@ -2144,10 +2185,11 @@
     {
       "name": "Fizz",
       "region": "Bilgewater",
-      "role": [
+      "class": [
         "Assassin",
         "Fighter"
       ],
+      "position": "Unknown",
       "resource": "Mana",
       "species": "Yordle",
       "primaryDamageType": "AD",
@@ -2220,10 +2262,11 @@
     {
       "name": "Galio",
       "region": "Demacia",
-      "role": [
+      "class": [
         "Tank",
         "Mage"
       ],
+      "position": "Unknown",
       "resource": "Mana",
       "species": "Unknown",
       "primaryDamageType": "AP",
@@ -2288,9 +2331,10 @@
     {
       "name": "Gangplank",
       "region": "Bilgewater",
-      "role": [
+      "class": [
         "Fighter"
       ],
+      "position": "Unknown",
       "resource": "Mana",
       "species": "Human",
       "primaryDamageType": "AD",
@@ -2349,10 +2393,11 @@
     {
       "name": "Garen",
       "region": "Demacia",
-      "role": [
+      "class": [
         "Fighter",
         "Tank"
       ],
+      "position": "Unknown",
       "resource": "None",
       "species": "Human",
       "primaryDamageType": "AD",
@@ -2414,10 +2459,11 @@
     {
       "name": "Gnar",
       "region": "Freljord",
-      "role": [
+      "class": [
         "Fighter",
         "Tank"
       ],
+      "position": "Unknown",
       "resource": "Rage",
       "species": "Yordle",
       "primaryDamageType": "AD",
@@ -2481,10 +2527,11 @@
     {
       "name": "Gragas",
       "region": "Freljord",
-      "role": [
+      "class": [
         "Fighter",
         "Mage"
       ],
+      "position": "Unknown",
       "resource": "Mana",
       "species": "Iceborn",
       "primaryDamageType": "AP",
@@ -2548,9 +2595,10 @@
     {
       "name": "Graves",
       "region": "Bilgewater",
-      "role": [
+      "class": [
         "Marksman"
       ],
+      "position": "Unknown",
       "resource": "Mana",
       "species": "Human",
       "primaryDamageType": "AD",
@@ -2613,10 +2661,11 @@
     {
       "name": "Gwen",
       "region": "Shadow Isles",
-      "role": [
+      "class": [
         "Fighter",
         "Assassin"
       ],
+      "position": "Unknown",
       "resource": "Mana",
       "species": "Human",
       "primaryDamageType": "AD",
@@ -2667,10 +2716,11 @@
     {
       "name": "Hecarim",
       "region": "Shadow Isles",
-      "role": [
+      "class": [
         "Fighter",
         "Tank"
       ],
+      "position": "Unknown",
       "resource": "Mana",
       "species": "Unknown",
       "primaryDamageType": "AD",
@@ -2729,10 +2779,11 @@
     {
       "name": "Heimerdinger",
       "region": "Piltover",
-      "role": [
+      "class": [
         "Mage",
         "Support"
       ],
+      "position": "Unknown",
       "resource": "Mana",
       "species": "Yordle",
       "primaryDamageType": "AP",
@@ -2785,9 +2836,10 @@
     {
       "name": "Hwei",
       "region": "Ionia",
-      "role": [
+      "class": [
         "Mage"
       ],
+      "position": "Unknown",
       "resource": "Mana",
       "species": "Human",
       "primaryDamageType": "AP",
@@ -2833,10 +2885,11 @@
     {
       "name": "Illaoi",
       "region": "Bilgewater",
-      "role": [
+      "class": [
         "Fighter",
         "Tank"
       ],
+      "position": "Unknown",
       "resource": "Mana",
       "species": "Human",
       "primaryDamageType": "AD",
@@ -2886,10 +2939,11 @@
     {
       "name": "Irelia",
       "region": "Ionia",
-      "role": [
+      "class": [
         "Fighter",
         "Assassin"
       ],
+      "position": "Unknown",
       "resource": "Mana",
       "species": "Human",
       "primaryDamageType": "AD",
@@ -2951,10 +3005,11 @@
     {
       "name": "Ivern",
       "region": "Ionia",
-      "role": [
+      "class": [
         "Support",
         "Mage"
       ],
+      "position": "Unknown",
       "resource": "Mana",
       "species": "Human",
       "primaryDamageType": "AP",
@@ -3008,10 +3063,11 @@
     {
       "name": "Janna",
       "region": "Zaun",
-      "role": [
+      "class": [
         "Support",
         "Mage"
       ],
+      "position": "Unknown",
       "resource": "Mana",
       "species": "Spirit God",
       "primaryDamageType": "AP",
@@ -3076,10 +3132,11 @@
     {
       "name": "Jarvan IV",
       "region": "Demacia",
-      "role": [
+      "class": [
         "Tank",
         "Fighter"
       ],
+      "position": "Unknown",
       "resource": "Mana",
       "species": "Human",
       "primaryDamageType": "AD",
@@ -3142,10 +3199,11 @@
     {
       "name": "Jax",
       "region": "Runeterra",
-      "role": [
+      "class": [
         "Fighter",
         "Assassin"
       ],
+      "position": "Unknown",
       "resource": "Mana",
       "species": "Unknown",
       "primaryDamageType": "AD",
@@ -3208,10 +3266,11 @@
     {
       "name": "Jayce",
       "region": "Piltover",
-      "role": [
+      "class": [
         "Fighter",
         "Marksman"
       ],
+      "position": "Unknown",
       "resource": "Mana",
       "species": "Human",
       "primaryDamageType": "AD",
@@ -3275,10 +3334,11 @@
     {
       "name": "Jhin",
       "region": "Ionia",
-      "role": [
+      "class": [
         "Marksman",
         "Mage"
       ],
+      "position": "Unknown",
       "resource": "Mana",
       "species": "Human",
       "primaryDamageType": "AD",
@@ -3341,9 +3401,10 @@
     {
       "name": "Jinx",
       "region": "Zaun",
-      "role": [
+      "class": [
         "Marksman"
       ],
+      "position": "Unknown",
       "resource": "Mana",
       "species": "Human",
       "primaryDamageType": "AD",
@@ -3405,9 +3466,10 @@
     {
       "name": "Kai'Sa",
       "region": "Void",
-      "role": [
+      "class": [
         "Marksman"
       ],
+      "position": "Unknown",
       "resource": "Mana",
       "species": "Human",
       "primaryDamageType": "AD",
@@ -3465,9 +3527,10 @@
     {
       "name": "Kalista",
       "region": "Shadow Isles",
-      "role": [
+      "class": [
         "Marksman"
       ],
+      "position": "Unknown",
       "resource": "Mana",
       "species": "Unknown",
       "primaryDamageType": "AD",
@@ -3522,10 +3585,11 @@
     {
       "name": "Karma",
       "region": "Ionia",
-      "role": [
+      "class": [
         "Mage",
         "Support"
       ],
+      "position": "Unknown",
       "resource": "Mana",
       "species": "Human",
       "primaryDamageType": "AP",
@@ -3585,9 +3649,10 @@
     {
       "name": "Karthus",
       "region": "Shadow Isles",
-      "role": [
+      "class": [
         "Mage"
       ],
+      "position": "Unknown",
       "resource": "Mana",
       "species": "Unknown",
       "primaryDamageType": "AP",
@@ -3640,10 +3705,11 @@
     {
       "name": "Kassadin",
       "region": "Void",
-      "role": [
+      "class": [
         "Assassin",
         "Mage"
       ],
+      "position": "Unknown",
       "resource": "Mana",
       "species": "Human",
       "primaryDamageType": "AP",
@@ -3702,10 +3768,11 @@
     {
       "name": "Katarina",
       "region": "Noxus",
-      "role": [
+      "class": [
         "Assassin",
         "Mage"
       ],
+      "position": "Unknown",
       "resource": "None",
       "species": "Human",
       "primaryDamageType": "AP",
@@ -3770,10 +3837,11 @@
     {
       "name": "Kayle",
       "region": "Demacia",
-      "role": [
+      "class": [
         "Fighter",
         "Support"
       ],
+      "position": "Unknown",
       "resource": "Mana",
       "species": "Human",
       "primaryDamageType": "AD",
@@ -3836,10 +3904,11 @@
     {
       "name": "Kayn",
       "region": "Ionia",
-      "role": [
+      "class": [
         "Fighter",
         "Assassin"
       ],
+      "position": "Unknown",
       "resource": "Mana",
       "species": "God-Warrior",
       "primaryDamageType": "AD",
@@ -3894,10 +3963,11 @@
     {
       "name": "Kennen",
       "region": "Ionia",
-      "role": [
+      "class": [
         "Mage",
         "Marksman"
       ],
+      "position": "Unknown",
       "resource": "Energy",
       "species": "Yordle",
       "primaryDamageType": "AD",
@@ -3962,9 +4032,10 @@
     {
       "name": "Kha'Zix",
       "region": "Void",
-      "role": [
+      "class": [
         "Assassin"
       ],
+      "position": "Unknown",
       "resource": "Mana",
       "species": "Voidborn",
       "primaryDamageType": "AD",
@@ -4029,9 +4100,10 @@
     {
       "name": "Kindred",
       "region": "Runeterra",
-      "role": [
+      "class": [
         "Marksman"
       ],
+      "position": "Unknown",
       "resource": "Mana",
       "species": "Spirit God",
       "primaryDamageType": "AD",
@@ -4084,10 +4156,11 @@
     {
       "name": "Kled",
       "region": "Noxus",
-      "role": [
+      "class": [
         "Fighter",
         "Tank"
       ],
+      "position": "Unknown",
       "resource": "Courage",
       "species": "Yordle",
       "primaryDamageType": "AD",
@@ -4140,10 +4213,11 @@
     {
       "name": "Kog'Maw",
       "region": "Void",
-      "role": [
+      "class": [
         "Marksman",
         "Mage"
       ],
+      "position": "Unknown",
       "resource": "Mana",
       "species": "Voidborn",
       "primaryDamageType": "AD",
@@ -4197,10 +4271,11 @@
     {
       "name": "K'Sante",
       "region": "Shurima",
-      "role": [
+      "class": [
         "Tank",
         "Fighter"
       ],
+      "position": "Unknown",
       "resource": "Mana",
       "species": "Human",
       "primaryDamageType": "AD",
@@ -4262,10 +4337,11 @@
     {
       "name": "LeBlanc",
       "region": "Noxus",
-      "role": [
+      "class": [
         "Assassin",
         "Mage"
       ],
+      "position": "Unknown",
       "resource": "Mana",
       "species": "Human",
       "primaryDamageType": "AP",
@@ -4328,10 +4404,11 @@
     {
       "name": "Lee Sin",
       "region": "Ionia",
-      "role": [
+      "class": [
         "Fighter",
         "Assassin"
       ],
+      "position": "Unknown",
       "resource": "Energy",
       "species": "Human",
       "primaryDamageType": "AD",
@@ -4398,10 +4475,11 @@
     {
       "name": "Leona",
       "region": "Targon",
-      "role": [
+      "class": [
         "Tank",
         "Support"
       ],
+      "position": "Unknown",
       "resource": "Mana",
       "species": "Human",
       "primaryDamageType": "AD",
@@ -4474,10 +4552,11 @@
     {
       "name": "Lillia",
       "region": "Ionia",
-      "role": [
+      "class": [
         "Fighter",
         "Mage"
       ],
+      "position": "Unknown",
       "resource": "Mana",
       "species": "Unknown",
       "primaryDamageType": "AP",
@@ -4530,9 +4609,10 @@
     {
       "name": "Lissandra",
       "region": "Freljord",
-      "role": [
+      "class": [
         "Mage"
       ],
+      "position": "Unknown",
       "resource": "Mana",
       "species": "Iceborn",
       "primaryDamageType": "AP",
@@ -4595,9 +4675,10 @@
     {
       "name": "Lucian",
       "region": "Demacia",
-      "role": [
+      "class": [
         "Marksman"
       ],
+      "position": "Unknown",
       "resource": "Mana",
       "species": "Human",
       "primaryDamageType": "AD",
@@ -4660,10 +4741,11 @@
     {
       "name": "Lulu",
       "region": "Bandle City",
-      "role": [
+      "class": [
         "Support",
         "Mage"
       ],
+      "position": "Unknown",
       "resource": "Mana",
       "species": "Yordle",
       "primaryDamageType": "AP",
@@ -4726,10 +4808,11 @@
     {
       "name": "Lux",
       "region": "Demacia",
-      "role": [
+      "class": [
         "Mage",
         "Support"
       ],
+      "position": "Unknown",
       "resource": "Mana",
       "species": "Human",
       "primaryDamageType": "AP",
@@ -4797,10 +4880,11 @@
     {
       "name": "Malphite",
       "region": "Ixtal",
-      "role": [
+      "class": [
         "Tank",
         "Fighter"
       ],
+      "position": "Unknown",
       "resource": "Mana",
       "species": "Unknown",
       "primaryDamageType": "AD",
@@ -4863,10 +4947,11 @@
     {
       "name": "Malzahar",
       "region": "Void",
-      "role": [
+      "class": [
         "Mage",
         "Assassin"
       ],
+      "position": "Unknown",
       "resource": "Mana",
       "species": "Human",
       "primaryDamageType": "AP",
@@ -4923,10 +5008,11 @@
     {
       "name": "Maokai",
       "region": "Shadow Isles",
-      "role": [
+      "class": [
         "Tank",
         "Mage"
       ],
+      "position": "Unknown",
       "resource": "Mana",
       "species": "Unknown",
       "primaryDamageType": "AP",
@@ -4990,10 +5076,11 @@
     {
       "name": "Master Yi",
       "region": "Ionia",
-      "role": [
+      "class": [
         "Assassin",
         "Fighter"
       ],
+      "position": "Unknown",
       "resource": "Mana",
       "species": "Human",
       "primaryDamageType": "AD",
@@ -5057,9 +5144,10 @@
     {
       "name": "Milio",
       "region": "Ixtal",
-      "role": [
+      "class": [
         "Support"
       ],
+      "position": "Unknown",
       "resource": "Mana",
       "species": "Human",
       "primaryDamageType": "AD",
@@ -5114,9 +5202,10 @@
     {
       "name": "Miss Fortune",
       "region": "Bilgewater",
-      "role": [
+      "class": [
         "Marksman"
       ],
+      "position": "Unknown",
       "resource": "Mana",
       "species": "Human",
       "primaryDamageType": "AD",
@@ -5184,10 +5273,11 @@
     {
       "name": "Wukong",
       "region": "Ionia",
-      "role": [
+      "class": [
         "Fighter",
         "Tank"
       ],
+      "position": "Unknown",
       "resource": "Mana",
       "species": "Unknown",
       "primaryDamageType": "AD",
@@ -5246,9 +5336,10 @@
     {
       "name": "Mordekaiser",
       "region": "Noxus",
-      "role": [
+      "class": [
         "Fighter"
       ],
+      "position": "Unknown",
       "resource": "Shield",
       "species": "Unknown",
       "primaryDamageType": "AD",
@@ -5308,10 +5399,11 @@
     {
       "name": "Morgana",
       "region": "Demacia",
-      "role": [
+      "class": [
         "Mage",
         "Support"
       ],
+      "position": "Unknown",
       "resource": "Mana",
       "species": "Human",
       "primaryDamageType": "AP",
@@ -5374,9 +5466,10 @@
     {
       "name": "Naafiri",
       "region": "Shurima",
-      "role": [
+      "class": [
         "Assassin"
       ],
+      "position": "Unknown",
       "resource": "Mana",
       "species": "Darkin",
       "primaryDamageType": "AD",
@@ -5433,10 +5526,11 @@
     {
       "name": "Nami",
       "region": "Runeterra",
-      "role": [
+      "class": [
         "Support",
         "Mage"
       ],
+      "position": "Unknown",
       "resource": "Mana",
       "species": "Unknown",
       "primaryDamageType": "AP",
@@ -5498,10 +5592,11 @@
     {
       "name": "Nasus",
       "region": "Shurima",
-      "role": [
+      "class": [
         "Fighter",
         "Tank"
       ],
+      "position": "Unknown",
       "resource": "Mana",
       "species": "God-Warrior",
       "primaryDamageType": "AD",
@@ -5556,10 +5651,11 @@
     {
       "name": "Nautilus",
       "region": "Bilgewater",
-      "role": [
+      "class": [
         "Tank",
         "Support"
       ],
+      "position": "Unknown",
       "resource": "Mana",
       "species": "Unknown",
       "primaryDamageType": "AD",
@@ -5621,10 +5717,11 @@
     {
       "name": "Neeko",
       "region": "Ixtal",
-      "role": [
+      "class": [
         "Mage",
         "Support"
       ],
+      "position": "Unknown",
       "resource": "Mana",
       "species": "Unknown",
       "primaryDamageType": "AP",
@@ -5680,10 +5777,11 @@
     {
       "name": "Nidalee",
       "region": "Ixtal",
-      "role": [
+      "class": [
         "Assassin",
         "Mage"
       ],
+      "position": "Unknown",
       "resource": "Mana",
       "species": "Vastaya",
       "primaryDamageType": "AP",
@@ -5746,10 +5844,11 @@
     {
       "name": "Nilah",
       "region": "Bilgewater",
-      "role": [
+      "class": [
         "Fighter",
         "Assassin"
       ],
+      "position": "Unknown",
       "resource": "Mana",
       "species": "Human",
       "primaryDamageType": "AD",
@@ -5800,10 +5899,11 @@
     {
       "name": "Nocturne",
       "region": "Runeterra",
-      "role": [
+      "class": [
         "Assassin",
         "Fighter"
       ],
+      "position": "Unknown",
       "resource": "Mana",
       "species": "Unknown",
       "primaryDamageType": "AD",
@@ -5863,10 +5963,11 @@
     {
       "name": "Nunu & Willump",
       "region": "Freljord",
-      "role": [
+      "class": [
         "Tank",
         "Fighter"
       ],
+      "position": "Unknown",
       "resource": "Mana",
       "species": "Human",
       "primaryDamageType": "AD",
@@ -5923,10 +6024,11 @@
     {
       "name": "Olaf",
       "region": "Freljord",
-      "role": [
+      "class": [
         "Fighter",
         "Tank"
       ],
+      "position": "Unknown",
       "resource": "Mana",
       "species": "Iceborn",
       "primaryDamageType": "AD",
@@ -5981,10 +6083,11 @@
     {
       "name": "Orianna",
       "region": "Piltover",
-      "role": [
+      "class": [
         "Mage",
         "Support"
       ],
+      "position": "Unknown",
       "resource": "Mana",
       "species": "Unknown",
       "primaryDamageType": "AP",
@@ -6044,10 +6147,11 @@
     {
       "name": "Ornn",
       "region": "Freljord",
-      "role": [
+      "class": [
         "Tank",
         "Fighter"
       ],
+      "position": "Unknown",
       "resource": "Mana",
       "species": "Spirit God",
       "primaryDamageType": "AD",
@@ -6098,10 +6202,11 @@
     {
       "name": "Pantheon",
       "region": "Targon",
-      "role": [
+      "class": [
         "Fighter",
         "Assassin"
       ],
+      "position": "Unknown",
       "resource": "Mana",
       "species": "Human",
       "primaryDamageType": "AD",
@@ -6165,10 +6270,11 @@
     {
       "name": "Poppy",
       "region": "Demacia",
-      "role": [
+      "class": [
         "Tank",
         "Fighter"
       ],
+      "position": "Unknown",
       "resource": "Mana",
       "species": "Yordle",
       "primaryDamageType": "AD",
@@ -6235,10 +6341,11 @@
     {
       "name": "Pyke",
       "region": "Bilgewater",
-      "role": [
+      "class": [
         "Support",
         "Assassin"
       ],
+      "position": "Unknown",
       "resource": "Mana",
       "species": "Unknown",
       "primaryDamageType": "AD",
@@ -6299,10 +6406,11 @@
     {
       "name": "Qiyana",
       "region": "Ixtal",
-      "role": [
+      "class": [
         "Assassin",
         "Fighter"
       ],
+      "position": "Unknown",
       "resource": "Mana",
       "species": "Human",
       "primaryDamageType": "AD",
@@ -6361,10 +6469,11 @@
     {
       "name": "Quinn",
       "region": "Demacia",
-      "role": [
+      "class": [
         "Marksman",
         "Assassin"
       ],
+      "position": "Unknown",
       "resource": "Mana",
       "species": "Human",
       "primaryDamageType": "AD",
@@ -6420,9 +6529,10 @@
     {
       "name": "Rakan",
       "region": "Ionia",
-      "role": [
+      "class": [
         "Support"
       ],
+      "position": "Unknown",
       "resource": "Mana",
       "species": "Unknown",
       "primaryDamageType": "AD",
@@ -6485,10 +6595,11 @@
     {
       "name": "Rammus",
       "region": "Shurima",
-      "role": [
+      "class": [
         "Tank",
         "Fighter"
       ],
+      "position": "Unknown",
       "resource": "Mana",
       "species": "Unknown",
       "primaryDamageType": "AD",
@@ -6548,9 +6659,10 @@
     {
       "name": "Rek'Sai",
       "region": "Void",
-      "role": [
+      "class": [
         "Fighter"
       ],
+      "position": "Unknown",
       "resource": "Rage",
       "species": "Unknown",
       "primaryDamageType": "AD",
@@ -6603,10 +6715,11 @@
     {
       "name": "Rell",
       "region": "Noxus",
-      "role": [
+      "class": [
         "Tank",
         "Support"
       ],
+      "position": "Unknown",
       "resource": "Mana",
       "species": "Human",
       "primaryDamageType": "AD",
@@ -6663,10 +6776,11 @@
     {
       "name": "Renata Glasc",
       "region": "Zaun",
-      "role": [
+      "class": [
         "Support",
         "Mage"
       ],
+      "position": "Unknown",
       "resource": "Mana",
       "species": "Human",
       "primaryDamageType": "AP",
@@ -6718,10 +6832,11 @@
     {
       "name": "Renekton",
       "region": "Shurima",
-      "role": [
+      "class": [
         "Fighter",
         "Tank"
       ],
+      "position": "Unknown",
       "resource": "Fury",
       "species": "God-Warrior",
       "primaryDamageType": "AD",
@@ -6784,10 +6899,11 @@
     {
       "name": "Rengar",
       "region": "Ixtal",
-      "role": [
+      "class": [
         "Assassin",
         "Fighter"
       ],
+      "position": "Unknown",
       "resource": "Ferocity",
       "species": "Unknown",
       "primaryDamageType": "AD",
@@ -6853,10 +6969,11 @@
     {
       "name": "Riven",
       "region": "Noxus",
-      "role": [
+      "class": [
         "Fighter",
         "Assassin"
       ],
+      "position": "Unknown",
       "resource": "None",
       "species": "Human",
       "primaryDamageType": "AD",
@@ -6919,10 +7036,11 @@
     {
       "name": "Rumble",
       "region": "Bandle City",
-      "role": [
+      "class": [
         "Fighter",
         "Mage"
       ],
+      "position": "Unknown",
       "resource": "Heat",
       "species": "Yordle",
       "primaryDamageType": "AP",
@@ -6982,10 +7100,11 @@
     {
       "name": "Ryze",
       "region": "Runeterra",
-      "role": [
+      "class": [
         "Mage",
         "Fighter"
       ],
+      "position": "Unknown",
       "resource": "Mana",
       "species": "Human",
       "primaryDamageType": "AP",
@@ -7048,9 +7167,10 @@
     {
       "name": "Samira",
       "region": "Noxus",
-      "role": [
+      "class": [
         "Marksman"
       ],
+      "position": "Unknown",
       "resource": "Mana",
       "species": "Human",
       "primaryDamageType": "AD",
@@ -7101,10 +7221,11 @@
     {
       "name": "Sejuani",
       "region": "Freljord",
-      "role": [
+      "class": [
         "Tank",
         "Fighter"
       ],
+      "position": "Unknown",
       "resource": "Mana",
       "species": "Iceborn",
       "primaryDamageType": "AD",
@@ -7173,10 +7294,11 @@
     {
       "name": "Senna",
       "region": "Unknown",
-      "role": [
+      "class": [
         "Marksman",
         "Support"
       ],
+      "position": "Unknown",
       "resource": "Mana",
       "species": "Unknown",
       "primaryDamageType": "AD",
@@ -7235,10 +7357,11 @@
     {
       "name": "Seraphine",
       "region": "Zaun",
-      "role": [
+      "class": [
         "Mage",
         "Support"
       ],
+      "position": "Unknown",
       "resource": "Mana",
       "species": "Human",
       "primaryDamageType": "AP",
@@ -7297,10 +7420,11 @@
     {
       "name": "Sett",
       "region": "Ionia",
-      "role": [
+      "class": [
         "Fighter",
         "Tank"
       ],
+      "position": "Unknown",
       "resource": "Grit",
       "species": "Vastaya",
       "primaryDamageType": "AD",
@@ -7362,9 +7486,10 @@
     {
       "name": "Shaco",
       "region": "Runeterra",
-      "role": [
+      "class": [
         "Assassin"
       ],
+      "position": "Unknown",
       "resource": "Mana",
       "species": "Unknown",
       "primaryDamageType": "AD",
@@ -7430,9 +7555,10 @@
     {
       "name": "Shen",
       "region": "Ionia",
-      "role": [
+      "class": [
         "Tank"
       ],
+      "position": "Unknown",
       "resource": "Energy",
       "species": "Human",
       "primaryDamageType": "AD",
@@ -7497,10 +7623,11 @@
     {
       "name": "Shyvana",
       "region": "Demacia",
-      "role": [
+      "class": [
         "Fighter",
         "Tank"
       ],
+      "position": "Unknown",
       "resource": "Fury",
       "species": "Terrestrial Dragon",
       "primaryDamageType": "AD",
@@ -7557,10 +7684,11 @@
     {
       "name": "Singed",
       "region": "Zaun",
-      "role": [
+      "class": [
         "Tank",
         "Fighter"
       ],
+      "position": "Unknown",
       "resource": "Mana",
       "species": "Human",
       "primaryDamageType": "AD",
@@ -7624,10 +7752,11 @@
     {
       "name": "Sion",
       "region": "Noxus",
-      "role": [
+      "class": [
         "Tank",
         "Fighter"
       ],
+      "position": "Unknown",
       "resource": "Mana",
       "species": "Unknown",
       "primaryDamageType": "AD",
@@ -7686,9 +7815,10 @@
     {
       "name": "Sivir",
       "region": "Shurima",
-      "role": [
+      "class": [
         "Marksman"
       ],
+      "position": "Unknown",
       "resource": "Mana",
       "species": "Human",
       "primaryDamageType": "AD",
@@ -7749,10 +7879,11 @@
     {
       "name": "Skarner",
       "region": "Ixtal",
-      "role": [
+      "class": [
         "Fighter",
         "Tank"
       ],
+      "position": "Unknown",
       "resource": "Mana",
       "species": "Brackern",
       "primaryDamageType": "AD",
@@ -7799,6 +7930,7 @@
           "name": "Impale",
           "description": "Skarner's tails lash forward to suppress enemy champions. Once suppressed, the victims will be dragged along by Skarner as he moves around.",
           "flags": {
+            "hasKnockback": true,
             "hasSuppression": true
           }
         }
@@ -7807,10 +7939,11 @@
     {
       "name": "Sona",
       "region": "Demacia",
-      "role": [
+      "class": [
         "Support",
         "Mage"
       ],
+      "position": "Unknown",
       "resource": "Mana",
       "species": "Human",
       "primaryDamageType": "AP",
@@ -7877,10 +8010,11 @@
     {
       "name": "Soraka",
       "region": "Ionia",
-      "role": [
+      "class": [
         "Support",
         "Mage"
       ],
+      "position": "Unknown",
       "resource": "Mana",
       "species": "Celestial",
       "primaryDamageType": "AP",
@@ -7942,10 +8076,11 @@
     {
       "name": "Swain",
       "region": "Noxus",
-      "role": [
+      "class": [
         "Mage",
         "Fighter"
       ],
+      "position": "Unknown",
       "resource": "Mana",
       "species": "Human",
       "primaryDamageType": "AP",
@@ -8002,10 +8137,11 @@
     {
       "name": "Sylas",
       "region": "Freljord",
-      "role": [
+      "class": [
         "Mage",
         "Assassin"
       ],
+      "position": "Unknown",
       "resource": "Mana",
       "species": "Human",
       "primaryDamageType": "AP",
@@ -8060,9 +8196,10 @@
     {
       "name": "Syndra",
       "region": "Ionia",
-      "role": [
+      "class": [
         "Mage"
       ],
+      "position": "Unknown",
       "resource": "Mana",
       "species": "Human",
       "primaryDamageType": "AP",
@@ -8122,10 +8259,11 @@
     {
       "name": "Tahm Kench",
       "region": "Runeterra",
-      "role": [
+      "class": [
         "Support",
         "Tank"
       ],
+      "position": "Unknown",
       "resource": "Mana",
       "species": "Unknown",
       "primaryDamageType": "AD",
@@ -8183,10 +8321,11 @@
     {
       "name": "Taliyah",
       "region": "Shurima",
-      "role": [
+      "class": [
         "Mage",
         "Support"
       ],
+      "position": "Unknown",
       "resource": "Mana",
       "species": "Human",
       "primaryDamageType": "AP",
@@ -8248,9 +8387,10 @@
     {
       "name": "Talon",
       "region": "Noxus",
-      "role": [
+      "class": [
         "Assassin"
       ],
+      "position": "Unknown",
       "resource": "Mana",
       "species": "Human",
       "primaryDamageType": "AD",
@@ -8311,10 +8451,11 @@
     {
       "name": "Taric",
       "region": "Targon",
-      "role": [
+      "class": [
         "Support",
         "Fighter"
       ],
+      "position": "Unknown",
       "resource": "Mana",
       "species": "Human",
       "primaryDamageType": "AD",
@@ -8368,10 +8509,11 @@
     {
       "name": "Teemo",
       "region": "Bandle City",
-      "role": [
+      "class": [
         "Marksman",
         "Assassin"
       ],
+      "position": "Unknown",
       "resource": "Mana",
       "species": "Yordle",
       "primaryDamageType": "AD",
@@ -8434,10 +8576,11 @@
     {
       "name": "Thresh",
       "region": "Shadow Isles",
-      "role": [
+      "class": [
         "Support",
         "Fighter"
       ],
+      "position": "Unknown",
       "resource": "Mana",
       "species": "Unknown",
       "primaryDamageType": "AD",
@@ -8499,10 +8642,11 @@
     {
       "name": "Tristana",
       "region": "Bandle City",
-      "role": [
+      "class": [
         "Marksman",
         "Assassin"
       ],
+      "position": "Unknown",
       "resource": "Mana",
       "species": "Yordle",
       "primaryDamageType": "AD",
@@ -8564,10 +8708,11 @@
     {
       "name": "Trundle",
       "region": "Freljord",
-      "role": [
+      "class": [
         "Fighter",
         "Tank"
       ],
+      "position": "Unknown",
       "resource": "Mana",
       "species": "Iceborn",
       "primaryDamageType": "AD",
@@ -8619,10 +8764,11 @@
     {
       "name": "Tryndamere",
       "region": "Freljord",
-      "role": [
+      "class": [
         "Fighter",
         "Assassin"
       ],
+      "position": "Unknown",
       "resource": "Fury",
       "species": "Human",
       "primaryDamageType": "AD",
@@ -8674,9 +8820,10 @@
     {
       "name": "Twisted Fate",
       "region": "Bilgewater",
-      "role": [
+      "class": [
         "Mage"
       ],
+      "position": "Unknown",
       "resource": "Mana",
       "species": "Human",
       "primaryDamageType": "AP",
@@ -8740,10 +8887,11 @@
     {
       "name": "Twitch",
       "region": "Zaun",
-      "role": [
+      "class": [
         "Marksman",
         "Assassin"
       ],
+      "position": "Unknown",
       "resource": "Mana",
       "species": "Unknown",
       "primaryDamageType": "AD",
@@ -8808,10 +8956,11 @@
     {
       "name": "Udyr",
       "region": "Ionia",
-      "role": [
+      "class": [
         "Fighter",
         "Tank"
       ],
+      "position": "Unknown",
       "resource": "Mana",
       "species": "Vastaya",
       "primaryDamageType": "AD",
@@ -8868,10 +9017,11 @@
     {
       "name": "Urgot",
       "region": "Zaun",
-      "role": [
+      "class": [
         "Fighter",
         "Tank"
       ],
+      "position": "Unknown",
       "resource": "Mana",
       "species": "Human",
       "primaryDamageType": "AD",
@@ -8927,10 +9077,11 @@
     {
       "name": "Varus",
       "region": "Ionia",
-      "role": [
+      "class": [
         "Marksman",
         "Mage"
       ],
+      "position": "Unknown",
       "resource": "Mana",
       "species": "Human",
       "primaryDamageType": "AD",
@@ -8988,10 +9139,11 @@
     {
       "name": "Vayne",
       "region": "Demacia",
-      "role": [
+      "class": [
         "Marksman",
         "Assassin"
       ],
+      "position": "Unknown",
       "resource": "Mana",
       "species": "Human",
       "primaryDamageType": "AD",
@@ -9056,9 +9208,10 @@
     {
       "name": "Veigar",
       "region": "Bandle City",
-      "role": [
+      "class": [
         "Mage"
       ],
+      "position": "Unknown",
       "resource": "Mana",
       "species": "Yordle",
       "primaryDamageType": "AP",
@@ -9120,9 +9273,10 @@
     {
       "name": "Vel'Koz",
       "region": "Void",
-      "role": [
+      "class": [
         "Mage"
       ],
+      "position": "Unknown",
       "resource": "Mana",
       "species": "Voidborn",
       "primaryDamageType": "AP",
@@ -9178,9 +9332,10 @@
     {
       "name": "Vex",
       "region": "Bandle City",
-      "role": [
+      "class": [
         "Mage"
       ],
+      "position": "Unknown",
       "resource": "Mana",
       "species": "Yordle",
       "primaryDamageType": "AP",
@@ -9236,10 +9391,11 @@
     {
       "name": "Vi",
       "region": "Piltover",
-      "role": [
+      "class": [
         "Fighter",
         "Assassin"
       ],
+      "position": "Unknown",
       "resource": "Mana",
       "species": "Human",
       "primaryDamageType": "AD",
@@ -9301,10 +9457,11 @@
     {
       "name": "Viego",
       "region": "Shadow Isles",
-      "role": [
+      "class": [
         "Assassin",
         "Fighter"
       ],
+      "position": "Unknown",
       "resource": "None",
       "species": "Unknown",
       "primaryDamageType": "AD",
@@ -9362,9 +9519,10 @@
     {
       "name": "Viktor",
       "region": "Zaun",
-      "role": [
+      "class": [
         "Mage"
       ],
+      "position": "Unknown",
       "resource": "Mana",
       "species": "Human",
       "primaryDamageType": "AP",
@@ -9424,9 +9582,10 @@
     {
       "name": "Vladimir",
       "region": "Noxus",
-      "role": [
+      "class": [
         "Mage"
       ],
+      "position": "Unknown",
       "resource": "Crimson Rush",
       "species": "Human",
       "primaryDamageType": "AP",
@@ -9487,10 +9646,11 @@
     {
       "name": "Volibear",
       "region": "Freljord",
-      "role": [
+      "class": [
         "Fighter",
         "Tank"
       ],
+      "position": "Unknown",
       "resource": "Mana",
       "species": "Spirit God",
       "primaryDamageType": "AD",
@@ -9551,10 +9711,11 @@
     {
       "name": "Warwick",
       "region": "Zaun",
-      "role": [
+      "class": [
         "Fighter",
         "Tank"
       ],
+      "position": "Unknown",
       "resource": "Mana",
       "species": "Human",
       "primaryDamageType": "AD",
@@ -9616,9 +9777,10 @@
     {
       "name": "Xayah",
       "region": "Ionia",
-      "role": [
+      "class": [
         "Marksman"
       ],
+      "position": "Unknown",
       "resource": "Mana",
       "species": "Unknown",
       "primaryDamageType": "AD",
@@ -9681,9 +9843,10 @@
     {
       "name": "Xerath",
       "region": "Shurima",
-      "role": [
+      "class": [
         "Mage"
       ],
+      "position": "Unknown",
       "resource": "Mana",
       "species": "Human",
       "primaryDamageType": "AP",
@@ -9739,10 +9902,11 @@
     {
       "name": "Xin Zhao",
       "region": "Ionia",
-      "role": [
+      "class": [
         "Fighter",
         "Assassin"
       ],
+      "position": "Unknown",
       "resource": "Mana",
       "species": "Human",
       "primaryDamageType": "AD",
@@ -9802,10 +9966,11 @@
     {
       "name": "Yasuo",
       "region": "Ionia",
-      "role": [
+      "class": [
         "Fighter",
         "Assassin"
       ],
+      "position": "Unknown",
       "resource": "Flow",
       "species": "Human",
       "primaryDamageType": "AD",
@@ -9875,10 +10040,11 @@
     {
       "name": "Yone",
       "region": "Ionia",
-      "role": [
+      "class": [
         "Assassin",
         "Fighter"
       ],
+      "position": "Unknown",
       "resource": "Flow",
       "species": "Human",
       "primaryDamageType": "AD",
@@ -9938,10 +10104,11 @@
     {
       "name": "Yorick",
       "region": "Shadow Isles",
-      "role": [
+      "class": [
         "Fighter",
         "Tank"
       ],
+      "position": "Unknown",
       "resource": "Mana",
       "species": "Human",
       "primaryDamageType": "AD",
@@ -9992,10 +10159,11 @@
     {
       "name": "Yuumi",
       "region": "Bandle City",
-      "role": [
+      "class": [
         "Support",
         "Mage"
       ],
+      "position": "Unknown",
       "resource": "Mana",
       "species": "Unknown",
       "primaryDamageType": "AP",
@@ -10053,10 +10221,11 @@
     {
       "name": "Zac",
       "region": "Zaun",
-      "role": [
+      "class": [
         "Tank",
         "Fighter"
       ],
+      "position": "Unknown",
       "resource": "None",
       "species": "Unknown",
       "primaryDamageType": "AD",
@@ -10107,9 +10276,10 @@
     {
       "name": "Zed",
       "region": "Ionia",
-      "role": [
+      "class": [
         "Assassin"
       ],
+      "position": "Unknown",
       "resource": "Energy",
       "species": "Human",
       "primaryDamageType": "AD",
@@ -10171,9 +10341,10 @@
     {
       "name": "Zeri",
       "region": "Zaun",
-      "role": [
+      "class": [
         "Marksman"
       ],
+      "position": "Unknown",
       "resource": "Mana",
       "species": "Human",
       "primaryDamageType": "AD",
@@ -10231,9 +10402,10 @@
     {
       "name": "Ziggs",
       "region": "Zaun",
-      "role": [
+      "class": [
         "Mage"
       ],
+      "position": "Unknown",
       "resource": "Mana",
       "species": "Yordle",
       "primaryDamageType": "AP",
@@ -10292,10 +10464,11 @@
     {
       "name": "Zilean",
       "region": "Runeterra",
-      "role": [
+      "class": [
         "Support",
         "Mage"
       ],
+      "position": "Unknown",
       "resource": "Mana",
       "species": "Human",
       "primaryDamageType": "AP",
@@ -10350,10 +10523,11 @@
     {
       "name": "Zoe",
       "region": "Targon",
-      "role": [
+      "class": [
         "Mage",
         "Support"
       ],
+      "position": "Unknown",
       "resource": "Mana",
       "species": "Unknown",
       "primaryDamageType": "AP",
@@ -10411,10 +10585,11 @@
     {
       "name": "Zyra",
       "region": "Ixtal",
-      "role": [
+      "class": [
         "Mage",
         "Support"
       ],
+      "position": "Unknown",
       "resource": "Mana",
       "species": "Unknown",
       "primaryDamageType": "AP",
