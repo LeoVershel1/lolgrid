@@ -64,30 +64,31 @@ def analyze_ability(ability: Dict) -> Dict[str, bool]:
     name = ability.get('name', '').lower()
     flags = {}
 
-    # CC types
+    # CC types with multiple keywords for each
     cc_types = {
-        'stun': 'hasStun',
-        'root': 'hasRoot',
-        'silence': 'hasSilence',
-        'ground': 'hasGround',
-        'knockup': 'hasKnockup',
-        'knockback': 'hasKnockback',
-        'fear': 'hasFear',
-        'charm': 'hasCharm',
-        'sleep': 'hasSleep',
-        'taunt': 'hasTaunt',
-        'polymorph': 'hasPolymorph',
-        'suppression': 'hasSuppression'
+        'hasStun': ['stun', 'stunned', 'stunning'],
+        'hasRoot': ['root', 'rooted', 'rooting', 'immobilize', 'immobilized'],
+        'hasSilence': ['silence', 'silenced', 'silencing'],
+        'hasGround': ['ground', 'grounded', 'grounding'],
+        'hasKnockup': ['knockup', 'knock up', 'knocking up', 'into the air', 'airborne'],
+        'hasKnockback': ['knockback', 'knock back', 'knocking back', 'push back', 'pushing back'],
+        'hasFear': ['fear', 'feared', 'fearing', 'flee', 'fleeing'],
+        'hasCharm': ['charm', 'charmed', 'charming'],
+        'hasSleep': ['sleep', 'asleep', 'sleeping'],
+        'hasTaunt': ['taunt', 'taunted', 'taunting'],
+        'hasPolymorph': ['polymorph', 'polymorphed', 'transformed into a'],
+        'hasSuppression': ['suppression', 'suppressed', 'suppressing']
     }
 
     # Check for CC
     has_cc = False
-    for cc_type, flag in cc_types.items():
-        if cc_type in description:
+    for flag, keywords in cc_types.items():
+        if any(keyword in description for keyword in keywords):
             flags[flag] = True
             has_cc = True
 
-    if has_cc:
+    hard_cc_types = ['stun', 'sleep', 'charm', 'fear', 'taunt', 'suppression', 'knockup', 'knockback']
+    if any(cc_type in description for cc_type in hard_cc_types):
         flags['hasHardCC'] = True
 
     # Check for slows
@@ -96,8 +97,7 @@ def analyze_ability(ability: Dict) -> Dict[str, bool]:
 
     # Check for DoT
     dot_indicators = [
-        'damage over time', 'dot', 'burn', 'bleed', 'poison', 'ignite',
-        'mark', 'mark of the', 'mark of', 'marking', 'marked'
+        'damage over time', 'dot', 'burn', 'bleed', 'poison', 'ignite'
     ]
     if any(indicator in description for indicator in dot_indicators):
         flags['hasDamageOverTime'] = True
@@ -106,7 +106,7 @@ def analyze_ability(ability: Dict) -> Dict[str, bool]:
     aoe_indicators = [
         'area', 'aoe', 'radius', 'circle', 'cone', 'line', 'wave',
         'blast', 'explosion', 'burst', 'nova', 'storm', 'field',
-        'zone', 'aura', 'pulse', 'shockwave'
+        'zone', 'aura', 'pulse', 'shockwave', 'subsequent targets'
     ]
     if any(indicator in description for indicator in aoe_indicators):
         flags['hasAreaOfEffect'] = True
@@ -116,30 +116,29 @@ def analyze_ability(ability: Dict) -> Dict[str, bool]:
         flags['hasAutoAttackReset'] = True
 
     # Check for ability charges
-    if any(phrase in description for phrase in ['charge', 'charges', 'stored', 'store']):
+    if 'maxammo' in ability and ability['maxammo'] != -1:
         flags['hasCharges'] = True
 
     # Check for ability transformations
-    if any(phrase in description for phrase in ['changes', 'transforms', 'becomes', 'evolves']):
+    if any(phrase in description for phrase in ['changes', 'transforms', 'evolves']):
         flags['isTransforming'] = True
 
     # Check for shields
     if 'shield' in description:
         flags['hasShield'] = True
 
-    # Check for healing
-    if any(word in description for word in ['heal', 'healing', 'restored', 'restores']):
-        flags['hasHealing'] = True
+    # TODO: Add healing check later
+    # this is hard because it's not always specified what type of healing we're talking about 
+    # can be self healing, can be healing allies, do we want to differentiate?
 
     # Detailed mobility checks
     mobility_types = {
         'dash': ['dash', 'dashes', 'dashing'],
         'blink': ['blink', 'teleport', 'flash'],
         'leap': ['leap', 'jump', 'jumping', 'leaping'],
-        'pull': ['pull', 'pulls', 'pulling', 'hook'],
         'charge': ['charge toward', 'charges toward', 'charging toward'],
         'ghost': ['phase through', 'move through', 'pass through'],
-        'moveSpeed': ['movement speed', 'move speed', 'moves faster', 'moving faster']
+        'moveSpeed': ['gains movement speed', 'gains move speed', 'moves faster', 'moving faster']
     }
 
     has_mobility = False
@@ -196,7 +195,8 @@ def process_champion(champion: Dict) -> Dict:
         champion['abilities']['passive'] = {
             'name': passive.get('name', ''),
             'description': passive.get('description', ''),
-            'flags': analyze_ability(passive)
+            'maxammo': passive.get('maxammo'),
+            'flags': analyze_ability(passive),
         }
 
     # Process Q, W, E, R abilities
@@ -207,7 +207,8 @@ def process_champion(champion: Dict) -> Dict:
             champion['abilities'][slot] = {
                 'name': ability.get('name', ''),
                 'description': ability.get('description', ''),
-                'flags': analyze_ability(ability)
+                'maxammo': ability.get('maxammo'),
+                'flags': analyze_ability(ability),
             }
 
     return champion
