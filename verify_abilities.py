@@ -115,8 +115,8 @@ def analyze_ability(ability: Dict) -> Dict[str, bool]:
     if any(phrase in description for phrase in ['reset', 'resets', 'next attack', 'next basic attack']):
         flags['hasAutoAttackReset'] = True
 
-    # Check for ability charges
-    if 'maxammo' in ability and ability['maxammo'] != -1:
+    # Check for ability charges - only if maxammo is a positive number
+    if 'maxammo' in ability and ability['maxammo'] is not None and ability['maxammo'] != -1 and int(ability['maxammo']) > 0:
         flags['hasCharges'] = True
 
     # Check for ability transformations
@@ -195,7 +195,6 @@ def process_champion(champion: Dict) -> Dict:
         champion['abilities']['passive'] = {
             'name': passive.get('name', ''),
             'description': passive.get('description', ''),
-            'maxammo': passive.get('maxammo'),
             'flags': analyze_ability(passive),
         }
 
@@ -207,7 +206,6 @@ def process_champion(champion: Dict) -> Dict:
             champion['abilities'][slot] = {
                 'name': ability.get('name', ''),
                 'description': ability.get('description', ''),
-                'maxammo': ability.get('maxammo'),
                 'flags': analyze_ability(ability),
             }
 

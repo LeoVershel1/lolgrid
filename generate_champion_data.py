@@ -244,7 +244,7 @@ async def create_champion_template(session: aiohttp.ClientSession, champ_data: D
         "range": int(champ_data.get("stats", {}).get("attackrange", 0)),
         "baseMovespeed": int(champ_data.get("stats", {}).get("movespeed", 0)),
         "releaseSeason": wiki_data["release_season"],
-        "modelSize": int(champ_data.get("stats", {}).get("collision_radius", 0) * 100),  # Approximate from collision radius
+        "modelSize": int(champ_data.get("stats", {}).get("gameplay_radius", 0)),  # Model size from gameplay radius
         "skinLines": sorted(list(skin_lines)),  # Add skin lines as a sorted list
         "abilities": {
             "hasPassiveE": False,  # To be filled manually
