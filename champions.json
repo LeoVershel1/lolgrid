@@ -2,7 +2,9 @@
   "champions": [
     {
       "name": "Aatrox",
-      "region": "Runeterra",
+      "region": [
+        "Shurima"
+      ],
       "class": [
         "Fighter",
         "Tank"
@@ -11,7 +13,11 @@
         "Top"
       ],
       "resource": "Blood Well",
-      "species": "Darkin",
+      "species": [
+        "Darkin",
+        "God-Warrior",
+        "Human"
+      ],
       "primaryDamageType": "AD",
       "range": 175,
       "baseMovespeed": 345,
@@ -56,11 +62,17 @@
           "description": "Aatrox unleashes his demonic form, fearing nearby enemy minions and gaining attack damage, increased healing, and Move Speed. If he gets a takedown, this effect is extended.",
           "flags": {}
         }
-      }
+      },
+      "regions": [
+        "Shurima (Ancient Times)",
+        "Runeterra\n Shurima"
+      ]
     },
     {
       "name": "Ahri",
-      "region": "Runeterra",
+      "region": [
+        "Ionia"
+      ],
       "class": [
         "Mage",
         "Assassin"
@@ -69,7 +81,9 @@
         "Mid"
       ],
       "resource": "Mana",
-      "species": "Human",
+      "species": [
+        "Vesani"
+      ],
       "primaryDamageType": "AP",
       "range": 550,
       "baseMovespeed": 330,
@@ -120,11 +134,16 @@
           "description": "Ahri dashes forward and fires essence bolts, damaging nearby enemies. Spirit Rush can be cast up to three times before going on cooldown, and gains additional recasts when taking down enemy champions.",
           "flags": {}
         }
-      }
+      },
+      "regions": [
+        "Ionia"
+      ]
     },
     {
       "name": "Akali",
-      "region": "Ionia",
+      "region": [
+        "Shurima"
+      ],
       "class": [
         "Assassin"
       ],
@@ -133,7 +152,9 @@
         "Mid"
       ],
       "resource": "Energy",
-      "species": "Spirit",
+      "species": [
+        "Human"
+      ],
       "primaryDamageType": "AD",
       "range": 125,
       "baseMovespeed": 345,
@@ -186,11 +207,17 @@
           "description": "Akali leaps in a direction, damaging enemies she strikes. Re-cast: Akali dashes in a direction, executing all enemies she strikes.",
           "flags": {}
         }
-      }
+      },
+      "regions": [
+        "Temple of Thanjuul",
+        "Ionia"
+      ]
     },
     {
       "name": "Akshan",
-      "region": "Runeterra",
+      "region": [
+        "Shurima"
+      ],
       "class": [
         "Marksman",
         "Assassin"
@@ -199,7 +226,9 @@
         "Mid"
       ],
       "resource": "Mana",
-      "species": "Dragon",
+      "species": [
+        "Human"
+      ],
       "primaryDamageType": "AD",
       "range": 500,
       "baseMovespeed": 330,
@@ -235,11 +264,17 @@
           "description": "Akshan locks onto an enemy champion and starts storing bullets. When released, he fires all stored bullets, dealing damage based on missing health to the first champion, minion, or structure hit.",
           "flags": {}
         }
-      }
+      },
+      "regions": [
+        "Shurima",
+        "Marwi"
+      ]
     },
     {
       "name": "Alistar",
-      "region": "Runeterra",
+      "region": [
+        "Unknown"
+      ],
       "class": [
         "Tank",
         "Support"
@@ -248,7 +283,9 @@
         "Support"
       ],
       "resource": "Mana",
-      "species": "Human",
+      "species": [
+        "Minotaur"
+      ],
       "primaryDamageType": "AD",
       "range": 125,
       "baseMovespeed": 330,
@@ -296,11 +333,17 @@
           "description": "Alistar lets out a wild roar, removing all crowd control effects on himself, and reducing incoming physical and magical damage for the duration.",
           "flags": {}
         }
-      }
+      },
+      "regions": [
+        "Runeterra",
+        "The Great Barrier"
+      ]
     },
     {
       "name": "Amumu",
-      "region": "Shurima",
+      "region": [
+        "Shurima"
+      ],
       "class": [
         "Tank",
         "Mage"
@@ -310,7 +353,9 @@
         "Support"
       ],
       "resource": "Mana",
-      "species": "Spirit",
+      "species": [
+        "Yordle"
+      ],
       "primaryDamageType": "AP",
       "range": 125,
       "baseMovespeed": 335,
@@ -356,11 +401,17 @@
           "description": "Amumu entangles surrounding enemy units in bandages, applying his <keywordMajor>Curse</keywordMajor>, damaging and stunning them.",
           "flags": {}
         }
-      }
+      },
+      "regions": [
+        "Shurima",
+        "Shurima (Ancient Times)"
+      ]
     },
     {
       "name": "Anivia",
-      "region": "Noxus",
+      "region": [
+        "Freljord"
+      ],
       "class": [
         "Mage",
         "Support"
@@ -369,7 +420,9 @@
         "Mid"
       ],
       "resource": "Mana",
-      "species": "Human",
+      "species": [
+        "Spirit God"
+      ],
       "primaryDamageType": "AP",
       "range": 600,
       "baseMovespeed": 325,
@@ -415,11 +468,17 @@
           "description": "Anivia summons a driving rain of ice and hail to damage her enemies and slow their advance.",
           "flags": {}
         }
-      }
+      },
+      "regions": [
+        "Freljord",
+        "Freljord (The Formation)"
+      ]
     },
     {
       "name": "Annie",
-      "region": "Noxus",
+      "region": [
+        "Noxus"
+      ],
       "class": [
         "Mage"
       ],
@@ -427,7 +486,11 @@
         "Mid"
       ],
       "resource": "Mana",
-      "species": "Human",
+      "species": [
+        "Human",
+        "Magical",
+        "Magically Altered"
+      ],
       "primaryDamageType": "AP",
       "range": 625,
       "baseMovespeed": 335,
@@ -476,11 +539,18 @@
           "description": "Annie wills her bear Tibbers to life, dealing damage to units in the area. Tibbers can attack and also burns enemies that stand near him.",
           "flags": {}
         }
-      }
+      },
+      "regions": [
+        "Noxus",
+        "Runeterra\n Noxus",
+        "Ironspike Mountains"
+      ]
     },
     {
       "name": "Aphelios",
-      "region": "Ionia",
+      "region": [
+        "Targon"
+      ],
       "class": [
         "Marksman"
       ],
@@ -488,7 +558,10 @@
         "Bot"
       ],
       "resource": "Mana",
-      "species": "Spirit",
+      "species": [
+        "Human",
+        "Aphelios"
+      ],
       "primaryDamageType": "AD",
       "range": 550,
       "baseMovespeed": 325,
@@ -527,11 +600,17 @@
           "description": "Fire a concentrated blast of moonlight that explodes on enemy champions. Applies the unique effect of Aphelios' main-hand gun.",
           "flags": {}
         }
-      }
+      },
+      "regions": [
+        "Mount Targon",
+        "Targon"
+      ]
     },
     {
       "name": "Ashe",
-      "region": "Runeterra",
+      "region": [
+        "Freljord"
+      ],
       "class": [
         "Marksman",
         "Support"
@@ -541,7 +620,10 @@
         "Support"
       ],
       "resource": "Mana",
-      "species": "Human",
+      "species": [
+        "Human",
+        "Iceborn"
+      ],
       "primaryDamageType": "AD",
       "range": 600,
       "baseMovespeed": 325,
@@ -592,11 +674,18 @@
           "description": "Ashe fires a missile of ice in a straight line. If the arrow collides with an enemy Champion, it deals damage and stuns the Champion, stunning for longer the farther arrow has traveled. In addition, surrounding enemy units take damage and are slowed.",
           "flags": {}
         }
-      }
+      },
+      "regions": [
+        "Vathcaer",
+        "Freljord"
+      ]
     },
     {
       "name": "Aurelion Sol",
-      "region": "Runeterra",
+      "region": [
+        "Targon",
+        "Unknown"
+      ],
       "class": [
         "Mage"
       ],
@@ -604,7 +693,9 @@
         "Mid"
       ],
       "resource": "Mana",
-      "species": "Darkin",
+      "species": [
+        "Celestial Dragon"
+      ],
       "primaryDamageType": "AP",
       "range": 550,
       "baseMovespeed": 335,
@@ -642,11 +733,17 @@
           "description": "Falling Star: Aurelion Sol crashes a star into the earth. This impact deals magic damage and stuns enemies while also granting Stardust for each enemy champion it hits. Gathering enough Stardust transforms Aurelion Sol's next Falling Star into The Skies Descend. The Skies Descend: Aurelion Sol drags a giant star down from the heavens with an increased impact zone and increased damage, knocking up enemies rather than stunning them. A shockwave then spreads from the edge of the impact zone, which damages and slows the enemies it hits. Stardust increases the impact area of both Falling Star and The Skies Descend.",
           "flags": {}
         }
-      }
+      },
+      "regions": [
+        "Runeterra\n Targon",
+        "Unknown (Before Runeterra)"
+      ]
     },
     {
       "name": "Azir",
-      "region": "Shurima",
+      "region": [
+        "Shurima"
+      ],
       "class": [
         "Mage",
         "Marksman"
@@ -655,7 +752,11 @@
         "Mid"
       ],
       "resource": "Mana",
-      "species": "Human",
+      "species": [
+        "God-Warrior",
+        "Revenant",
+        "Human"
+      ],
       "primaryDamageType": "AD",
       "range": 525,
       "baseMovespeed": 335,
@@ -695,11 +796,18 @@
           "description": "Azir summons a wall of soldiers which charge forward, knocking back and damaging enemies.",
           "flags": {}
         }
-      }
+      },
+      "regions": [
+        "Shurima",
+        "Shurima City",
+        "Shurima (Ancient Times)"
+      ]
     },
     {
       "name": "Bard",
-      "region": "Runeterra",
+      "region": [
+        "Unknown"
+      ],
       "class": [
         "Support",
         "Mage"
@@ -708,7 +816,9 @@
         "Support"
       ],
       "resource": "Mana",
-      "species": "Spirit",
+      "species": [
+        "Celestial"
+      ],
       "primaryDamageType": "AP",
       "range": 500,
       "baseMovespeed": 330,
@@ -748,11 +858,17 @@
           "description": "Bard sends spirit energy arcing to a location, putting all champions, minions, monsters, and turrets hit into stasis for a brief time.",
           "flags": {}
         }
-      }
+      },
+      "regions": [
+        "Runeterra",
+        "Celestial Realm (Beginning of Time)"
+      ]
     },
     {
       "name": "Bel'Veth",
-      "region": "Runeterra",
+      "region": [
+        "Shurima"
+      ],
       "class": [
         "Fighter"
       ],
@@ -760,7 +876,9 @@
         "Jungle"
       ],
       "resource": "",
-      "species": "Dragon",
+      "species": [
+        "Voidborn"
+      ],
       "primaryDamageType": "AD",
       "range": 175,
       "baseMovespeed": 340,
@@ -796,11 +914,18 @@
           "description": "Bel'Veth consumes Void coral remnants, transforming into her true form and increasing her max health, attack range, attack speed, and out-of-combat move speed. Consuming the Void coral remnants of a Void epic monster will grant her a longer ultimate duration, as well as the power to summon Void remora.",
           "flags": {}
         }
-      }
+      },
+      "regions": [
+        "Void\n Shurima",
+        "Void\nBelveth",
+        "Shurima (Origin of Assimilation)"
+      ]
     },
     {
       "name": "Blitzcrank",
-      "region": "Piltover",
+      "region": [
+        "Zaun"
+      ],
       "class": [
         "Tank",
         "Fighter"
@@ -809,7 +934,9 @@
         "Support"
       ],
       "resource": "Mana",
-      "species": "Human",
+      "species": [
+        "Techmaturgical Golem"
+      ],
       "primaryDamageType": "AD",
       "range": 125,
       "baseMovespeed": 325,
@@ -856,11 +983,16 @@
           "description": "Enemies attacked by Blitzcrank are marked and take lightning damage after 1 second. Additionally, Blitzcrank can activate this ability to remove nearby enemies' shields, damage them, and silence them briefly.",
           "flags": {}
         }
-      }
+      },
+      "regions": [
+        "Zaun"
+      ]
     },
     {
       "name": "Brand",
-      "region": "Runeterra",
+      "region": [
+        "Freljord"
+      ],
       "class": [
         "Mage"
       ],
@@ -870,7 +1002,11 @@
         "Mid"
       ],
       "resource": "Mana",
-      "species": "Spirit",
+      "species": [
+        "Human",
+        "Magical",
+        "Magically Altered"
+      ],
       "primaryDamageType": "AP",
       "range": 550,
       "baseMovespeed": 340,
@@ -915,11 +1051,18 @@
           "description": "Brand unleashes a devastating torrent of fire that bounces up to 5 times off of Brand and nearby enemies, dealing magic damage to enemies each time bounce. Bounces prioritize stacking Blaze to max on Champions. If a target is ablaze, Pyroclasm will briefly slow them.",
           "flags": {}
         }
-      }
+      },
+      "regions": [
+        "Rygann's Reach",
+        "Runeterra",
+        "Freljord"
+      ]
     },
     {
       "name": "Braum",
-      "region": "Freljord",
+      "region": [
+        "Freljord"
+      ],
       "class": [
         "Support",
         "Tank"
@@ -928,7 +1071,10 @@
         "Support"
       ],
       "resource": "Mana",
-      "species": "Spirit",
+      "species": [
+        "Human",
+        "Iceborn"
+      ],
       "primaryDamageType": "AD",
       "range": 125,
       "baseMovespeed": 335,
@@ -969,11 +1115,16 @@
           "description": "Braum slams the ground, knocking up enemies nearby and in a line in front of him. A fissure is left along the line that slows enemies.",
           "flags": {}
         }
-      }
+      },
+      "regions": [
+        "Freljord"
+      ]
     },
     {
       "name": "Briar",
-      "region": "Runeterra",
+      "region": [
+        "Noxus"
+      ],
       "class": [
         "Fighter",
         "Assassin"
@@ -982,7 +1133,9 @@
         "Jungle"
       ],
       "resource": "Fury",
-      "species": "Human",
+      "species": [
+        "Blood Golem"
+      ],
       "primaryDamageType": "AD",
       "range": 125,
       "baseMovespeed": 340,
@@ -1017,11 +1170,16 @@
           "description": "Briar kicks her pillory's hemolith gemstone, marking the first champion it hits as her prey. She then beelines straight to them, fearing other surrounding enemies upon arriving at her target, and enters a state of complete hemomania. She will pursue her prey until death, gaining the benefits of Blood Frenzy as well as additional Armor, Magic Resistance, Life Steal, and Move Speed.",
           "flags": {}
         }
-      }
+      },
+      "regions": [
+        "Noxus"
+      ]
     },
     {
       "name": "Caitlyn",
-      "region": "Piltover",
+      "region": [
+        "Piltover"
+      ],
       "class": [
         "Marksman"
       ],
@@ -1029,7 +1187,9 @@
         "Bot"
       ],
       "resource": "Mana",
-      "species": "Yordle",
+      "species": [
+        "Human"
+      ],
       "primaryDamageType": "AD",
       "range": 650,
       "baseMovespeed": 325,
@@ -1080,11 +1240,16 @@
           "description": "Caitlyn takes time to line up the perfect shot, dealing massive damage to a single target at a huge range. Enemy champions can intercept the bullet for their ally.",
           "flags": {}
         }
-      }
+      },
+      "regions": [
+        "Piltover"
+      ]
     },
     {
       "name": "Camille",
-      "region": "Piltover",
+      "region": [
+        "Piltover"
+      ],
       "class": [
         "Fighter",
         "Tank"
@@ -1094,7 +1259,10 @@
         "Support"
       ],
       "resource": "Mana",
-      "species": "Human",
+      "species": [
+        "Human",
+        "Cyborg"
+      ],
       "primaryDamageType": "AD",
       "range": 125,
       "baseMovespeed": 340,
@@ -1135,11 +1303,16 @@
           "description": "Camille dashes to target champion, anchoring them to the area. She also deals bonus magic damage to the target with her basic attacks.",
           "flags": {}
         }
-      }
+      },
+      "regions": [
+        "Piltover"
+      ]
     },
     {
       "name": "Cassiopeia",
-      "region": "Noxus",
+      "region": [
+        "Noxus"
+      ],
       "class": [
         "Mage"
       ],
@@ -1147,7 +1320,10 @@
         "Mid"
       ],
       "resource": "Mana",
-      "species": "Human",
+      "species": [
+        "Human",
+        "Magically Altered"
+      ],
       "primaryDamageType": "AP",
       "range": 550,
       "baseMovespeed": 328,
@@ -1189,11 +1365,17 @@
           "description": "Cassiopeia releases a swirl of magical energy from her eyes, stunning any enemies in front of her that are facing her and slowing any others with their back turned.",
           "flags": {}
         }
-      }
+      },
+      "regions": [
+        "Noxus Prime",
+        "Noxus"
+      ]
     },
     {
       "name": "Cho'Gath",
-      "region": "Runeterra",
+      "region": [
+        "Unknown"
+      ],
       "class": [
         "Tank",
         "Mage"
@@ -1202,7 +1384,10 @@
         "Top"
       ],
       "resource": "Mana",
-      "species": "Yordle",
+      "species": [
+        "Voidborn",
+        "Unknown Sub-species"
+      ],
       "primaryDamageType": "AP",
       "range": 125,
       "baseMovespeed": 345,
@@ -1245,11 +1430,17 @@
           "description": "Devours an enemy unit, dealing a high amount of true damage. If the target is killed, Cho'Gath grows, gaining maximum Health.",
           "flags": {}
         }
-      }
+      },
+      "regions": [
+        "Runeterra",
+        "Void"
+      ]
     },
     {
       "name": "Corki",
-      "region": "Piltover",
+      "region": [
+        "Bandle City"
+      ],
       "class": [
         "Marksman"
       ],
@@ -1257,7 +1448,9 @@
         "Mid"
       ],
       "resource": "Mana",
-      "species": "Yordle",
+      "species": [
+        "Yordle"
+      ],
       "primaryDamageType": "AD",
       "range": 550,
       "baseMovespeed": 325,
@@ -1301,11 +1494,16 @@
           "description": "Corki fires a missile toward his target location that explodes on impact, dealing damage to enemies in an area. Corki stores missiles over time, up to a maximum. Every 3rd missile fired will be a Big One, dealing extra damage.",
           "flags": {}
         }
-      }
+      },
+      "regions": [
+        "Bandle City"
+      ]
     },
     {
       "name": "Darius",
-      "region": "Demacia",
+      "region": [
+        "Noxus"
+      ],
       "class": [
         "Fighter",
         "Tank"
@@ -1314,7 +1512,9 @@
         "Top"
       ],
       "resource": "Mana",
-      "species": "Human",
+      "species": [
+        "Human"
+      ],
       "primaryDamageType": "AD",
       "range": 175,
       "baseMovespeed": 340,
@@ -1359,11 +1559,17 @@
           "description": "Darius leaps to an enemy champion and strikes a lethal blow, dealing true damage. This damage is increased for each stack of Hemorrhage on the target. If Noxian Guillotine is a killing blow, its cooldown is refreshed for a brief duration.",
           "flags": {}
         }
-      }
+      },
+      "regions": [
+        "Noxus",
+        "Basilich"
+      ]
     },
     {
       "name": "Diana",
-      "region": "Bilgewater",
+      "region": [
+        "Targon"
+      ],
       "class": [
         "Fighter",
         "Mage"
@@ -1373,7 +1579,10 @@
         "Mid"
       ],
       "resource": "Mana",
-      "species": "Human",
+      "species": [
+        "Aspect Host",
+        "formerly Human"
+      ],
       "primaryDamageType": "AP",
       "range": 150,
       "baseMovespeed": 345,
@@ -1418,11 +1627,17 @@
           "description": "Diana reveals and draws in all nearby enemies and slows them.<br><br>If Diana pulls in one or more enemy champions, the moonlight crashes down onto her after a short delay, dealing magic damage in an area around her, increased for each target beyond the first pulled.",
           "flags": {}
         }
-      }
+      },
+      "regions": [
+        "Targon",
+        "Unknown"
+      ]
     },
     {
       "name": "Draven",
-      "region": "Noxus",
+      "region": [
+        "Noxus"
+      ],
       "class": [
         "Marksman"
       ],
@@ -1430,7 +1645,9 @@
         "Bot"
       ],
       "resource": "Mana",
-      "species": "Dragon",
+      "species": [
+        "Human"
+      ],
       "primaryDamageType": "AD",
       "range": 550,
       "baseMovespeed": 330,
@@ -1476,11 +1693,17 @@
           "description": "Draven hurls two massive axes to deal physical damage to each unit struck. Whirling Death slowly reverses direction and returns to Draven after striking an enemy champion. Draven may also activate this ability while the axes are in flight to cause it to return early. Deals less damage for each unit hit and resets when the axes reverse direction. Executes enemies who have less health than Draven's number of Adoration stacks.",
           "flags": {}
         }
-      }
+      },
+      "regions": [
+        "Noxus",
+        "Basilich"
+      ]
     },
     {
       "name": "Dr. Mundo",
-      "region": "Zaun",
+      "region": [
+        "Zaun"
+      ],
       "class": [
         "Fighter",
         "Tank"
@@ -1489,7 +1712,10 @@
         "Top"
       ],
       "resource": "None",
-      "species": "Human",
+      "species": [
+        "Human",
+        "Chemically Altered"
+      ],
       "primaryDamageType": "AD",
       "range": 125,
       "baseMovespeed": 345,
@@ -1534,11 +1760,16 @@
           "description": "Dr. Mundo pumps himself with chemicals, instantly healing a percent of his missing Health. He then gains Move Speed and regenerates a portion of his maximum Health over a long duration.",
           "flags": {}
         }
-      }
+      },
+      "regions": [
+        "Zaun"
+      ]
     },
     {
       "name": "Ekko",
-      "region": "Zaun",
+      "region": [
+        "Zaun"
+      ],
       "class": [
         "Assassin",
         "Fighter"
@@ -1548,7 +1779,9 @@
         "Mid"
       ],
       "resource": "Mana",
-      "species": "Dragon",
+      "species": [
+        "Human"
+      ],
       "primaryDamageType": "AD",
       "range": 125,
       "baseMovespeed": 340,
@@ -1593,11 +1826,16 @@
           "description": "Ekko shatters his timeline, becoming untargetable and rewinding to a more favorable point in time. He returns to whenever he was a few seconds ago, and heals for a percentage of the damage received in that duration. Enemies near his arrival zone take massive damage.",
           "flags": {}
         }
-      }
+      },
+      "regions": [
+        "Zaun"
+      ]
     },
     {
       "name": "Elise",
-      "region": "Noxus",
+      "region": [
+        "Noxus"
+      ],
       "class": [
         "Mage",
         "Fighter"
@@ -1606,7 +1844,10 @@
         "Jungle"
       ],
       "resource": "Mana",
-      "species": "Human",
+      "species": [
+        "Human",
+        "Magically Altered"
+      ],
       "primaryDamageType": "AP",
       "range": 550,
       "baseMovespeed": 330,
@@ -1648,11 +1889,18 @@
           "description": "Transforms into a menacing spider, reducing her attack range in exchange for Move Speed, new abilities, and a Spiderling swarm that will attack her foes.",
           "flags": {}
         }
-      }
+      },
+      "regions": [
+        "Noxus Prime",
+        "Noxus",
+        "Shadow Isles"
+      ]
     },
     {
       "name": "Evelynn",
-      "region": "Runeterra",
+      "region": [
+        "Unknown"
+      ],
       "class": [
         "Assassin",
         "Mage"
@@ -1661,7 +1909,9 @@
         "Jungle"
       ],
       "resource": "Mana",
-      "species": "Human",
+      "species": [
+        "Demon"
+      ],
       "primaryDamageType": "AP",
       "range": 125,
       "baseMovespeed": 335,
@@ -1708,11 +1958,17 @@
           "description": "Evelynn briefly goes untargetable and decimates the area in front of her before warping backwards a long distance.",
           "flags": {}
         }
-      }
+      },
+      "regions": [
+        "Runeterra",
+        "Runeterra (Ancient Times)"
+      ]
     },
     {
       "name": "Ezreal",
-      "region": "Freljord",
+      "region": [
+        "Piltover"
+      ],
       "class": [
         "Marksman",
         "Mage"
@@ -1721,7 +1977,10 @@
         "Bot"
       ],
       "resource": "Mana",
-      "species": "Human",
+      "species": [
+        "Human",
+        "Magical"
+      ],
       "primaryDamageType": "AD",
       "range": 550,
       "baseMovespeed": 325,
@@ -1773,11 +2032,16 @@
           "description": "Ezreal winds up before firing a powerful barrage of energy that deals massive damage to each unit it passes through (damage is reduced for minions and non-epic monsters).",
           "flags": {}
         }
-      }
+      },
+      "regions": [
+        "Piltover"
+      ]
     },
     {
       "name": "Fiddlesticks",
-      "region": "Runeterra",
+      "region": [
+        "Unknown"
+      ],
       "class": [
         "Mage",
         "Support"
@@ -1786,7 +2050,9 @@
         "Jungle"
       ],
       "resource": "Mana",
-      "species": "Human",
+      "species": [
+        "Demon"
+      ],
       "primaryDamageType": "AP",
       "range": 480,
       "baseMovespeed": 335,
@@ -1830,11 +2096,17 @@
           "description": "A murder of crows flock wildly around Fiddlesticks, dealing damage per second to all enemy units in the area.",
           "flags": {}
         }
-      }
+      },
+      "regions": [
+        "Runeterra",
+        "Spirit Realm (Ancient Times)"
+      ]
     },
     {
       "name": "Fiora",
-      "region": "Runeterra",
+      "region": [
+        "Demacia"
+      ],
       "class": [
         "Fighter",
         "Assassin"
@@ -1843,7 +2115,9 @@
         "Top"
       ],
       "resource": "Mana",
-      "species": "Dragon",
+      "species": [
+        "Human"
+      ],
       "primaryDamageType": "AD",
       "range": 150,
       "baseMovespeed": 345,
@@ -1890,11 +2164,17 @@
           "description": "Fiora reveals all four Vitals on an enemy champion and gains Move Speed while near them. If Fiora hits all four Vitals or if the target dies after she has hit at least one, Fiora and her allies in the area are healed over the next few seconds.",
           "flags": {}
         }
-      }
+      },
+      "regions": [
+        "Demacia",
+        "Demacia City"
+      ]
     },
     {
       "name": "Fizz",
-      "region": "Bilgewater",
+      "region": [
+        "Bandle City"
+      ],
       "class": [
         "Assassin",
         "Fighter"
@@ -1903,7 +2183,9 @@
         "Mid"
       ],
       "resource": "Mana",
-      "species": "Yordle",
+      "species": [
+        "Yordle"
+      ],
       "primaryDamageType": "AD",
       "range": 175,
       "baseMovespeed": 335,
@@ -1949,11 +2231,17 @@
           "description": "Fizz tosses a fish in a direction that attaches to any champion that touches it, slowing the target. After a short delay, a shark erupts from the ground, knocking up the target and knocking any nearby enemies aside. All enemies hit are dealt magic damage and slowed.",
           "flags": {}
         }
-      }
+      },
+      "regions": [
+        "Bandle City",
+        "Bilgewater"
+      ]
     },
     {
       "name": "Galio",
-      "region": "Demacia",
+      "region": [
+        "Demacia"
+      ],
       "class": [
         "Tank",
         "Mage"
@@ -1963,7 +2251,9 @@
         "Support"
       ],
       "resource": "Mana",
-      "species": "Human",
+      "species": [
+        "Petricite Golem"
+      ],
       "primaryDamageType": "AP",
       "range": 150,
       "baseMovespeed": 335,
@@ -2005,11 +2295,17 @@
           "description": "Galio designates an ally's position as his landing spot, granting all allies in the area a magic shield. After a delay Galio smashes down location, knocking up nearby enemies.",
           "flags": {}
         }
-      }
+      },
+      "regions": [
+        "Demacia",
+        "Demacia City"
+      ]
     },
     {
       "name": "Gangplank",
-      "region": "Bilgewater",
+      "region": [
+        "Shadow Isles"
+      ],
       "class": [
         "Fighter"
       ],
@@ -2017,7 +2313,10 @@
         "Top"
       ],
       "resource": "Mana",
-      "species": "Spirit",
+      "species": [
+        "Human",
+        "Cyborg"
+      ],
       "primaryDamageType": "AD",
       "range": 125,
       "baseMovespeed": 345,
@@ -2062,11 +2361,17 @@
           "description": "Gangplank signals his ship to bombard an area, slowing and damaging enemies.",
           "flags": {}
         }
-      }
+      },
+      "regions": [
+        "Serpent Isles",
+        "Bilgewater"
+      ]
     },
     {
       "name": "Garen",
-      "region": "Demacia",
+      "region": [
+        "Demacia"
+      ],
       "class": [
         "Fighter",
         "Tank"
@@ -2075,7 +2380,9 @@
         "Top"
       ],
       "resource": "None",
-      "species": "Human",
+      "species": [
+        "Human"
+      ],
       "primaryDamageType": "AD",
       "range": 175,
       "baseMovespeed": 340,
@@ -2123,11 +2430,17 @@
           "description": "Garen calls upon the might of Demacia to attempt to execute an enemy champion.",
           "flags": {}
         }
-      }
+      },
+      "regions": [
+        "High Silvermere",
+        "Demacia"
+      ]
     },
     {
       "name": "Gnar",
-      "region": "Void",
+      "region": [
+        "Bandle City"
+      ],
       "class": [
         "Fighter",
         "Tank"
@@ -2136,7 +2449,9 @@
         "Top"
       ],
       "resource": "Rage",
-      "species": "Yordle",
+      "species": [
+        "Yordle"
+      ],
       "primaryDamageType": "AD",
       "range": 175,
       "baseMovespeed": 335,
@@ -2179,11 +2494,17 @@
           "description": "Mega Gnar throws everything around him in a chosen direction, dealing damage and slowing them.  Any enemy that hits a wall is stunned and takes bonus damage.",
           "flags": {}
         }
-      }
+      },
+      "regions": [
+        "Bandle City\nRamshara",
+        "Freljord"
+      ]
     },
     {
       "name": "Gragas",
-      "region": "Runeterra",
+      "region": [
+        "Freljord"
+      ],
       "class": [
         "Fighter",
         "Mage"
@@ -2194,7 +2515,10 @@
         "Mid"
       ],
       "resource": "Mana",
-      "species": "Human",
+      "species": [
+        "Human",
+        "Iceborn"
+      ],
       "primaryDamageType": "AP",
       "range": 125,
       "baseMovespeed": 330,
@@ -2240,11 +2564,17 @@
           "description": "Gragas hurls his cask to a location, dealing damage and knocking back enemies caught in the blast radius.",
           "flags": {}
         }
-      }
+      },
+      "regions": [
+        "Freljord",
+        "Unknown"
+      ]
     },
     {
       "name": "Graves",
-      "region": "Bilgewater",
+      "region": [
+        "Shadow Isles"
+      ],
       "class": [
         "Marksman"
       ],
@@ -2252,7 +2582,9 @@
         "Jungle"
       ],
       "resource": "Mana",
-      "species": "Human",
+      "species": [
+        "Human"
+      ],
       "primaryDamageType": "AD",
       "range": 425,
       "baseMovespeed": 340,
@@ -2298,11 +2630,17 @@
           "description": "Graves fires an explosive shell dealing heavy damage to the first champion it hits. After hitting a champion or reaching the end of its range, the shell explodes dealing damage in a cone.",
           "flags": {}
         }
-      }
+      },
+      "regions": [
+        "Serpent Isles",
+        "Bilgewater"
+      ]
     },
     {
       "name": "Gwen",
-      "region": "Void",
+      "region": [
+        "Shadow Isles"
+      ],
       "class": [
         "Fighter",
         "Assassin"
@@ -2311,7 +2649,10 @@
         "Top"
       ],
       "resource": "Mana",
-      "species": "Spirit",
+      "species": [
+        "Human",
+        "Magically Altered"
+      ],
       "primaryDamageType": "AD",
       "range": 150,
       "baseMovespeed": 340,
@@ -2348,11 +2689,17 @@
           "description": "Gwen hurls a needle that slows enemies hit, deals magic damage, and applies A Thousand Cuts to champions hit. <br><br>This ability can be cast up to two more times, with each cast throwing additional needles and dealing more damage. Gwen must hit an enemy between each cast to unlock the next one. ",
           "flags": {}
         }
-      }
+      },
+      "regions": [
+        "Camavor",
+        "Shadow Isles\n Camavor"
+      ]
     },
     {
       "name": "Hecarim",
-      "region": "Runeterra",
+      "region": [
+        "Shadow Isles"
+      ],
       "class": [
         "Fighter",
         "Tank"
@@ -2361,7 +2708,11 @@
         "Jungle"
       ],
       "resource": "Mana",
-      "species": "Undead",
+      "species": [
+        "Wraith",
+        "Human",
+        "Horse"
+      ],
       "primaryDamageType": "AD",
       "range": 175,
       "baseMovespeed": 345,
@@ -2406,11 +2757,18 @@
           "description": "Hecarim summons spectral riders and charges forward, dealing magic damage in a line. Hecarim creates a shockwave when he finishes his charge, causing nearby enemies to flee in terror.",
           "flags": {}
         }
-      }
+      },
+      "regions": [
+        "Kingdom of Camavor",
+        "Shadow Isles\n Camavor"
+      ]
     },
     {
       "name": "Heimerdinger",
-      "region": "Piltover",
+      "region": [
+        "Piltover",
+        "Bandle City"
+      ],
       "class": [
         "Mage",
         "Support"
@@ -2421,7 +2779,9 @@
         "Mid"
       ],
       "resource": "Mana",
-      "species": "Human",
+      "species": [
+        "Yordle"
+      ],
       "primaryDamageType": "AP",
       "range": 550,
       "baseMovespeed": 340,
@@ -2461,11 +2821,17 @@
           "description": "Heimerdinger invents an upgrade, causing his next spell to have increased effects. ",
           "flags": {}
         }
-      }
+      },
+      "regions": [
+        "Piltover\n Bandle City",
+        "Bandle City"
+      ]
     },
     {
       "name": "Hwei",
-      "region": "Ionia",
+      "region": [
+        "Ionia"
+      ],
       "class": [
         "Mage"
       ],
@@ -2474,7 +2840,10 @@
         "Support"
       ],
       "resource": "Mana",
-      "species": "Celestial",
+      "species": [
+        "Human",
+        "Magical"
+      ],
       "primaryDamageType": "AP",
       "range": 550,
       "baseMovespeed": 325,
@@ -2509,11 +2878,17 @@
           "description": "Hwei paints a vision of pure despair. The first enemy champion struck becomes the center of an expanding painting that slows and damages nearby enemies. The vision explodes after reaching its maximum size or when the champion dies.",
           "flags": {}
         }
-      }
+      },
+      "regions": [
+        "Koyehn",
+        "Ionia"
+      ]
     },
     {
       "name": "Illaoi",
-      "region": "Void",
+      "region": [
+        "Bilgewater"
+      ],
       "class": [
         "Fighter",
         "Tank"
@@ -2522,7 +2897,10 @@
         "Top"
       ],
       "resource": "Mana",
-      "species": "Human",
+      "species": [
+        "Human",
+        "Magical"
+      ],
       "primaryDamageType": "AD",
       "range": 125,
       "baseMovespeed": 350,
@@ -2560,11 +2938,18 @@
           "description": "Illaoi smashes her idol into the ground, dealing physical damage to nearby enemies. A Tentacle spawns for each enemy champion hit.",
           "flags": {}
         }
-      }
+      },
+      "regions": [
+        "Bilgewater",
+        "Serpent Isles",
+        "Buhru"
+      ]
     },
     {
       "name": "Irelia",
-      "region": "Noxus",
+      "region": [
+        "Ionia"
+      ],
       "class": [
         "Fighter",
         "Assassin"
@@ -2574,7 +2959,10 @@
         "Mid"
       ],
       "resource": "Mana",
-      "species": "Human",
+      "species": [
+        "Human",
+        "Magical"
+      ],
       "primaryDamageType": "AD",
       "range": 200,
       "baseMovespeed": 335,
@@ -2621,11 +3009,18 @@
           "description": "Irelia fires a massive number of blades that explode outward upon hitting an enemy champion. Enemies hit by the blades are damaged and Marked. Afterwards the blades form a wall that will damage and slow enemies that walk through it.",
           "flags": {}
         }
-      }
+      },
+      "regions": [
+        "Navori",
+        "Ionia"
+      ]
     },
     {
       "name": "Ivern",
-      "region": "Runeterra",
+      "region": [
+        "Ionia",
+        "Freljord"
+      ],
       "class": [
         "Support",
         "Mage"
@@ -2634,7 +3029,10 @@
         "Jungle"
       ],
       "resource": "Mana",
-      "species": "Voidborn",
+      "species": [
+        "Human",
+        "Magically Altered"
+      ],
       "primaryDamageType": "AP",
       "range": 475,
       "baseMovespeed": 330,
@@ -2672,11 +3070,17 @@
           "description": "Ivern summons his Sentinel friend Daisy to fight with him. Re-cast command Daisy to attack or move.",
           "flags": {}
         }
-      }
+      },
+      "regions": [
+        "Freljord (Ancient Times)\nIonia (Ancient Times)",
+        "Ionia\n Freljord"
+      ]
     },
     {
       "name": "Janna",
-      "region": "Runeterra",
+      "region": [
+        "Shurima"
+      ],
       "class": [
         "Support",
         "Mage"
@@ -2685,7 +3089,9 @@
         "Support"
       ],
       "resource": "Mana",
-      "species": "Human",
+      "species": [
+        "Spirit God"
+      ],
       "primaryDamageType": "AP",
       "range": 550,
       "baseMovespeed": 325,
@@ -2733,11 +3139,17 @@
           "description": "Janna surrounds herself in a magical storm, throwing enemies back. After the storm has settled, soothing winds heal nearby allies while the ability is active.",
           "flags": {}
         }
-      }
+      },
+      "regions": [
+        "Shurima (Ancient Times)",
+        "Zaun\n Shurima"
+      ]
     },
     {
       "name": "Jarvan IV",
-      "region": "Demacia",
+      "region": [
+        "Demacia"
+      ],
       "class": [
         "Tank",
         "Fighter"
@@ -2746,7 +3158,9 @@
         "Jungle"
       ],
       "resource": "Mana",
-      "species": "Human",
+      "species": [
+        "Human"
+      ],
       "primaryDamageType": "AD",
       "range": 175,
       "baseMovespeed": 340,
@@ -2793,11 +3207,18 @@
           "description": "Jarvan IV heroically leaps into battle at a target with such force that he terraforms the surrounding area to create an arena around them. Nearby enemies are damaged at the moment of impact.",
           "flags": {}
         }
-      }
+      },
+      "regions": [
+        "Demacia",
+        "Demacia City"
+      ]
     },
     {
       "name": "Jax",
-      "region": "Void",
+      "region": [
+        "Shurima",
+        "Unknown"
+      ],
       "class": [
         "Fighter",
         "Assassin"
@@ -2807,7 +3228,10 @@
         "Jungle"
       ],
       "resource": "Mana",
-      "species": "Human",
+      "species": [
+        "Unknown",
+        "Possibly Sand-Troll"
+      ],
       "primaryDamageType": "AD",
       "range": 125,
       "baseMovespeed": 350,
@@ -2855,11 +3279,18 @@
           "description": "Every third consecutive attack deals additional Magic Damage. Additionally, Jax can activate this ability to deal damage around himself and strengthen his resolve, increasing his Armor and Magic Resist for a short duration.",
           "flags": {}
         }
-      }
+      },
+      "regions": [
+        "Runeterra\n Icathia\n Shurima",
+        "Shurima (Ancient Times)",
+        "Icathia"
+      ]
     },
     {
       "name": "Jayce",
-      "region": "Piltover",
+      "region": [
+        "Piltover"
+      ],
       "class": [
         "Fighter",
         "Marksman"
@@ -2869,7 +3300,9 @@
         "Mid"
       ],
       "resource": "Mana",
-      "species": "Human",
+      "species": [
+        "Human"
+      ],
       "primaryDamageType": "AD",
       "range": 125,
       "baseMovespeed": 335,
@@ -2911,11 +3344,16 @@
           "description": "Hammer Stance: Transforms the Mercury Hammer into the Mercury Cannon gaining new abilities and increased range. The first attack in this form reduces the target's Armor and Magic Resist.<br><br>Cannon Stance: Transforms the Mercury Cannon into the Mercury Hammer gaining new abilities and increasing Armor and Magic Resist. The first attack in this form deals additional magic damage.",
           "flags": {}
         }
-      }
+      },
+      "regions": [
+        "Piltover"
+      ]
     },
     {
       "name": "Jhin",
-      "region": "Ionia",
+      "region": [
+        "Ionia"
+      ],
       "class": [
         "Marksman",
         "Mage"
@@ -2924,7 +3362,10 @@
         "Bot"
       ],
       "resource": "Mana",
-      "species": "Human",
+      "species": [
+        "Human",
+        "Magical"
+      ],
       "primaryDamageType": "AD",
       "range": 550,
       "baseMovespeed": 330,
@@ -2968,11 +3409,16 @@
           "description": "Jhin channels, transforming Whisper into a shoulder-mounted mega-cannon. It is able to fire 4 super shots at extreme range that pierce through minions and monsters, but stop on the first champion impacted. Whisper cripples enemies hit, which slows them and deals execute damage. The 4th shot is perfectly crafted, epically powerful, and guaranteed to critically strike.",
           "flags": {}
         }
-      }
+      },
+      "regions": [
+        "Ionia"
+      ]
     },
     {
       "name": "Jinx",
-      "region": "Zaun",
+      "region": [
+        "Zaun"
+      ],
       "class": [
         "Marksman"
       ],
@@ -2980,7 +3426,10 @@
         "Bot"
       ],
       "resource": "Mana",
-      "species": "Human",
+      "species": [
+        "Human",
+        "Chemically Altered"
+      ],
       "primaryDamageType": "AD",
       "range": 525,
       "baseMovespeed": 325,
@@ -3026,11 +3475,16 @@
           "description": "Jinx fires a super rocket across the map that gains damage as it travels. The rocket will explode upon colliding with an enemy champion, dealing damage to it and surrounding enemies based on their missing Health.",
           "flags": {}
         }
-      }
+      },
+      "regions": [
+        "Zaun"
+      ]
     },
     {
       "name": "Kai'Sa",
-      "region": "Shurima",
+      "region": [
+        "Shurima"
+      ],
       "class": [
         "Marksman"
       ],
@@ -3038,7 +3492,10 @@
         "Bot"
       ],
       "resource": "Mana",
-      "species": "Human",
+      "species": [
+        "Human",
+        "Void Touched"
+      ],
       "primaryDamageType": "AD",
       "range": 525,
       "baseMovespeed": 335,
@@ -3083,11 +3540,17 @@
           "description": "Kai'Sa dashes near an enemy champion.",
           "flags": {}
         }
-      }
+      },
+      "regions": [
+        "Shurima",
+        "Void"
+      ]
     },
     {
       "name": "Kalista",
-      "region": "Shurima",
+      "region": [
+        "Shadow Isles"
+      ],
       "class": [
         "Marksman"
       ],
@@ -3095,7 +3558,10 @@
         "Bot"
       ],
       "resource": "Mana",
-      "species": "Spirit",
+      "species": [
+        "Wraith",
+        "Human"
+      ],
       "primaryDamageType": "AD",
       "range": 525,
       "baseMovespeed": 330,
@@ -3134,11 +3600,17 @@
           "description": "Kalista teleports the Oathsworn ally to herself. They gain the ability to dash toward a position, knocking enemy champions back.",
           "flags": {}
         }
-      }
+      },
+      "regions": [
+        "Kingdom of Camavor",
+        "Shadow Isles\n Camavor"
+      ]
     },
     {
       "name": "Karma",
-      "region": "Ionia",
+      "region": [
+        "Ionia"
+      ],
       "class": [
         "Mage",
         "Support"
@@ -3149,7 +3621,11 @@
         "Top"
       ],
       "resource": "Mana",
-      "species": "Spirit",
+      "species": [
+        "Human",
+        "Magical",
+        "Reincarnated Spirit"
+      ],
       "primaryDamageType": "AP",
       "range": 525,
       "baseMovespeed": 335,
@@ -3196,11 +3672,18 @@
           "description": "Karma empowers her next ability to do an additional effect. Mantra is available at level 1 and does not require a skill point.",
           "flags": {}
         }
-      }
+      },
+      "regions": [
+        "Ionia (Current Reincarnation)",
+        "Northern Highlands",
+        "Ionia"
+      ]
     },
     {
       "name": "Karthus",
-      "region": "Shadow Isles",
+      "region": [
+        "Noxus"
+      ],
       "class": [
         "Mage"
       ],
@@ -3208,7 +3691,10 @@
         "Jungle"
       ],
       "resource": "Mana",
-      "species": "Undead",
+      "species": [
+        "Wraith",
+        "Human"
+      ],
       "primaryDamageType": "AP",
       "range": 450,
       "baseMovespeed": 335,
@@ -3251,11 +3737,18 @@
           "description": "After channeling for 3 seconds, Karthus deals damage to all enemy champions.",
           "flags": {}
         }
-      }
+      },
+      "regions": [
+        "Noxus Prime",
+        "Noxus",
+        "Shadow Isles\n Noxus"
+      ]
     },
     {
       "name": "Kassadin",
-      "region": "Runeterra",
+      "region": [
+        "Shurima"
+      ],
       "class": [
         "Assassin",
         "Mage"
@@ -3264,7 +3757,10 @@
         "Mid"
       ],
       "resource": "Mana",
-      "species": "Spirit",
+      "species": [
+        "Human",
+        "Void Touched"
+      ],
       "primaryDamageType": "AP",
       "range": 150,
       "baseMovespeed": 335,
@@ -3306,11 +3802,17 @@
           "description": "Kassadin teleports to a nearby location dealing damage to nearby enemy units. Multiple Riftwalks in a short period of time cost additional Mana but also deal additional damage.",
           "flags": {}
         }
-      }
+      },
+      "regions": [
+        "Shurima",
+        "Void"
+      ]
     },
     {
       "name": "Katarina",
-      "region": "Bilgewater",
+      "region": [
+        "Noxus"
+      ],
       "class": [
         "Assassin",
         "Mage"
@@ -3319,7 +3821,9 @@
         "Mid"
       ],
       "resource": "None",
-      "species": "Human",
+      "species": [
+        "Human"
+      ],
       "primaryDamageType": "AP",
       "range": 125,
       "baseMovespeed": 335,
@@ -3369,11 +3873,17 @@
           "description": "Katarina becomes a flurry of blades, dealing massive magic damage while she channels to the 3 nearest enemy champions.",
           "flags": {}
         }
-      }
+      },
+      "regions": [
+        "Noxus Prime",
+        "Noxus"
+      ]
     },
     {
       "name": "Kayle",
-      "region": "Demacia",
+      "region": [
+        "Demacia"
+      ],
       "class": [
         "Fighter",
         "Support"
@@ -3382,7 +3892,11 @@
         "Top"
       ],
       "resource": "Mana",
-      "species": "Human",
+      "species": [
+        "Human",
+        "Magically Altered",
+        "Aspect Host Candidate"
+      ],
       "primaryDamageType": "AD",
       "range": 175,
       "baseMovespeed": 335,
@@ -3430,11 +3944,17 @@
           "description": "Kayle makes an ally invulnerable and calls upon former Aspects of Justice to purify the area around her target with a holy rain of swords.",
           "flags": {}
         }
-      }
+      },
+      "regions": [
+        "Demacia",
+        "Mount Targon (Ancient Times)"
+      ]
     },
     {
       "name": "Kayn",
-      "region": "Runeterra",
+      "region": [
+        "Noxus"
+      ],
       "class": [
         "Fighter",
         "Assassin"
@@ -3443,7 +3963,10 @@
         "Jungle"
       ],
       "resource": "Mana",
-      "species": "Darkin",
+      "species": [
+        "Human",
+        "Magically Altered"
+      ],
       "primaryDamageType": "AD",
       "range": 175,
       "baseMovespeed": 340,
@@ -3483,11 +4006,17 @@
           "description": "Kayn hides in an enemy's body, dealing massive damage when he bursts out.",
           "flags": {}
         }
-      }
+      },
+      "regions": [
+        "Noxus",
+        "Ionia\n Noxus"
+      ]
     },
     {
       "name": "Kennen",
-      "region": "Ionia",
+      "region": [
+        "Bandle City"
+      ],
       "class": [
         "Mage",
         "Marksman"
@@ -3496,7 +4025,9 @@
         "Top"
       ],
       "resource": "Energy",
-      "species": "Yordle",
+      "species": [
+        "Yordle"
+      ],
       "primaryDamageType": "AD",
       "range": 550,
       "baseMovespeed": 335,
@@ -3540,11 +4071,17 @@
           "description": "Kennen summons a storm that strikes at nearby enemy champions for magical damage.",
           "flags": {}
         }
-      }
+      },
+      "regions": [
+        "Bandle City",
+        "Ionia"
+      ]
     },
     {
       "name": "Kha'Zix",
-      "region": "Demacia",
+      "region": [
+        "The Void"
+      ],
       "class": [
         "Assassin"
       ],
@@ -3552,7 +4089,10 @@
         "Jungle"
       ],
       "resource": "Mana",
-      "species": "Voidborn",
+      "species": [
+        "Voidborn",
+        "Unknown Sub-species"
+      ],
       "primaryDamageType": "AD",
       "range": 125,
       "baseMovespeed": 350,
@@ -3593,11 +4133,17 @@
           "description": "Each rank allows Kha'Zix to evolve one of his abilities, giving it a unique additional effect. When activated, Kha'Zix becomes <font color='#91d7ee'>Invisible</font>, triggering Unseen Threat and increasing Move Speed. If he chooses to <font color='#00DD33'>Evolve Adaptive Cloaking</font>, Void Assault gains increased <font color='#91d7ee'>Invisibility</font> duration, and an additional use.",
           "flags": {}
         }
-      }
+      },
+      "regions": [
+        "The Void",
+        "Void"
+      ]
     },
     {
       "name": "Kindred",
-      "region": "Runeterra",
+      "region": [
+        "Unknown"
+      ],
       "class": [
         "Marksman"
       ],
@@ -3605,7 +4151,9 @@
         "Jungle"
       ],
       "resource": "Mana",
-      "species": "Celestial",
+      "species": [
+        "Spirit Gods"
+      ],
       "primaryDamageType": "AD",
       "range": 500,
       "baseMovespeed": 325,
@@ -3645,11 +4193,17 @@
           "description": "Lamb grants all living things inside a zone a respite from death. Until the effect ends, nothing can die. At the end, units are healed.",
           "flags": {}
         }
-      }
+      },
+      "regions": [
+        "Unknown Possibly the Spirit Realm",
+        "Runeterra"
+      ]
     },
     {
       "name": "Kled",
-      "region": "Noxus",
+      "region": [
+        "Noxus"
+      ],
       "class": [
         "Fighter",
         "Tank"
@@ -3658,7 +4212,10 @@
         "Top"
       ],
       "resource": "Courage",
-      "species": "Yordle",
+      "species": [
+        "Yordle",
+        "Kled"
+      ],
       "primaryDamageType": "AD",
       "range": 125,
       "baseMovespeed": 345,
@@ -3696,11 +4253,18 @@
           "description": "Kled and Skaarl charge to a location, leaving a speed-granting trail behind them and gaining a shield. Skaarl locks onto and rams the first enemy champion encountered.",
           "flags": {}
         }
-      }
+      },
+      "regions": [
+        "Noxus",
+        "Bandle City"
+      ]
     },
     {
       "name": "Kog'Maw",
-      "region": "Piltover",
+      "region": [
+        "The Void",
+        "Shurima"
+      ],
       "class": [
         "Marksman",
         "Mage"
@@ -3709,7 +4273,10 @@
         "Bot"
       ],
       "resource": "Mana",
-      "species": "Dragon",
+      "species": [
+        "Voidborn",
+        "Unknown Sub-species"
+      ],
       "primaryDamageType": "AD",
       "range": 500,
       "baseMovespeed": 330,
@@ -3754,11 +4321,17 @@
           "description": "Kog'Maw fires an artillery shell at a great distance dealing magic damage (increased significantly on low health enemies) and revealing non-stealthed targets. Additionally, multiple Living Artilleries in a short period of time cause them to cost additional Mana.",
           "flags": {}
         }
-      }
+      },
+      "regions": [
+        "The Void (Creation)\nIcathia (Entry point into Runeterra)",
+        "Void"
+      ]
     },
     {
       "name": "K'Sante",
-      "region": "Piltover",
+      "region": [
+        "Shurima"
+      ],
       "class": [
         "Tank",
         "Fighter"
@@ -3767,7 +4340,9 @@
         "Top"
       ],
       "resource": "Mana",
-      "species": "God-Warrior",
+      "species": [
+        "Human"
+      ],
       "primaryDamageType": "AD",
       "range": 175,
       "baseMovespeed": 330,
@@ -3804,11 +4379,17 @@
           "description": "K'Sante smashes an enemy away. If the enemy hits a wall they will go through the wall taking more damage. K'Sante will appear behind the target and goes All Out by shredding his defenses but greatly increasing his damage.<br><br>",
           "flags": {}
         }
-      }
+      },
+      "regions": [
+        "Shurima",
+        "Nazumah"
+      ]
     },
     {
       "name": "LeBlanc",
-      "region": "Runeterra",
+      "region": [
+        "Noxus"
+      ],
       "class": [
         "Assassin",
         "Mage"
@@ -3817,7 +4398,11 @@
         "Mid"
       ],
       "resource": "Mana",
-      "species": "Human",
+      "species": [
+        "Human",
+        "Magical",
+        "Magically Altered"
+      ],
       "primaryDamageType": "AP",
       "range": 525,
       "baseMovespeed": 340,
@@ -3863,11 +4448,17 @@
           "description": "LeBlanc casts a mimicked version of one of her basic spells.",
           "flags": {}
         }
-      }
+      },
+      "regions": [
+        "Noxus",
+        "Unknown (Medieval Times)"
+      ]
     },
     {
       "name": "Lee Sin",
-      "region": "Ionia",
+      "region": [
+        "Ionia"
+      ],
       "class": [
         "Fighter",
         "Assassin"
@@ -3876,7 +4467,10 @@
         "Jungle"
       ],
       "resource": "Energy",
-      "species": "Human",
+      "species": [
+        "Human",
+        "Magical"
+      ],
       "primaryDamageType": "AD",
       "range": 125,
       "baseMovespeed": 345,
@@ -3925,11 +4519,16 @@
           "description": "Lee Sin performs a powerful roundhouse kick launching his target back, dealing physical damage to the target and any enemies they collide with. Enemies the target collides with are knocked into the air for a short duration. This technique was taught to him by Jesse Perring, although Lee Sin does not kick players off the map.",
           "flags": {}
         }
-      }
+      },
+      "regions": [
+        "Ionia"
+      ]
     },
     {
       "name": "Leona",
-      "region": "Freljord",
+      "region": [
+        "Targon"
+      ],
       "class": [
         "Tank",
         "Support"
@@ -3938,7 +4537,10 @@
         "Support"
       ],
       "resource": "Mana",
-      "species": "Human",
+      "species": [
+        "Aspect Host",
+        "formerly Human"
+      ],
       "primaryDamageType": "AD",
       "range": 125,
       "baseMovespeed": 335,
@@ -3987,11 +4589,18 @@
           "description": "Leona calls down a beam of solar energy, dealing damage to enemies in an area. Enemies in the center of the area are stunned, while enemies on the outside are slowed.",
           "flags": {}
         }
-      }
+      },
+      "regions": [
+        "Rakkor Caves",
+        "Mount Targon",
+        "Targon"
+      ]
     },
     {
       "name": "Lillia",
-      "region": "Ionia",
+      "region": [
+        "Ionia"
+      ],
       "class": [
         "Fighter",
         "Mage"
@@ -4000,7 +4609,9 @@
         "Jungle"
       ],
       "resource": "Mana",
-      "species": "Spirit",
+      "species": [
+        "Fae Fawn"
+      ],
       "primaryDamageType": "AP",
       "range": 325,
       "baseMovespeed": 330,
@@ -4037,11 +4648,18 @@
           "description": "Lillia causes all enemies with Dream Dust on them to become Drowsy before falling asleep. Those enemies will take extra damage on being forcibly woken up.",
           "flags": {}
         }
-      }
+      },
+      "regions": [
+        "Navori",
+        "Garden of Forgetting",
+        "Ionia"
+      ]
     },
     {
       "name": "Lissandra",
-      "region": "Runeterra",
+      "region": [
+        "Freljord"
+      ],
       "class": [
         "Mage"
       ],
@@ -4049,7 +4667,10 @@
         "Mid"
       ],
       "resource": "Mana",
-      "species": "Human",
+      "species": [
+        "Human",
+        "Iceborn"
+      ],
       "primaryDamageType": "AP",
       "range": 550,
       "baseMovespeed": 325,
@@ -4091,11 +4712,17 @@
           "description": "If cast on an enemy champion, the target is frozen solid, stunning it. If cast on Lissandra, she encases herself in dark ice, healing herself while becoming untargetable and invulnerable. Dark ice then emanates from the target dealing magic damage to enemies and slowing Move Speed.",
           "flags": {}
         }
-      }
+      },
+      "regions": [
+        "Freljord",
+        "Freljord(Ancient Times)"
+      ]
     },
     {
       "name": "Lucian",
-      "region": "Demacia",
+      "region": [
+        "Demacia"
+      ],
       "class": [
         "Marksman"
       ],
@@ -4103,7 +4730,9 @@
         "Bot"
       ],
       "resource": "Mana",
-      "species": "Human",
+      "species": [
+        "Human"
+      ],
       "primaryDamageType": "AD",
       "range": 500,
       "baseMovespeed": 335,
@@ -4149,11 +4778,17 @@
           "description": "Lucian unleashes a torrent of shots from his weapons.",
           "flags": {}
         }
-      }
+      },
+      "regions": [
+        "Demacia",
+        "Runeterra\n Blessed Isles\n Demacia"
+      ]
     },
     {
       "name": "Lulu",
-      "region": "Runeterra",
+      "region": [
+        "Bandle City"
+      ],
       "class": [
         "Support",
         "Mage"
@@ -4162,7 +4797,9 @@
         "Support"
       ],
       "resource": "Mana",
-      "species": "Yordle",
+      "species": [
+        "Yordle"
+      ],
       "primaryDamageType": "AP",
       "range": 550,
       "baseMovespeed": 330,
@@ -4208,11 +4845,16 @@
           "description": "Lulu enlarges an ally, knocking nearby enemies into the air and granting the ally a large amount of bonus health. For the next few seconds, that ally gains an aura that slows nearby enemies.",
           "flags": {}
         }
-      }
+      },
+      "regions": [
+        "Bandle City"
+      ]
     },
     {
       "name": "Lux",
-      "region": "Demacia",
+      "region": [
+        "Demacia"
+      ],
       "class": [
         "Mage",
         "Support"
@@ -4222,7 +4864,10 @@
         "Support"
       ],
       "resource": "Mana",
-      "species": "Celestial",
+      "species": [
+        "Human",
+        "Magical"
+      ],
       "primaryDamageType": "AP",
       "range": 550,
       "baseMovespeed": 330,
@@ -4275,11 +4920,17 @@
           "description": "After gathering energy, Lux fires a beam of light that deals damage to all targets in the area. In addition, triggers Lux's passive ability and refreshes the Illumination debuff duration.",
           "flags": {}
         }
-      }
+      },
+      "regions": [
+        "High Silvermere",
+        "Demacia"
+      ]
     },
     {
       "name": "Malphite",
-      "region": "Runeterra",
+      "region": [
+        "Targon"
+      ],
       "class": [
         "Tank",
         "Fighter"
@@ -4290,7 +4941,9 @@
         "Support"
       ],
       "resource": "Mana",
-      "species": "Spirit",
+      "species": [
+        "Elemental Golem"
+      ],
       "primaryDamageType": "AD",
       "range": 125,
       "baseMovespeed": 335,
@@ -4337,11 +4990,18 @@
           "description": "Malphite launches himself to a location at high speed, damaging enemies and knocking them into the air.",
           "flags": {}
         }
-      }
+      },
+      "regions": [
+        "Monolith",
+        "Ixtal\n Shurima",
+        "Ixtal (Ancient Times)"
+      ]
     },
     {
       "name": "Malzahar",
-      "region": "Runeterra",
+      "region": [
+        "Shurima"
+      ],
       "class": [
         "Mage",
         "Assassin"
@@ -4350,7 +5010,10 @@
         "Mid"
       ],
       "resource": "Mana",
-      "species": "Spirit",
+      "species": [
+        "Human",
+        "Void Touched"
+      ],
       "primaryDamageType": "AP",
       "range": 500,
       "baseMovespeed": 335,
@@ -4394,11 +5057,18 @@
           "description": "Malzahar channels the essence of the Void to suppress an enemy champion over a zone of damaging negative energy.",
           "flags": {}
         }
-      }
+      },
+      "regions": [
+        "Shurima",
+        "Amakra",
+        "Void"
+      ]
     },
     {
       "name": "Maokai",
-      "region": "Ionia",
+      "region": [
+        "Shadow Isles"
+      ],
       "class": [
         "Tank",
         "Mage"
@@ -4408,7 +5078,9 @@
         "Jungle"
       ],
       "resource": "Mana",
-      "species": "Spirit",
+      "species": [
+        "Treant"
+      ],
       "primaryDamageType": "AP",
       "range": 125,
       "baseMovespeed": 335,
@@ -4451,11 +5123,17 @@
           "description": "Maokai summons a colossal wall of brambles and thorns that slowly advances forwards, damaging and rooting any enemies in the path.",
           "flags": {}
         }
-      }
+      },
+      "regions": [
+        "Blessed Isles",
+        "Shadow Isles\n Blessed Isles"
+      ]
     },
     {
       "name": "Master Yi",
-      "region": "Ionia",
+      "region": [
+        "Ionia"
+      ],
       "class": [
         "Assassin",
         "Fighter"
@@ -4464,7 +5142,10 @@
         "Jungle"
       ],
       "resource": "Mana",
-      "species": "Human",
+      "species": [
+        "Human",
+        "Magical"
+      ],
       "primaryDamageType": "AD",
       "range": 175,
       "baseMovespeed": 355,
@@ -4513,11 +5194,17 @@
           "description": "Master Yi moves with unparalleled agility, temporarily increasing his Move Speed and Attack Speed as well as making him immune to all slowing effects. While active, Champion kills or assists extend Highlander's duration. Passively reduces cooldown for his other abilities on a kill or assist.",
           "flags": {}
         }
-      }
+      },
+      "regions": [
+        "Wuju",
+        "Ionia"
+      ]
     },
     {
       "name": "Milio",
-      "region": "Ixtal",
+      "region": [
+        "Ixtal"
+      ],
       "class": [
         "Support"
       ],
@@ -4525,7 +5212,10 @@
         "Support"
       ],
       "resource": "Mana",
-      "species": "Dragon",
+      "species": [
+        "Human",
+        "Magical"
+      ],
       "primaryDamageType": "AD",
       "range": 525,
       "baseMovespeed": 330,
@@ -4560,11 +5250,16 @@
           "description": "Milio unleashes a wave of soothing flames that heal and remove crowd control effects from allies in range.",
           "flags": {}
         }
-      }
+      },
+      "regions": [
+        "Ixtal"
+      ]
     },
     {
       "name": "Miss Fortune",
-      "region": "Bilgewater",
+      "region": [
+        "Shadow Isles"
+      ],
       "class": [
         "Marksman"
       ],
@@ -4572,7 +5267,9 @@
         "Bot"
       ],
       "resource": "Mana",
-      "species": "Human",
+      "species": [
+        "Human"
+      ],
       "primaryDamageType": "AD",
       "range": 550,
       "baseMovespeed": 325,
@@ -4625,11 +5322,17 @@
           "description": "Miss Fortune channels a barrage of bullets into a cone in front of her, dealing large amounts of damage to enemies. Each wave of Bullet Time can critically strike",
           "flags": {}
         }
-      }
+      },
+      "regions": [
+        "Serpent Isles",
+        "Bilgewater"
+      ]
     },
     {
       "name": "Wukong",
-      "region": "Demacia",
+      "region": [
+        "Ionia"
+      ],
       "class": [
         "Fighter",
         "Tank"
@@ -4639,7 +5342,9 @@
         "Top"
       ],
       "resource": "Mana",
-      "species": "Vastaya",
+      "species": [
+        "Shimon"
+      ],
       "primaryDamageType": "AD",
       "range": 175,
       "baseMovespeed": 340,
@@ -4681,11 +5386,17 @@
           "description": "Wukong's extends his staff and spins it around repeatedly, gaining Move Speed.<br><br>Enemies struck take damage and are knocked up.",
           "flags": {}
         }
-      }
+      },
+      "regions": [
+        "Shimon Village",
+        "Ionia"
+      ]
     },
     {
       "name": "Mordekaiser",
-      "region": "Void",
+      "region": [
+        "Noxus"
+      ],
       "class": [
         "Fighter"
       ],
@@ -4693,7 +5404,10 @@
         "Top"
       ],
       "resource": "Shield",
-      "species": "Human",
+      "species": [
+        "Revenant",
+        "Human"
+      ],
       "primaryDamageType": "AD",
       "range": 175,
       "baseMovespeed": 335,
@@ -4738,11 +5452,17 @@
           "description": "Mordekaiser drags his victim to a different dimension with him and steals a portion of their stats. If he kills them, he keeps the stats until the victim respawns.",
           "flags": {}
         }
-      }
+      },
+      "regions": [
+        "Noxus",
+        "Unknown (Medieval Times)"
+      ]
     },
     {
       "name": "Morgana",
-      "region": "Demacia",
+      "region": [
+        "Demacia"
+      ],
       "class": [
         "Mage",
         "Support"
@@ -4751,7 +5471,11 @@
         "Support"
       ],
       "resource": "Mana",
-      "species": "Human",
+      "species": [
+        "Human",
+        "Magically Altered",
+        "Aspect Host Candidate"
+      ],
       "primaryDamageType": "AP",
       "range": 450,
       "baseMovespeed": 335,
@@ -4799,11 +5523,18 @@
           "description": "Morgana unleashes the full force of her Celestial power as she unbinds her wings and hovers above the ground. She lashes chains of dark pain onto nearby enemy champions, gaining Move Speed towards them. The chains slow and deal initial damage and, after a delay, stun those who are unable to break them.",
           "flags": {}
         }
-      }
+      },
+      "regions": [
+        "Demacia",
+        "Mount Targon (Ancient Times)"
+      ]
     },
     {
       "name": "Naafiri",
-      "region": "Shurima",
+      "region": [
+        "Shurima",
+        "Unknown"
+      ],
       "class": [
         "Assassin"
       ],
@@ -4811,7 +5542,10 @@
         "Mid"
       ],
       "resource": "Mana",
-      "species": "Darkin",
+      "species": [
+        "Darkin",
+        "Naafiri"
+      ],
       "primaryDamageType": "AD",
       "range": 125,
       "baseMovespeed": 335,
@@ -4846,11 +5580,16 @@
           "description": "Naafiri empowers her pack and spawns additional packmates, instantly receiving a burst of speed and vision and gaining a shield the first time she hits another champion.<br><br>After killing another champion for the first time, all effects are refreshed.<br>",
           "flags": {}
         }
-      }
+      },
+      "regions": [
+        "Runeterra\n Shurima"
+      ]
     },
     {
       "name": "Nami",
-      "region": "Targon",
+      "region": [
+        "Bilgewater"
+      ],
       "class": [
         "Support",
         "Mage"
@@ -4859,7 +5598,9 @@
         "Support"
       ],
       "resource": "Mana",
-      "species": "Vastaya",
+      "species": [
+        "Marai"
+      ],
       "primaryDamageType": "AP",
       "range": 550,
       "baseMovespeed": 335,
@@ -4905,11 +5646,18 @@
           "description": "Summons a massive Tidal Wave that knocks up, slows, and damages enemies. Allies hit gain double the effect of Surging Tides.",
           "flags": {}
         }
-      }
+      },
+      "regions": [
+        "Marai Territory",
+        "Runeterra",
+        "Marai Village"
+      ]
     },
     {
       "name": "Nasus",
-      "region": "Runeterra",
+      "region": [
+        "Shurima"
+      ],
       "class": [
         "Fighter",
         "Tank"
@@ -4918,7 +5666,10 @@
         "Top"
       ],
       "resource": "Mana",
-      "species": "God-Warrior",
+      "species": [
+        "God-Warrior",
+        "Human"
+      ],
       "primaryDamageType": "AD",
       "range": 125,
       "baseMovespeed": 350,
@@ -4964,11 +5715,18 @@
           "description": "Nasus unleashes a mighty sandstorm that batters nearby enemies. While the storm rages, he gains increased Health, Attack Range, damages nearby enemies, has a reduced cooldown on Siphoning Strike, and gains bonus Armor and Magic Resistance.",
           "flags": {}
         }
-      }
+      },
+      "regions": [
+        "Shurima",
+        "Shurima City",
+        "Shurima (Ancient Times)"
+      ]
     },
     {
       "name": "Nautilus",
-      "region": "Runeterra",
+      "region": [
+        "Shadow Isles"
+      ],
       "class": [
         "Tank",
         "Support"
@@ -4977,7 +5735,10 @@
         "Support"
       ],
       "resource": "Mana",
-      "species": "Dragon",
+      "species": [
+        "Revenant",
+        "Human"
+      ],
       "primaryDamageType": "AD",
       "range": 175,
       "baseMovespeed": 325,
@@ -5019,11 +5780,17 @@
           "description": "Nautilus fires a shockwave into the earth that chases an opponent. This shockwave rips up the earth above it, knocking enemies into the air. When it reaches the opponent, the shockwave erupts, knocking his target into the air and stunning them.",
           "flags": {}
         }
-      }
+      },
+      "regions": [
+        "Serpent Isles",
+        "Bilgewater"
+      ]
     },
     {
       "name": "Neeko",
-      "region": "Void",
+      "region": [
+        "Shurima"
+      ],
       "class": [
         "Mage",
         "Support"
@@ -5033,7 +5800,9 @@
         "Support"
       ],
       "resource": "Mana",
-      "species": "Vastaya",
+      "species": [
+        "Oovi-Kat"
+      ],
       "primaryDamageType": "AP",
       "range": 550,
       "baseMovespeed": 340,
@@ -5074,11 +5843,18 @@
           "description": "After a short preparation, Neeko leaps into the air. Upon landing, nearby enemies are damaged and knocked up. The preparation is hidden if Neeko is disguised.",
           "flags": {}
         }
-      }
+      },
+      "regions": [
+        "Oovi-Kat Island",
+        "Ixtal",
+        "Eternal Ocean"
+      ]
     },
     {
       "name": "Nidalee",
-      "region": "Runeterra",
+      "region": [
+        "Ixtal"
+      ],
       "class": [
         "Assassin",
         "Mage"
@@ -5087,7 +5863,11 @@
         "Jungle"
       ],
       "resource": "Mana",
-      "species": "Human",
+      "species": [
+        "Human",
+        "Magical",
+        "Vastayan Ancestery"
+      ],
       "primaryDamageType": "AP",
       "range": 525,
       "baseMovespeed": 340,
@@ -5135,11 +5915,17 @@
           "description": "Nidalee transforms into a cougar, gaining new abilities.",
           "flags": {}
         }
-      }
+      },
+      "regions": [
+        "Ixtal",
+        "Unknown"
+      ]
     },
     {
       "name": "Nilah",
-      "region": "Runeterra",
+      "region": [
+        "Shurima"
+      ],
       "class": [
         "Fighter",
         "Assassin"
@@ -5148,7 +5934,10 @@
         "Bot"
       ],
       "resource": "Mana",
-      "species": "Spirit",
+      "species": [
+        "Human",
+        "Magically Altered"
+      ],
       "primaryDamageType": "AD",
       "range": 225,
       "baseMovespeed": 340,
@@ -5184,11 +5973,17 @@
           "description": "Twirling her whip-blade in joyful exuberance, Nilah deals damage to enemies around her before pulling them closer with her weapon.",
           "flags": {}
         }
-      }
+      },
+      "regions": [
+        "Kathkan",
+        "Kathkan\n Bilgewater"
+      ]
     },
     {
       "name": "Nocturne",
-      "region": "Void",
+      "region": [
+        "Unknown"
+      ],
       "class": [
         "Assassin",
         "Fighter"
@@ -5197,7 +5992,9 @@
         "Jungle"
       ],
       "resource": "Mana",
-      "species": "Celestial",
+      "species": [
+        "Demon"
+      ],
       "primaryDamageType": "AD",
       "range": 125,
       "baseMovespeed": 345,
@@ -5240,11 +6037,17 @@
           "description": "Nocturne reduces the sight radius of all enemy champions and removes their ally vision in the process. He can then launch himself at a nearby enemy champion.",
           "flags": {}
         }
-      }
+      },
+      "regions": [
+        "Runeterra",
+        "Spirit Realm (Ancient Times)"
+      ]
     },
     {
       "name": "Nunu & Willump",
-      "region": "Freljord",
+      "region": [
+        "Unknown"
+      ],
       "class": [
         "Tank",
         "Fighter"
@@ -5253,7 +6056,9 @@
         "Jungle"
       ],
       "resource": "Mana",
-      "species": "Human",
+      "species": [
+        "Unknown"
+      ],
       "primaryDamageType": "AD",
       "range": 125,
       "baseMovespeed": 345,
@@ -5298,11 +6103,16 @@
           "description": "Nunu & Willump create a powerful blizzard in an area that slows enemies and deals massive damage at the end.",
           "flags": {}
         }
-      }
+      },
+      "regions": [
+        "Unknown"
+      ]
     },
     {
       "name": "Olaf",
-      "region": "Freljord",
+      "region": [
+        "Freljord"
+      ],
       "class": [
         "Fighter",
         "Tank"
@@ -5311,7 +6121,10 @@
         "Top"
       ],
       "resource": "Mana",
-      "species": "Spirit",
+      "species": [
+        "Human",
+        "Iceborn"
+      ],
       "primaryDamageType": "AD",
       "range": 125,
       "baseMovespeed": 350,
@@ -5354,11 +6167,17 @@
           "description": "Olaf passively gains increased armor and magic resist. He can activate this ability to become immune to disables for as long as he keeps attacking.",
           "flags": {}
         }
-      }
+      },
+      "regions": [
+        "Freljord",
+        "Lokfar"
+      ]
     },
     {
       "name": "Orianna",
-      "region": "Piltover",
+      "region": [
+        "Piltover"
+      ],
       "class": [
         "Mage",
         "Support"
@@ -5367,7 +6186,11 @@
         "Mid"
       ],
       "resource": "Mana",
-      "species": "Human",
+      "species": [
+        "Golem",
+        "Hextech",
+        "Magically Altered"
+      ],
       "primaryDamageType": "AP",
       "range": 525,
       "baseMovespeed": 325,
@@ -5411,11 +6234,16 @@
           "description": "Orianna commands her Ball to unleash a shockwave, dealing magic damage and launching nearby enemies towards the Ball after a short delay.",
           "flags": {}
         }
-      }
+      },
+      "regions": [
+        "Piltover"
+      ]
     },
     {
       "name": "Ornn",
-      "region": "Runeterra",
+      "region": [
+        "Freljord"
+      ],
       "class": [
         "Tank",
         "Fighter"
@@ -5424,7 +6252,9 @@
         "Top"
       ],
       "resource": "Mana",
-      "species": "Spirit",
+      "species": [
+        "Spirit God"
+      ],
       "primaryDamageType": "AD",
       "range": 175,
       "baseMovespeed": 335,
@@ -5461,11 +6291,17 @@
           "description": "Ornn summons a massive elemental at a location which travels toward him with increasing speed. Enemies run over by the elemental take damage, are slowed and are made Brittle. Ornn can recast the ability to charge into the elemental, redirecting it in the direction he hits it, causing the elemental to affect any enemies it runs over to be knocked up, dealing the same damage and re-applying Brittle.",
           "flags": {}
         }
-      }
+      },
+      "regions": [
+        "Freljord",
+        "Freljord (The Formation)"
+      ]
     },
     {
       "name": "Pantheon",
-      "region": "Runeterra",
+      "region": [
+        "Targon"
+      ],
       "class": [
         "Fighter",
         "Assassin"
@@ -5477,7 +6313,10 @@
         "Mid"
       ],
       "resource": "Mana",
-      "species": "Human",
+      "species": [
+        "Human",
+        "Magically Altered"
+      ],
       "primaryDamageType": "AD",
       "range": 175,
       "baseMovespeed": 345,
@@ -5523,11 +6362,20 @@
           "description": "Pantheon composes himself and then leaps into the air, landing at a chosen location as a comet.",
           "flags": {}
         }
-      }
+      },
+      "regions": [
+        "Targon Prime (Pantheon",
+        "Mount Targon",
+        "Targon",
+        "Targon (Atreus)",
+        "Ancient Times)\nRakkor Caves"
+      ]
     },
     {
       "name": "Poppy",
-      "region": "Runeterra",
+      "region": [
+        "Demacia"
+      ],
       "class": [
         "Tank",
         "Fighter"
@@ -5537,7 +6385,9 @@
         "Jungle"
       ],
       "resource": "Mana",
-      "species": "Yordle",
+      "species": [
+        "Yordle"
+      ],
       "primaryDamageType": "AD",
       "range": 125,
       "baseMovespeed": 345,
@@ -5582,11 +6432,17 @@
           "description": "Poppy channels a hammer strike that knocks enemies very far away.",
           "flags": {}
         }
-      }
+      },
+      "regions": [
+        "Demacia",
+        "Bandle City"
+      ]
     },
     {
       "name": "Pyke",
-      "region": "Ionia",
+      "region": [
+        "Shadow Isles"
+      ],
       "class": [
         "Support",
         "Assassin"
@@ -5595,7 +6451,10 @@
         "Support"
       ],
       "resource": "Mana",
-      "species": "Human",
+      "species": [
+        "Revenant",
+        "Human"
+      ],
       "primaryDamageType": "AD",
       "range": 150,
       "baseMovespeed": 330,
@@ -5638,11 +6497,17 @@
           "description": "Pyke blinks to and executes low health enemies, allowing him to cast this spell again and granting additional gold to an ally who assists.",
           "flags": {}
         }
-      }
+      },
+      "regions": [
+        "Serpent Isles",
+        "Bilgewater"
+      ]
     },
     {
       "name": "Qiyana",
-      "region": "Ixtal",
+      "region": [
+        "Ixtal"
+      ],
       "class": [
         "Assassin",
         "Fighter"
@@ -5651,7 +6516,10 @@
         "Mid"
       ],
       "resource": "Mana",
-      "species": "Dragon",
+      "species": [
+        "Human",
+        "Magical"
+      ],
       "primaryDamageType": "AD",
       "range": 150,
       "baseMovespeed": 335,
@@ -5693,11 +6561,17 @@
           "description": "Qiyana sends out a shockwave that detonates whatever elements she hits with it, stunning and damaging nearby enemies.",
           "flags": {}
         }
-      }
+      },
+      "regions": [
+        "Ixaocan",
+        "Ixtal"
+      ]
     },
     {
       "name": "Quinn",
-      "region": "Demacia",
+      "region": [
+        "Demacia"
+      ],
       "class": [
         "Marksman",
         "Assassin"
@@ -5706,7 +6580,9 @@
         "Top"
       ],
       "resource": "Mana",
-      "species": "Dragon",
+      "species": [
+        "Human"
+      ],
       "primaryDamageType": "AD",
       "range": 525,
       "baseMovespeed": 330,
@@ -5746,11 +6622,16 @@
           "description": "Quinn and Valor team up to fly around at great speed.  Ending the ability casts Skystrike, which deals damage to nearby enemies and marks champions as Vulnerable.",
           "flags": {}
         }
-      }
+      },
+      "regions": [
+        "Demacia"
+      ]
     },
     {
       "name": "Rakan",
-      "region": "Ionia",
+      "region": [
+        "Unknown"
+      ],
       "class": [
         "Support"
       ],
@@ -5758,7 +6639,9 @@
         "Support"
       ],
       "resource": "Mana",
-      "species": "Human",
+      "species": [
+        "Lhotlan"
+      ],
       "primaryDamageType": "AD",
       "range": 300,
       "baseMovespeed": 335,
@@ -5801,11 +6684,18 @@
           "description": "Gains Move Speed, charming and dealing magic damage to enemies touched.",
           "flags": {}
         }
-      }
+      },
+      "regions": [
+        "Qaelin",
+        "Lhotlan Village",
+        "Ionia"
+      ]
     },
     {
       "name": "Rammus",
-      "region": "Freljord",
+      "region": [
+        "Shurima"
+      ],
       "class": [
         "Tank",
         "Fighter"
@@ -5814,7 +6704,10 @@
         "Jungle"
       ],
       "resource": "Mana",
-      "species": "Spirit",
+      "species": [
+        "Unknown",
+        "Possibly Baccai"
+      ],
       "primaryDamageType": "AD",
       "range": 125,
       "baseMovespeed": 335,
@@ -5858,11 +6751,17 @@
           "description": "Rammus hops into the air and slams down at a target area, dealing magic damage and slowing enemies. If cast while Rammus is in Powerball, Rammus knocks up enemies near the center as well.",
           "flags": {}
         }
-      }
+      },
+      "regions": [
+        "Shurima",
+        "Unknown (Possibly Shurima; Ancient Times)"
+      ]
     },
     {
       "name": "Rek'Sai",
-      "region": "Shurima",
+      "region": [
+        "Unknown"
+      ],
       "class": [
         "Fighter"
       ],
@@ -5870,7 +6769,9 @@
         "Jungle"
       ],
       "resource": "Rage",
-      "species": "Voidborn",
+      "species": [
+        "Xer'Sai"
+      ],
       "primaryDamageType": "AD",
       "range": 175,
       "baseMovespeed": 335,
@@ -5908,11 +6809,17 @@
           "description": "Rek'sai passively marks targets by damaging them. She can activate this ability to become briefly untargetable and lunge at a marked target for heavy damage based on their missing health.",
           "flags": {}
         }
-      }
+      },
+      "regions": [
+        "Runeterra (Possibly Shurima)",
+        "Void"
+      ]
     },
     {
       "name": "Rell",
-      "region": "Noxus",
+      "region": [
+        "Unknown"
+      ],
       "class": [
         "Tank",
         "Support"
@@ -5921,7 +6828,11 @@
         "Support"
       ],
       "resource": "Mana",
-      "species": "Dragon",
+      "species": [
+        "Human",
+        "Magical",
+        "Magically Altered"
+      ],
       "primaryDamageType": "AD",
       "range": 175,
       "baseMovespeed": 330,
@@ -5957,11 +6868,17 @@
           "description": "Rell explodes in a magnetic fury, violently Pulling nearby enemies toward herself. Then Rell constantly Drags nearby enemies toward herself for a short while, dealing magic damage over time.",
           "flags": {}
         }
-      }
+      },
+      "regions": [
+        "Qualthala",
+        "Noxus"
+      ]
     },
     {
       "name": "Renata Glasc",
-      "region": "Zaun",
+      "region": [
+        "Zaun"
+      ],
       "class": [
         "Support",
         "Mage"
@@ -5970,7 +6887,10 @@
         "Support"
       ],
       "resource": "Mana",
-      "species": "Spirit",
+      "species": [
+        "Human",
+        "Chemically Altered"
+      ],
       "primaryDamageType": "AP",
       "range": 550,
       "baseMovespeed": 330,
@@ -6008,11 +6928,16 @@
           "description": "Renata sends out a wave of chemicals, causing any enemies hit to go Berserk.",
           "flags": {}
         }
-      }
+      },
+      "regions": [
+        "Zaun"
+      ]
     },
     {
       "name": "Renekton",
-      "region": "Runeterra",
+      "region": [
+        "Shurima"
+      ],
       "class": [
         "Fighter",
         "Tank"
@@ -6021,7 +6946,10 @@
         "Top"
       ],
       "resource": "Fury",
-      "species": "God-Warrior",
+      "species": [
+        "God-Warrior",
+        "Human"
+      ],
       "primaryDamageType": "AD",
       "range": 125,
       "baseMovespeed": 345,
@@ -6068,11 +6996,18 @@
           "description": "Renekton transforms into the Tyrant form, gaining bonus Health and dealing damage to enemies around him. While in this form, Renekton gains Fury periodically.",
           "flags": {}
         }
-      }
+      },
+      "regions": [
+        "Shurima",
+        "Shurima City",
+        "Shurima (Ancient Times)"
+      ]
     },
     {
       "name": "Rengar",
-      "region": "Void",
+      "region": [
+        "Unknown"
+      ],
       "class": [
         "Assassin",
         "Fighter"
@@ -6082,7 +7017,9 @@
         "Top"
       ],
       "resource": "Ferocity",
-      "species": "Human",
+      "species": [
+        "Kiilash"
+      ],
       "primaryDamageType": "AD",
       "range": 125,
       "baseMovespeed": 345,
@@ -6124,11 +7061,18 @@
           "description": "Rengar's predatory instincts take over, <font color='#cd90ee'>Camouflaging</font> him and revealing the nearest enemy champion in a large radius around him. During Thrill of the Hunt, Rengar gains Move Speed and he can leap to the tracked enemy without being in brush, reducing their armor.",
           "flags": {}
         }
-      }
+      },
+      "regions": [
+        "Kiilash Village",
+        "Ixtal",
+        "Shuriman Jungle"
+      ]
     },
     {
       "name": "Riven",
-      "region": "Noxus",
+      "region": [
+        "Noxus"
+      ],
       "class": [
         "Fighter",
         "Assassin"
@@ -6137,7 +7081,9 @@
         "Top"
       ],
       "resource": "None",
-      "species": "Spirit",
+      "species": [
+        "Human"
+      ],
       "primaryDamageType": "AD",
       "range": 125,
       "baseMovespeed": 340,
@@ -6187,11 +7133,18 @@
           "description": "Riven empowers her keepsake weapon with energy, and gains Attack Damage and Range. During this time, she also gains the ability to use Wind Slash, a powerful ranged attack, once.",
           "flags": {}
         }
-      }
+      },
+      "regions": [
+        "Noxus",
+        "Trevale",
+        "Ionia\n Noxus"
+      ]
     },
     {
       "name": "Rumble",
-      "region": "Bilgewater",
+      "region": [
+        "Bandle City"
+      ],
       "class": [
         "Fighter",
         "Mage"
@@ -6201,7 +7154,9 @@
         "Mid"
       ],
       "resource": "Heat",
-      "species": "Yordle",
+      "species": [
+        "Yordle"
+      ],
       "primaryDamageType": "AP",
       "range": 125,
       "baseMovespeed": 345,
@@ -6241,11 +7196,16 @@
           "description": "Rumble fires off a group of rockets, creating a wall of flames that damages and slows enemies.",
           "flags": {}
         }
-      }
+      },
+      "regions": [
+        "Bandle City"
+      ]
     },
     {
       "name": "Ryze",
-      "region": "Runeterra",
+      "region": [
+        "Unknown"
+      ],
       "class": [
         "Mage",
         "Fighter"
@@ -6254,7 +7214,11 @@
         "Mid"
       ],
       "resource": "Mana",
-      "species": "Dragon",
+      "species": [
+        "Human",
+        "Magical",
+        "Magically Altered"
+      ],
       "primaryDamageType": "AP",
       "range": 550,
       "baseMovespeed": 340,
@@ -6301,11 +7265,17 @@
           "description": "Passively, Overload deals even more damage against targets with Flux.<br><br>On cast, Ryze creates a portal to a nearby location. After a few seconds, allies standing near the portal are teleported to the target location.",
           "flags": {}
         }
-      }
+      },
+      "regions": [
+        "Khom (Medieval Times)",
+        "Runeterra"
+      ]
     },
     {
       "name": "Samira",
-      "region": "Noxus",
+      "region": [
+        "Shurima"
+      ],
       "class": [
         "Marksman"
       ],
@@ -6313,7 +7283,9 @@
         "Bot"
       ],
       "resource": "Mana",
-      "species": "Dragon",
+      "species": [
+        "Human"
+      ],
       "primaryDamageType": "AD",
       "range": 500,
       "baseMovespeed": 335,
@@ -6351,11 +7323,18 @@
           "description": "Samira unleashes a torrent of shots from her weapons, wildly shooting all enemies surrounding her.",
           "flags": {}
         }
-      }
+      },
+      "regions": [
+        "Shurima",
+        "Amakra",
+        "Shurima\n Noxus"
+      ]
     },
     {
       "name": "Sejuani",
-      "region": "Demacia",
+      "region": [
+        "Freljord"
+      ],
       "class": [
         "Tank",
         "Fighter"
@@ -6364,7 +7343,10 @@
         "Jungle"
       ],
       "resource": "Mana",
-      "species": "Spirit",
+      "species": [
+        "Human",
+        "Iceborn"
+      ],
       "primaryDamageType": "AD",
       "range": 150,
       "baseMovespeed": 340,
@@ -6410,11 +7392,17 @@
           "description": "Sejuani throws her bola that freezes and stuns the first champion hit and creates an ice storm that slows other enemies.",
           "flags": {}
         }
-      }
+      },
+      "regions": [
+        "Freljord"
+      ]
     },
     {
       "name": "Senna",
-      "region": "Runeterra",
+      "region": [
+        "Shadow Isles",
+        "Unknown"
+      ],
       "class": [
         "Marksman",
         "Support"
@@ -6424,7 +7412,10 @@
         "Support"
       ],
       "resource": "Mana",
-      "species": "Undead",
+      "species": [
+        "Wraith",
+        "Human"
+      ],
       "primaryDamageType": "AD",
       "range": 600,
       "baseMovespeed": 330,
@@ -6467,11 +7458,19 @@
           "description": "Senna calls upon the relic stones of fallen Sentinels, splitting her relic cannon into a holy array of shadow and light. She then fires a global beam that shields allies from harm, while damaging enemies caught in the center.",
           "flags": {}
         }
-      }
+      },
+      "regions": [
+        "Runeterra\n Blessed Isles",
+        "Unnamed Island",
+        "Outside Demacia"
+      ]
     },
     {
       "name": "Seraphine",
-      "region": "Piltover",
+      "region": [
+        "Zaun",
+        "Piltover"
+      ],
       "class": [
         "Mage",
         "Support"
@@ -6481,7 +7480,10 @@
         "Support"
       ],
       "resource": "Mana",
-      "species": "Spirit",
+      "species": [
+        "Human",
+        "Magical"
+      ],
       "primaryDamageType": "AP",
       "range": 525,
       "baseMovespeed": 325,
@@ -6522,11 +7524,17 @@
           "description": "Seraphine deals damage and charms enemies hit, refreshing the range with every allied or enemy champion hit.",
           "flags": {}
         }
-      }
+      },
+      "regions": [
+        "Piltover\n Zaun",
+        "Piltover"
+      ]
     },
     {
       "name": "Sett",
-      "region": "Noxus",
+      "region": [
+        "Ionia"
+      ],
       "class": [
         "Fighter",
         "Tank"
@@ -6535,7 +7543,11 @@
         "Top"
       ],
       "resource": "Grit",
-      "species": "Human",
+      "species": [
+        "Human",
+        "Magical",
+        "Vastayan Ancestery"
+      ],
       "primaryDamageType": "AD",
       "range": 125,
       "baseMovespeed": 340,
@@ -6577,11 +7589,17 @@
           "description": "Sett carries an enemy champion through the air and slams them into the ground, dealing damage and slowing all enemies near where they land.",
           "flags": {}
         }
-      }
+      },
+      "regions": [
+        "Navori",
+        "Ionia"
+      ]
     },
     {
       "name": "Shaco",
-      "region": "Void",
+      "region": [
+        "Unknown"
+      ],
       "class": [
         "Assassin"
       ],
@@ -6590,7 +7608,10 @@
         "Support"
       ],
       "resource": "Mana",
-      "species": "Human",
+      "species": [
+        "Unknown",
+        "Magically Altered"
+      ],
       "primaryDamageType": "AD",
       "range": 125,
       "baseMovespeed": 345,
@@ -6636,11 +7657,17 @@
           "description": "Shaco creates an illusion of himself near him, which can attack nearby enemies (Deals reduced damage to turrets).  Upon death, it explodes, spawning three mini Jack in the Boxes and dealing damage to nearby enemies.",
           "flags": {}
         }
-      }
+      },
+      "regions": [
+        "Runeterra",
+        "Unknown"
+      ]
     },
     {
       "name": "Shen",
-      "region": "Ionia",
+      "region": [
+        "Shurima"
+      ],
       "class": [
         "Tank"
       ],
@@ -6649,7 +7676,10 @@
         "Support"
       ],
       "resource": "Energy",
-      "species": "Human",
+      "species": [
+        "Human",
+        "Magical"
+      ],
       "primaryDamageType": "AD",
       "range": 125,
       "baseMovespeed": 340,
@@ -6694,11 +7724,17 @@
           "description": "Shen shields target allied champion from incoming damage, and soon after teleports to their location.",
           "flags": {}
         }
-      }
+      },
+      "regions": [
+        "Temple of Thanjuul",
+        "Ionia"
+      ]
     },
     {
       "name": "Shyvana",
-      "region": "Demacia",
+      "region": [
+        "Demacia"
+      ],
       "class": [
         "Fighter",
         "Tank"
@@ -6707,7 +7743,10 @@
         "Jungle"
       ],
       "resource": "Fury",
-      "species": "Human",
+      "species": [
+        "Terrestrial Dragon",
+        "Magically Altered"
+      ],
       "primaryDamageType": "AD",
       "range": 125,
       "baseMovespeed": 350,
@@ -6749,11 +7788,18 @@
           "description": "Shyvana transforms into a dragon and takes flight to a target location. Enemies along her path take damage and are knocked toward her target location.<br><br>Shyvana passively gains Fury per second and gains 2 Fury on basic attack.",
           "flags": {}
         }
-      }
+      },
+      "regions": [
+        "Demacia",
+        "Piltover"
+      ]
     },
     {
       "name": "Singed",
-      "region": "Noxus",
+      "region": [
+        "Zaun",
+        "Piltover"
+      ],
       "class": [
         "Tank",
         "Fighter"
@@ -6762,7 +7808,10 @@
         "Top"
       ],
       "resource": "Mana",
-      "species": "Human",
+      "species": [
+        "Human",
+        "Chemically Altered"
+      ],
       "primaryDamageType": "AD",
       "range": 125,
       "baseMovespeed": 345,
@@ -6807,11 +7856,17 @@
           "description": "Singed drinks a potent brew of chemicals, granting him increased combat stats, and making his Poison Trail apply Grievous Wounds.",
           "flags": {}
         }
-      }
+      },
+      "regions": [
+        "Zaun\n Piltover",
+        "Piltover"
+      ]
     },
     {
       "name": "Sion",
-      "region": "Demacia",
+      "region": [
+        "Noxus"
+      ],
       "class": [
         "Tank",
         "Fighter"
@@ -6820,7 +7875,10 @@
         "Top"
       ],
       "resource": "Mana",
-      "species": "Human",
+      "species": [
+        "Revenant",
+        "Human"
+      ],
       "primaryDamageType": "AD",
       "range": 175,
       "baseMovespeed": 345,
@@ -6863,11 +7921,17 @@
           "description": "Sion charges in a direction, ramping up speed over time. He can steer his charge slightly with the mouse cursor location. When he collides with an enemy he deals damage and knocks them up based on the distance he has charged.",
           "flags": {}
         }
-      }
+      },
+      "regions": [
+        "Noxus",
+        "Noxus (Medieval times)"
+      ]
     },
     {
       "name": "Sivir",
-      "region": "Runeterra",
+      "region": [
+        "Shurima"
+      ],
       "class": [
         "Marksman"
       ],
@@ -6875,7 +7939,9 @@
         "Bot"
       ],
       "resource": "Mana",
-      "species": "Human",
+      "species": [
+        "Human"
+      ],
       "primaryDamageType": "AD",
       "range": 500,
       "baseMovespeed": 335,
@@ -6925,11 +7991,16 @@
           "description": "Sivir leads her allies in battle, granting them a surge of Move Speed for a period of time. In addition, Sivir's attacks reduce her spell cooldowns.",
           "flags": {}
         }
-      }
+      },
+      "regions": [
+        "Shurima"
+      ]
     },
     {
       "name": "Skarner",
-      "region": "Shurima",
+      "region": [
+        "Ixtal"
+      ],
       "class": [
         "Fighter",
         "Tank"
@@ -6939,7 +8010,9 @@
         "Top"
       ],
       "resource": "Mana",
-      "species": "Brackern",
+      "species": [
+        "Brackern"
+      ],
       "primaryDamageType": "AD",
       "range": 125,
       "baseMovespeed": 335,
@@ -6978,11 +8051,16 @@
           "description": "Skarner suppresses an enemy champion and deals damage to it. During this time, Skarner can move freely and will drag his helpless victim around with him. When the effect ends, the target will be dealt additional damage.",
           "flags": {}
         }
-      }
+      },
+      "regions": [
+        "Ixtal"
+      ]
     },
     {
       "name": "Sona",
-      "region": "Demacia",
+      "region": [
+        "Demacia"
+      ],
       "class": [
         "Support",
         "Mage"
@@ -6991,7 +8069,10 @@
         "Support"
       ],
       "resource": "Mana",
-      "species": "Human",
+      "species": [
+        "Human",
+        "Magical"
+      ],
       "primaryDamageType": "AP",
       "range": 550,
       "baseMovespeed": 325,
@@ -7038,11 +8119,18 @@
           "description": "Sona plays her ultimate chord, stunning enemy champions and forcing them to dance and dealing magic damage to them. Each rank reduces the base cooldown of Sona's basic abilities.",
           "flags": {}
         }
-      }
+      },
+      "regions": [
+        "Demacia",
+        "Ionia"
+      ]
     },
     {
       "name": "Soraka",
-      "region": "Runeterra",
+      "region": [
+        "Targon",
+        "Ionia"
+      ],
       "class": [
         "Support",
         "Mage"
@@ -7051,7 +8139,10 @@
         "Support"
       ],
       "resource": "Mana",
-      "species": "Human",
+      "species": [
+        "Celestial",
+        "Fallen"
+      ],
       "primaryDamageType": "AP",
       "range": 550,
       "baseMovespeed": 325,
@@ -7100,11 +8191,17 @@
           "description": "Soraka fills her allies with hope, instantly restoring health to herself and all allied champions.",
           "flags": {}
         }
-      }
+      },
+      "regions": [
+        "Targon\n Ionia",
+        "The Heavens (Before Runeterra)"
+      ]
     },
     {
       "name": "Swain",
-      "region": "Noxus",
+      "region": [
+        "Noxus"
+      ],
       "class": [
         "Mage",
         "Fighter"
@@ -7114,7 +8211,10 @@
         "Mid"
       ],
       "resource": "Mana",
-      "species": "Human",
+      "species": [
+        "Human",
+        "Magically Altered"
+      ],
       "primaryDamageType": "AP",
       "range": 525,
       "baseMovespeed": 330,
@@ -7155,11 +8255,17 @@
           "description": "Swain transforms into a demon and drains health from nearby enemy champions, minions, and neutral monsters. Swain can cast Demonflare to decimate and slow nearby enemies with a nova of soulfire. This form is indefinite as long as Swain drains enemy champions.",
           "flags": {}
         }
-      }
+      },
+      "regions": [
+        "Noxus Prime",
+        "Noxus"
+      ]
     },
     {
       "name": "Sylas",
-      "region": "Demacia",
+      "region": [
+        "Demacia"
+      ],
       "class": [
         "Mage",
         "Assassin"
@@ -7169,7 +8275,10 @@
         "Top"
       ],
       "resource": "Mana",
-      "species": "Human",
+      "species": [
+        "Human",
+        "Magical"
+      ],
       "primaryDamageType": "AP",
       "range": 175,
       "baseMovespeed": 340,
@@ -7210,11 +8319,17 @@
           "description": "Sylas steals the enemy's ultimate ability and can cast it freely.",
           "flags": {}
         }
-      }
+      },
+      "regions": [
+        "Demacia",
+        "Dregbourne"
+      ]
     },
     {
       "name": "Syndra",
-      "region": "Ionia",
+      "region": [
+        "Ionia"
+      ],
       "class": [
         "Mage"
       ],
@@ -7222,7 +8337,10 @@
         "Mid"
       ],
       "resource": "Mana",
-      "species": "Spirit",
+      "species": [
+        "Human",
+        "Magical"
+      ],
       "primaryDamageType": "AP",
       "range": 550,
       "baseMovespeed": 330,
@@ -7268,11 +8386,17 @@
           "description": "Syndra bombards an enemy Champion with all of her Dark Spheres.",
           "flags": {}
         }
-      }
+      },
+      "regions": [
+        "Navori",
+        "Ionia"
+      ]
     },
     {
       "name": "Tahm Kench",
-      "region": "Runeterra",
+      "region": [
+        "Unknown"
+      ],
       "class": [
         "Support",
         "Tank"
@@ -7282,7 +8406,9 @@
         "Support"
       ],
       "resource": "Mana",
-      "species": "Spirit",
+      "species": [
+        "Demon"
+      ],
       "primaryDamageType": "AD",
       "range": 175,
       "baseMovespeed": 335,
@@ -7322,11 +8448,18 @@
           "description": "Tahm Kench devours a champion for a few seconds, dealing magic damage if they are an enemy, or shielding them if they are an ally.",
           "flags": {}
         }
-      }
+      },
+      "regions": [
+        "Serpentine River",
+        "Runeterra",
+        "Shuriman Jungle (Ancient Times)"
+      ]
     },
     {
       "name": "Taliyah",
-      "region": "Freljord",
+      "region": [
+        "Shurima"
+      ],
       "class": [
         "Mage",
         "Support"
@@ -7336,7 +8469,10 @@
         "Mid"
       ],
       "resource": "Mana",
-      "species": "Spirit",
+      "species": [
+        "Human",
+        "Magical"
+      ],
       "primaryDamageType": "AP",
       "range": 525,
       "baseMovespeed": 330,
@@ -7375,11 +8511,17 @@
           "description": "Taliyah creates a very long wall and then surfs it.",
           "flags": {}
         }
-      }
+      },
+      "regions": [
+        "Shurima",
+        "Nasaaj Village"
+      ]
     },
     {
       "name": "Talon",
-      "region": "Noxus",
+      "region": [
+        "Noxus"
+      ],
       "class": [
         "Assassin"
       ],
@@ -7388,7 +8530,9 @@
         "Jungle"
       ],
       "resource": "Mana",
-      "species": "Human",
+      "species": [
+        "Human"
+      ],
       "primaryDamageType": "AD",
       "range": 125,
       "baseMovespeed": 335,
@@ -7432,11 +8576,17 @@
           "description": "Talon disperses a ring of blades and becomes Invisible while gaining additional Move Speed. When Talon emerges from Invisibility, the blades converge on his location. Each time the blades move, Shadow Assault deals physical damage to enemies hit by at least one blade.",
           "flags": {}
         }
-      }
+      },
+      "regions": [
+        "Noxus Prime",
+        "Noxus"
+      ]
     },
     {
       "name": "Taric",
-      "region": "Runeterra",
+      "region": [
+        "Demacia"
+      ],
       "class": [
         "Support",
         "Fighter"
@@ -7446,7 +8596,10 @@
         "Mid"
       ],
       "resource": "Mana",
-      "species": "Human",
+      "species": [
+        "Aspect Host",
+        "formerly Human"
+      ],
       "primaryDamageType": "AD",
       "range": 150,
       "baseMovespeed": 340,
@@ -7486,11 +8639,17 @@
           "description": "Pulses cosmic energy onto nearby allied champions after a delay, making them invulnerable for a short duration.",
           "flags": {}
         }
-      }
+      },
+      "regions": [
+        "Demacia",
+        "Targon\n Demacia"
+      ]
     },
     {
       "name": "Teemo",
-      "region": "Runeterra",
+      "region": [
+        "Bandle City"
+      ],
       "class": [
         "Marksman",
         "Assassin"
@@ -7501,7 +8660,9 @@
         "Support"
       ],
       "resource": "Mana",
-      "species": "Human",
+      "species": [
+        "Yordle"
+      ],
       "primaryDamageType": "AD",
       "range": 500,
       "baseMovespeed": 330,
@@ -7548,11 +8709,16 @@
           "description": "Teemo throws an explosive poisonous trap using one of the mushrooms stored in his pack. If an enemy steps on the trap, it will release a poisonous cloud, slowing enemies and damaging them over time. If Teemo throws a mushroom onto another mushroom it will bounce, gaining additional range.",
           "flags": {}
         }
-      }
+      },
+      "regions": [
+        "Bandle City"
+      ]
     },
     {
       "name": "Thresh",
-      "region": "Shadow Isles",
+      "region": [
+        "Shadow Isles"
+      ],
       "class": [
         "Support",
         "Fighter"
@@ -7561,7 +8727,10 @@
         "Support"
       ],
       "resource": "Mana",
-      "species": "Undead",
+      "species": [
+        "Wraith",
+        "Human"
+      ],
       "primaryDamageType": "AD",
       "range": 450,
       "baseMovespeed": 330,
@@ -7610,11 +8779,17 @@
           "description": "A prison of walls that slow and deal damage if broken.",
           "flags": {}
         }
-      }
+      },
+      "regions": [
+        "Blessed Isles",
+        "Shadow Isles\n Blessed Isles"
+      ]
     },
     {
       "name": "Tristana",
-      "region": "Runeterra",
+      "region": [
+        "Bandle City"
+      ],
       "class": [
         "Marksman",
         "Assassin"
@@ -7624,7 +8799,9 @@
         "Mid"
       ],
       "resource": "Mana",
-      "species": "Yordle",
+      "species": [
+        "Yordle"
+      ],
       "primaryDamageType": "AD",
       "range": 525,
       "baseMovespeed": 325,
@@ -7672,11 +8849,16 @@
           "description": "Tristana loads a massive cannonball into her weapon and fires it at an enemy unit. This deals Magic Damage and knocks the target back. If the target is carrying the Explosive Charge bomb, the bomb detonation radius is doubled.",
           "flags": {}
         }
-      }
+      },
+      "regions": [
+        "Bandle City"
+      ]
     },
     {
       "name": "Trundle",
-      "region": "Freljord",
+      "region": [
+        "Freljord"
+      ],
       "class": [
         "Fighter",
         "Tank"
@@ -7686,7 +8868,11 @@
         "Jungle"
       ],
       "resource": "Mana",
-      "species": "Dragon",
+      "species": [
+        "Troll",
+        "Frost",
+        "Iceborn"
+      ],
       "primaryDamageType": "AD",
       "range": 175,
       "baseMovespeed": 350,
@@ -7727,11 +8913,16 @@
           "description": "Trundle immediately steals a percent of his target's Health, Armor and Magic Resistance. Over the next 4 seconds the amount of Health, Armor, and Magic Resistance stolen is doubled.",
           "flags": {}
         }
-      }
+      },
+      "regions": [
+        "Freljord"
+      ]
     },
     {
       "name": "Tryndamere",
-      "region": "Freljord",
+      "region": [
+        "Freljord"
+      ],
       "class": [
         "Fighter",
         "Assassin"
@@ -7740,7 +8931,10 @@
         "Top"
       ],
       "resource": "Fury",
-      "species": "Human",
+      "species": [
+        "Human",
+        "Magically Altered"
+      ],
       "primaryDamageType": "AD",
       "range": 175,
       "baseMovespeed": 345,
@@ -7785,11 +8979,16 @@
           "description": "Tryndamere's lust for battle becomes so strong that he is unable to die, no matter how wounded he becomes.",
           "flags": {}
         }
-      }
+      },
+      "regions": [
+        "Freljord"
+      ]
     },
     {
       "name": "Twisted Fate",
-      "region": "Bilgewater",
+      "region": [
+        "Unknown"
+      ],
       "class": [
         "Mage"
       ],
@@ -7799,7 +8998,10 @@
         "Top"
       ],
       "resource": "Mana",
-      "species": "Human",
+      "species": [
+        "Human",
+        "Magical"
+      ],
       "primaryDamageType": "AP",
       "range": 525,
       "baseMovespeed": 330,
@@ -7848,11 +9050,18 @@
           "description": "Twisted Fate predicts the fortunes of his foes, revealing all enemy champions and enabling the use of Gate, which teleports Twisted Fate to any target location in 1.5 seconds.",
           "flags": {}
         }
-      }
+      },
+      "regions": [
+        "Serpentine River",
+        "The Jungle",
+        "Bilgewater"
+      ]
     },
     {
       "name": "Twitch",
-      "region": "Bilgewater",
+      "region": [
+        "Zaun"
+      ],
       "class": [
         "Marksman",
         "Assassin"
@@ -7862,7 +9071,10 @@
         "Support"
       ],
       "resource": "Mana",
-      "species": "Human",
+      "species": [
+        "Plague Rat",
+        "Chemically Altered"
+      ],
       "primaryDamageType": "AD",
       "range": 550,
       "baseMovespeed": 330,
@@ -7908,11 +9120,17 @@
           "description": "Twitch unleashes the full power of his crossbow, shooting bolts over a great distance that pierce all enemies caught in their path.",
           "flags": {}
         }
-      }
+      },
+      "regions": [
+        "Zaun"
+      ]
     },
     {
       "name": "Udyr",
-      "region": "Runeterra",
+      "region": [
+        "Ionia",
+        "Freljord"
+      ],
       "class": [
         "Fighter",
         "Tank"
@@ -7922,7 +9140,11 @@
         "Jungle"
       ],
       "resource": "Mana",
-      "species": "Spirit",
+      "species": [
+        "Human",
+        "Magical",
+        "Vastayan Ancestry"
+      ],
       "primaryDamageType": "AD",
       "range": 125,
       "baseMovespeed": 350,
@@ -7962,11 +9184,17 @@
           "description": "Udyr surrounds himself in a glacial storm, damaging and slowing nearby enemies. Recast: Empower and unleash the storm, causing it to track enemies and deal additional damage.",
           "flags": {}
         }
-      }
+      },
+      "regions": [
+        "Freljord\n Ionia",
+        "Freljord"
+      ]
     },
     {
       "name": "Urgot",
-      "region": "Noxus",
+      "region": [
+        "Noxus"
+      ],
       "class": [
         "Fighter",
         "Tank"
@@ -7975,7 +9203,11 @@
         "Top"
       ],
       "resource": "Mana",
-      "species": "Human",
+      "species": [
+        "Human",
+        "Chemically Altered",
+        "Cyborg"
+      ],
       "primaryDamageType": "AD",
       "range": 350,
       "baseMovespeed": 330,
@@ -8015,11 +9247,17 @@
           "description": "Urgot fires a chem-drill that impales the first enemy champion hit. If that champion falls below a health threshold, Urgot judges them weak and can execute them.",
           "flags": {}
         }
-      }
+      },
+      "regions": [
+        "Noxus",
+        "Noxus\n Zaun"
+      ]
     },
     {
       "name": "Varus",
-      "region": "Ionia",
+      "region": [
+        "Unknown"
+      ],
       "class": [
         "Marksman",
         "Mage"
@@ -8028,7 +9266,10 @@
         "Bot"
       ],
       "resource": "Mana",
-      "species": "Darkin",
+      "species": [
+        "Darkin",
+        "Varus"
+      ],
       "primaryDamageType": "AD",
       "range": 575,
       "baseMovespeed": 330,
@@ -8074,11 +9315,20 @@
           "description": "Varus flings out a damaging tendril of corruption that immobilizes the first enemy champion hit and then spreads towards nearby uninfected champions, immobilizing them too on contact.",
           "flags": {}
         }
-      }
+      },
+      "regions": [
+        "Ancient Times)",
+        "Ionia\n Shurima (Varus)",
+        "Ionia (Kai)\nPallas",
+        "Ionia (Valmar)\nShurima (Varus",
+        "Navori"
+      ]
     },
     {
       "name": "Vayne",
-      "region": "Runeterra",
+      "region": [
+        "Demacia"
+      ],
       "class": [
         "Marksman",
         "Assassin"
@@ -8088,7 +9338,9 @@
         "Top"
       ],
       "resource": "Mana",
-      "species": "Darkin",
+      "species": [
+        "Human"
+      ],
       "primaryDamageType": "AD",
       "range": 550,
       "baseMovespeed": 330,
@@ -8138,11 +9390,17 @@
           "description": "Readying herself for an epic confrontation, Vayne gains increased Attack Damage, Invisibility during Tumble, reduced Tumble cooldown, and more bonus Move Speed from Night Hunter",
           "flags": {}
         }
-      }
+      },
+      "regions": [
+        "Demacia",
+        "Demacia City"
+      ]
     },
     {
       "name": "Veigar",
-      "region": "Piltover",
+      "region": [
+        "Bandle City"
+      ],
       "class": [
         "Mage"
       ],
@@ -8151,7 +9409,9 @@
         "Support"
       ],
       "resource": "Mana",
-      "species": "Yordle",
+      "species": [
+        "Yordle"
+      ],
       "primaryDamageType": "AP",
       "range": 550,
       "baseMovespeed": 340,
@@ -8199,11 +9459,17 @@
           "description": "Blasts target enemy champion, dealing a large amount of magic damage, increasing based on the target's missing health.",
           "flags": {}
         }
-      }
+      },
+      "regions": [
+        "Bandle City",
+        "Runeterra\n Bandle City"
+      ]
     },
     {
       "name": "Vel'Koz",
-      "region": "Runeterra",
+      "region": [
+        "Unknown"
+      ],
       "class": [
         "Mage"
       ],
@@ -8212,7 +9478,10 @@
         "Mid"
       ],
       "resource": "Mana",
-      "species": "Voidborn",
+      "species": [
+        "Voidborn",
+        "Unknown Sub-species"
+      ],
       "primaryDamageType": "AP",
       "range": 525,
       "baseMovespeed": 340,
@@ -8251,11 +9520,18 @@
           "description": "Vel'Koz unleashes a channelled beam that follows the cursor for 2.5 seconds that deals magic damage. Organic Deconstruction Researches enemy champions causing them to take true damage instead.",
           "flags": {}
         }
-      }
+      },
+      "regions": [
+        "Runeterra (Possibly Ancient Shurima)",
+        "Void"
+      ]
     },
     {
       "name": "Vex",
-      "region": "Shadow Isles",
+      "region": [
+        "Shadow Isles",
+        "Bandle City"
+      ],
       "class": [
         "Mage"
       ],
@@ -8263,7 +9539,9 @@
         "Mid"
       ],
       "resource": "Mana",
-      "species": "Yordle",
+      "species": [
+        "Yordle"
+      ],
       "primaryDamageType": "AP",
       "range": 550,
       "baseMovespeed": 335,
@@ -8299,11 +9577,17 @@
           "description": "Fire a missile that marks an enemy champion.  Recast to dash to them and deal damage.",
           "flags": {}
         }
-      }
+      },
+      "regions": [
+        "Shadow Isles\n Bandle City",
+        "Bandle City"
+      ]
     },
     {
       "name": "Vi",
-      "region": "Demacia",
+      "region": [
+        "Zaun"
+      ],
       "class": [
         "Fighter",
         "Assassin"
@@ -8312,7 +9596,9 @@
         "Jungle"
       ],
       "resource": "Mana",
-      "species": "Spirit",
+      "species": [
+        "Human"
+      ],
       "primaryDamageType": "AD",
       "range": 125,
       "baseMovespeed": 340,
@@ -8356,11 +9642,17 @@
           "description": "Vi runs down an enemy, knocking aside anyone in the way. When she reaches her target she knocks it into the air, jumps after it, and slams it back into the ground.",
           "flags": {}
         }
-      }
+      },
+      "regions": [
+        "Zaun",
+        "Piltover\n Zaun"
+      ]
     },
     {
       "name": "Viego",
-      "region": "Runeterra",
+      "region": [
+        "Unknown"
+      ],
       "class": [
         "Assassin",
         "Fighter"
@@ -8369,7 +9661,11 @@
         "Jungle"
       ],
       "resource": "None",
-      "species": "Undead",
+      "species": [
+        "Wraith",
+        "Human",
+        "Magical"
+      ],
       "primaryDamageType": "AD",
       "range": 200,
       "baseMovespeed": 345,
@@ -8408,11 +9704,18 @@
           "description": "Viego teleports to a nearby location and executes an enemy champion on arrival, piercing their heart and causing a destructive shockwave around them that knocks away their allies.",
           "flags": {}
         }
-      }
+      },
+      "regions": [
+        "Alov\u00e9dra",
+        "Camavor",
+        "Shadow Isles\n Camavor"
+      ]
     },
     {
       "name": "Viktor",
-      "region": "Piltover",
+      "region": [
+        "Zaun"
+      ],
       "class": [
         "Mage"
       ],
@@ -8420,7 +9723,11 @@
         "Mid"
       ],
       "resource": "Mana",
-      "species": "Human",
+      "species": [
+        "Human",
+        "Cyborg",
+        "Magically Altered"
+      ],
       "primaryDamageType": "AP",
       "range": 525,
       "baseMovespeed": 335,
@@ -8460,11 +9767,18 @@
           "description": "Viktor conjures a singularity on the field which deals magic damage and interrupts enemy channels. The singularity then periodically does magic damage to all nearby enemies. Viktor can redirect the singularity.<br><br>Augment: The Chaos Storm moves 25% faster.",
           "flags": {}
         }
-      }
+      },
+      "regions": [
+        "Zaun",
+        "Zaun\n Piltover"
+      ]
     },
     {
       "name": "Vladimir",
-      "region": "Noxus",
+      "region": [
+        "Noxus",
+        "Shadow Isles"
+      ],
       "class": [
         "Mage"
       ],
@@ -8473,7 +9787,11 @@
         "Top"
       ],
       "resource": "Crimson Rush",
-      "species": "Human",
+      "species": [
+        "Human",
+        "Magical",
+        "Magically Altered"
+      ],
       "primaryDamageType": "AP",
       "range": 450,
       "baseMovespeed": 330,
@@ -8519,11 +9837,18 @@
           "description": "Vladimir infects an area with a virulent plague. Affected enemies take increased damage for the duration. After a few seconds, Hemoplague deals magic damage to infected enemies and heals Vladimir for each enemy Champion hit.",
           "flags": {}
         }
-      }
+      },
+      "regions": [
+        "Noxus\n Blessed Isles\n Camavor",
+        "Camavor[1]",
+        "Alovedra"
+      ]
     },
     {
       "name": "Volibear",
-      "region": "Freljord",
+      "region": [
+        "Freljord"
+      ],
       "class": [
         "Fighter",
         "Tank"
@@ -8533,7 +9858,9 @@
         "Jungle"
       ],
       "resource": "Mana",
-      "species": "Spirit",
+      "species": [
+        "Spirit God"
+      ],
       "primaryDamageType": "AD",
       "range": 150,
       "baseMovespeed": 340,
@@ -8576,11 +9903,17 @@
           "description": "Volibear leaps to a target location, Slowing and damaging enemies beneath him while gaining bonus Health.  Enemy towers near his landing location become temporarily disabled.",
           "flags": {}
         }
-      }
+      },
+      "regions": [
+        "Freljord",
+        "Freljord (The Formation)"
+      ]
     },
     {
       "name": "Warwick",
-      "region": "Freljord",
+      "region": [
+        "Zaun"
+      ],
       "class": [
         "Fighter",
         "Tank"
@@ -8590,7 +9923,11 @@
         "Top"
       ],
       "resource": "Mana",
-      "species": "Human",
+      "species": [
+        "Human",
+        "Chemically Altered",
+        "Cyborg"
+      ],
       "primaryDamageType": "AD",
       "range": 125,
       "baseMovespeed": 335,
@@ -8637,11 +9974,16 @@
           "description": "Warwick leaps in a direction (scaling with his bonus Move Speed), suppressing the first champion he collides with for 1.5 seconds.",
           "flags": {}
         }
-      }
+      },
+      "regions": [
+        "Zaun"
+      ]
     },
     {
       "name": "Xayah",
-      "region": "Ionia",
+      "region": [
+        "Unknown"
+      ],
       "class": [
         "Marksman"
       ],
@@ -8649,7 +9991,9 @@
         "Bot"
       ],
       "resource": "Mana",
-      "species": "Vastaya",
+      "species": [
+        "Lhotlan"
+      ],
       "primaryDamageType": "AD",
       "range": 525,
       "baseMovespeed": 330,
@@ -8693,11 +10037,18 @@
           "description": "Xayah leaps into the air becoming untargetable and throwing out a fan of daggers, dropping Feathers she can recall.",
           "flags": {}
         }
-      }
+      },
+      "regions": [
+        "Qaelin",
+        "Lhotlan Village",
+        "Ionia"
+      ]
     },
     {
       "name": "Xerath",
-      "region": "Shurima",
+      "region": [
+        "Shurima"
+      ],
       "class": [
         "Mage"
       ],
@@ -8706,7 +10057,10 @@
         "Support"
       ],
       "resource": "Mana",
-      "species": "Human",
+      "species": [
+        "Baccai",
+        "formerly Human"
+      ],
       "primaryDamageType": "AP",
       "range": 525,
       "baseMovespeed": 340,
@@ -8747,11 +10101,18 @@
           "description": "Xerath immobilizes himself and gains numerous long-range barrages.",
           "flags": {}
         }
-      }
+      },
+      "regions": [
+        "Shurima",
+        "Saikhal",
+        "Shurima (Ancient Times)"
+      ]
     },
     {
       "name": "Xin Zhao",
-      "region": "Demacia",
+      "region": [
+        "Unknown"
+      ],
       "class": [
         "Fighter",
         "Assassin"
@@ -8760,7 +10121,9 @@
         "Jungle"
       ],
       "resource": "Mana",
-      "species": "Dragon",
+      "species": [
+        "Human"
+      ],
       "primaryDamageType": "AD",
       "range": 175,
       "baseMovespeed": 345,
@@ -8804,11 +10167,18 @@
           "description": "Xin Zhao challenges an enemy he damaged recently. Xin Zhao deals damage to nearby enemies based on their current Health and knocks non-challenged targets back, becoming impervious to damage dealt by champions outside of the circle created.",
           "flags": {}
         }
-      }
+      },
+      "regions": [
+        "Raikkon",
+        "Demacia\n Noxus\n Ionia",
+        "Ionia"
+      ]
     },
     {
       "name": "Yasuo",
-      "region": "Demacia",
+      "region": [
+        "Ionia"
+      ],
       "class": [
         "Fighter",
         "Assassin"
@@ -8819,7 +10189,10 @@
         "Bot"
       ],
       "resource": "Flow",
-      "species": "Spirit",
+      "species": [
+        "Human",
+        "Magical"
+      ],
       "primaryDamageType": "AD",
       "range": 175,
       "baseMovespeed": 345,
@@ -8867,11 +10240,17 @@
           "description": "Blinks to an <factionIonia1>Airborne</factionIonia1> enemy champion, dealing physical damage and holding all <factionIonia1>Airborne</factionIonia1> enemies in the area in the air. Grants maximum Flow but resets all stacks of Gathering Storm.<br><br>For a moderate time afterwards, Yasuo's critical strikes gain significant Bonus Armor Penetration.",
           "flags": {}
         }
-      }
+      },
+      "regions": [
+        "Navori",
+        "Ionia"
+      ]
     },
     {
       "name": "Yone",
-      "region": "Runeterra",
+      "region": [
+        "Ionia"
+      ],
       "class": [
         "Assassin",
         "Fighter"
@@ -8881,7 +10260,11 @@
         "Mid"
       ],
       "resource": "Flow",
-      "species": "Spirit",
+      "species": [
+        "Human",
+        "Magical",
+        "Magically Altered"
+      ],
       "primaryDamageType": "AD",
       "range": 175,
       "baseMovespeed": 345,
@@ -8922,11 +10305,17 @@
           "description": "Yone blinks behind the last champion in a line with a slash so powerful it pulls all enemies hit towards him.",
           "flags": {}
         }
-      }
+      },
+      "regions": [
+        "Navori",
+        "Ionia"
+      ]
     },
     {
       "name": "Yorick",
-      "region": "Shadow Isles",
+      "region": [
+        "Shadow Isles"
+      ],
       "class": [
         "Fighter",
         "Tank"
@@ -8935,7 +10324,11 @@
         "Top"
       ],
       "resource": "Mana",
-      "species": "Undead",
+      "species": [
+        "Human",
+        "Magical",
+        "Magically Altered"
+      ],
       "primaryDamageType": "AD",
       "range": 175,
       "baseMovespeed": 340,
@@ -8975,11 +10368,17 @@
           "description": "Yorick summons the Maiden of the Mist that causes Yorick's attacks against the Maiden's target to deal bonus damage. The Maiden will also automatically raise Walkers from dead enemies.",
           "flags": {}
         }
-      }
+      },
+      "regions": [
+        "Blessed Isles",
+        "Shadow Isles\n Blessed Isles"
+      ]
     },
     {
       "name": "Yuumi",
-      "region": "Piltover",
+      "region": [
+        "Bandle City"
+      ],
       "class": [
         "Support",
         "Mage"
@@ -8988,7 +10387,10 @@
         "Support"
       ],
       "resource": "Mana",
-      "species": "Yordle",
+      "species": [
+        "Cat",
+        "Magically Altered"
+      ],
       "primaryDamageType": "AP",
       "range": 425,
       "baseMovespeed": 330,
@@ -9027,11 +10429,16 @@
           "description": "Yuumi channels five waves that damage enemies and heal allies. Yuumi can move, attach, and cast Zoomies! while channeling. While on her Best Friend, this spell also follows her mouse.",
           "flags": {}
         }
-      }
+      },
+      "regions": [
+        "Bandle City"
+      ]
     },
     {
       "name": "Zac",
-      "region": "Zaun",
+      "region": [
+        "Zaun"
+      ],
       "class": [
         "Tank",
         "Fighter"
@@ -9042,7 +10449,9 @@
         "Support"
       ],
       "resource": "None",
-      "species": "Dragon",
+      "species": [
+        "Ooze Golem"
+      ],
       "primaryDamageType": "AD",
       "range": 175,
       "baseMovespeed": 340,
@@ -9081,11 +10490,16 @@
           "description": "Zac bounces four times, knocking up enemies hit and slowing them.",
           "flags": {}
         }
-      }
+      },
+      "regions": [
+        "Zaun"
+      ]
     },
     {
       "name": "Zed",
-      "region": "Ionia",
+      "region": [
+        "Ionia"
+      ],
       "class": [
         "Assassin"
       ],
@@ -9094,7 +10508,10 @@
         "Jungle"
       ],
       "resource": "Energy",
-      "species": "Human",
+      "species": [
+        "Human",
+        "Magically Altered"
+      ],
       "primaryDamageType": "AD",
       "range": 125,
       "baseMovespeed": 345,
@@ -9139,11 +10556,16 @@
           "description": "Zed becomes untargetable and dashes to an enemy champion, marking them. After 3 seconds the mark triggers, repeating a portion of all the damage Zed dealt to the target while they were marked.",
           "flags": {}
         }
-      }
+      },
+      "regions": [
+        "Ionia"
+      ]
     },
     {
       "name": "Zeri",
-      "region": "Zaun",
+      "region": [
+        "Zaun"
+      ],
       "class": [
         "Marksman"
       ],
@@ -9151,7 +10573,10 @@
         "Bot"
       ],
       "resource": "Mana",
-      "species": "Spirit",
+      "species": [
+        "Human",
+        "Magical"
+      ],
       "primaryDamageType": "AD",
       "range": 500,
       "baseMovespeed": 330,
@@ -9188,11 +10613,17 @@
           "description": "Zeri discharges a nova of electricity and overcharges herself, gaining increased damage and stacking Move Speed that refreshes and gets stronger every time she hits an enemy champion. While overcharged, Burst fire becomes a faster triple shot that chains lightning between enemies.",
           "flags": {}
         }
-      }
+      },
+      "regions": [
+        "Zaun",
+        "Entresol Level"
+      ]
     },
     {
       "name": "Ziggs",
-      "region": "Piltover",
+      "region": [
+        "Bandle City"
+      ],
       "class": [
         "Mage"
       ],
@@ -9201,7 +10632,9 @@
         "Mid"
       ],
       "resource": "Mana",
-      "species": "Yordle",
+      "species": [
+        "Yordle"
+      ],
       "primaryDamageType": "AP",
       "range": 550,
       "baseMovespeed": 325,
@@ -9245,11 +10678,18 @@
           "description": "Ziggs deploys his ultimate creation, the Mega Inferno Bomb, hurling it an enormous distance. Enemies in the primary blast zone take more damage than those farther away.",
           "flags": {}
         }
-      }
+      },
+      "regions": [
+        "Bandle City",
+        "Zaun\n Piltover"
+      ]
     },
     {
       "name": "Zilean",
-      "region": "Runeterra",
+      "region": [
+        "Shurima",
+        "Unknown"
+      ],
       "class": [
         "Support",
         "Mage"
@@ -9258,7 +10698,10 @@
         "Support"
       ],
       "resource": "Mana",
-      "species": "Human",
+      "species": [
+        "Human",
+        "Magical"
+      ],
       "primaryDamageType": "AP",
       "range": 550,
       "baseMovespeed": 335,
@@ -9299,11 +10742,17 @@
           "description": "Zilean places a protective time rune on an allied champion, teleporting the champion back in time if they take lethal damage.",
           "flags": {}
         }
-      }
+      },
+      "regions": [
+        "Runeterra\n Icathia\n Shurima",
+        "Icathia (Ancient Times)"
+      ]
     },
     {
       "name": "Zoe",
-      "region": "Targon",
+      "region": [
+        "Targon"
+      ],
       "class": [
         "Mage",
         "Support"
@@ -9312,7 +10761,10 @@
         "Mid"
       ],
       "resource": "Mana",
-      "species": "Celestial",
+      "species": [
+        "Aspect Host",
+        "Human"
+      ],
       "primaryDamageType": "AP",
       "range": 550,
       "baseMovespeed": 340,
@@ -9353,11 +10805,17 @@
           "description": "Blink to a nearby position for 1 second. Then blink back.",
           "flags": {}
         }
-      }
+      },
+      "regions": [
+        "Mount Targon",
+        "Targon"
+      ]
     },
     {
       "name": "Zyra",
-      "region": "Ionia",
+      "region": [
+        "Ixtal"
+      ],
       "class": [
         "Mage",
         "Support"
@@ -9366,7 +10824,10 @@
         "Support"
       ],
       "resource": "Mana",
-      "species": "Human",
+      "species": [
+        "Unknown",
+        "Possibly a new Species"
+      ],
       "primaryDamageType": "AP",
       "range": 575,
       "baseMovespeed": 340,
@@ -9410,7 +10871,12 @@
           "description": "Zyra summons a twisted thicket at her target location, dealing damage to enemies as it expands and knocking them airborne as it contracts. Plants within the thicket are enraged.",
           "flags": {}
         }
-      }
+      },
+      "regions": [
+        "Ixtal",
+        "Shuriman Jungle",
+        "Gardens of Zyr"
+      ]
     }
   ]
 }
