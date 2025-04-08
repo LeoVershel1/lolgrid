@@ -7,6 +7,7 @@ import { API_URL } from '../config';
 interface DailyChallenge {
   rows: string[];
   cols: string[];
+  gameId: string;
 }
 
 export default function Home() {
@@ -14,6 +15,7 @@ export default function Home() {
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);
   const [difficulty, setDifficulty] = useState(0.5);
+  const [gameState, setGameState] = useState<{gameId: string, grid: any[][]} | null>(null);
 
   const fetchDailyChallenge = async () => {
     try {
@@ -32,22 +34,25 @@ export default function Home() {
 
   const generateNewGrid = async () => {
     try {
-      setLoading(true);
-      setError(null);
-      const response = await fetch(`${API_URL}/api/generate`, {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-        },
-        body: JSON.stringify({ difficulty }),
-      });
-      if (!response.ok) throw new Error('Failed to generate new grid');
+      const response = await fetch(`${API_URL}/api/game?difficulty=${difficulty}`);
       const data = await response.json();
-      setChallenge(data);
-    } catch (err) {
-      setError(err instanceof Error ? err.message : 'An error occurred');
-    } finally {
-      setLoading(false);
+      
+      // Extract categories from the game state
+      const rows = data.categories.yAxis.map((cat: any) => cat.name);
+      const cols = data.categories.xAxis.map((cat: any) => cat.name);
+      
+      setChallenge({
+        rows,
+        cols,
+        gameId: data.gameId
+      });
+      
+      setGameState({
+        gameId: data.gameId,
+        grid: data.grid
+      });
+    } catch (error) {
+      console.error('Error generating grid:', error);
     }
   };
 
@@ -94,7 +99,7 @@ export default function Home() {
             </button>
           </div>
         </div>
-        {challenge && <GameBoard categories={challenge} />}
+        {challenge && gameState && <GameBoard categories={challenge} gameState={gameState} setGameState={setGameState} />}
       </div>
     </main>
   );

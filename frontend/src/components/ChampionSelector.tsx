@@ -1,7 +1,7 @@
 "use client";
 
 import React, { useState, useEffect, useRef } from 'react';
-import { API_BASE_URL } from '../config';
+import { API_URL } from '../config';
 
 interface ChampionSelectorProps {
   onSelect: (champion: string) => void;
@@ -18,7 +18,7 @@ const ChampionSelector: React.FC<ChampionSelectorProps> = ({ onSelect, onClose }
   useEffect(() => {
     const fetchChampions = async () => {
       try {
-        const response = await fetch(`${API_BASE_URL}/api/champions`);
+        const response = await fetch(`${API_URL}/api/champions`);
         const data = await response.json();
         setChampions(data);
       } catch (error) {
@@ -82,7 +82,7 @@ const ChampionSelector: React.FC<ChampionSelectorProps> = ({ onSelect, onClose }
                 className="flex items-center w-full p-2 hover:bg-gray-100 rounded"
               >
                 <img
-                  src={`${API_BASE_URL}/champion_icons/${encodeURIComponent(champion)}.png`}
+                  src={`${API_URL}/champion_icons/${encodeURIComponent(champion)}.png`}
                   alt={champion}
                   className="w-8 h-8 rounded-full mr-2"
                   onError={(e) => {

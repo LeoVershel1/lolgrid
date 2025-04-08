@@ -131,7 +131,9 @@
         "q": {
           "name": "Orb of Deception",
           "description": "Ahri sends out and pulls back her orb, dealing magic damage on the way out and true damage on the way back. ",
-          "flags": {}
+          "flags": {
+            "hasKnockup": true
+          }
         },
         "w": {
           "name": "Fox-Fire",
@@ -207,9 +209,7 @@
         "passive": {
           "name": "Assassin's Mark",
           "description": "Dealing spell damage to a champion creates a ring of energy around them. Exiting that ring empowers Akali's next Attack with bonus range and damage.",
-          "flags": {
-            "hasAutoAttackReset": true
-          }
+          "flags": {}
         },
         "q": {
           "name": "Five Point Strike",
@@ -446,6 +446,7 @@
           "description": "Amumu tosses a sticky bandage at a target, stunning and damaging the target while he pulls himself to them.",
           "flags": {
             "hasStun": true,
+            "hasKnockup": true,
             "hasHardCC": true,
             "hasCharges": true
           }
@@ -1134,9 +1135,7 @@
         "e": {
           "name": "Power Fist",
           "description": "Blitzcrank charges up their fist to make the next attack deal double damage and pop their target up in the air.",
-          "flags": {
-            "hasAutoAttackReset": true
-          }
+          "flags": {}
         },
         "r": {
           "name": "Static Field",
@@ -1357,7 +1356,6 @@
           "description": "Briar leaps forward and shatters her pillory, entering a Blood Frenzy that causes her to relentlessly pursue the nearest enemy (prioritizing champions). While frenzied, she gains increased Attack Speed and Move Speed, and her attacks deal damage in an area around her target.<br><br>Briar can reactivate this ability while frenzied to take a CHOMP out of her target on her next attack, dealing additional damage based on their missing Health, and healing Briar based on the damage she deals.",
           "flags": {
             "hasAreaOfEffect": true,
-            "hasAutoAttackReset": true,
             "hasLeap": true,
             "hasMobility": true
           }
@@ -1507,9 +1505,7 @@
         "q": {
           "name": "Precision Protocol",
           "description": "Camille's next attack deals bonus damage and grants bonus Move Speed. This spell can be recast for a short period of time, doing significantly increased bonus damage if Camille delays a period of time between the two attacks.",
-          "flags": {
-            "hasAutoAttackReset": true
-          }
+          "flags": {}
         },
         "w": {
           "name": "Tactical Sweep",
@@ -1823,14 +1819,15 @@
           "description": "Darius's next attack strikes an enemy's crucial artery. As they bleed out, their Move Speed is slowed.",
           "flags": {
             "hasSlows": true,
-            "hasDamageOverTime": true,
-            "hasAutoAttackReset": true
+            "hasDamageOverTime": true
           }
         },
         "e": {
           "name": "Apprehend",
           "description": "Darius hones his axe, passively causing his physical damage to ignore a percentage of his target's Armor. When activated, Darius sweeps up his enemies with his axe's hook and pulls them to him.",
-          "flags": {}
+          "flags": {
+            "hasKnockup": true
+          }
         },
         "r": {
           "name": "Noxian Guillotine",
@@ -1913,6 +1910,7 @@
           "name": "Moonfall",
           "description": "Diana reveals and draws in all nearby enemies and slows them.<br><br>If Diana pulls in one or more enemy champions, the moonlight crashes down onto her after a short delay, dealing magic damage in an area around her, increased for each target beyond the first pulled.",
           "flags": {
+            "hasKnockup": true,
             "hasSlows": true,
             "hasAreaOfEffect": true
           }
@@ -1967,8 +1965,7 @@
           "name": "Spinning Axe",
           "description": "Draven's next attack will deal bonus physical damage. This axe will ricochet off the target high up into the air. If Draven catches it, he automatically readies another Spinning Axe. Draven can have two Spinning Axes at once.",
           "flags": {
-            "hasKnockup": true,
-            "hasAutoAttackReset": true
+            "hasKnockup": true
           }
         },
         "w": {
@@ -2139,7 +2136,6 @@
           "name": "Phase Dive",
           "description": "Ekko rolls evasively while charging up his Z-Drive. His next attack deals bonus damage and warps reality, teleporting him to his target.",
           "flags": {
-            "hasAutoAttackReset": true,
             "hasBlink": true,
             "hasMobility": true
           }
@@ -2286,8 +2282,7 @@
           "description": "Evelynn curses her target, causing her next attack or spell after a delay to charm her target and reduce their magic resist.",
           "flags": {
             "hasCharm": true,
-            "hasHardCC": true,
-            "hasAutoAttackReset": true
+            "hasHardCC": true
           }
         },
         "e": {
@@ -2598,8 +2593,7 @@
           "name": "Seastone Trident",
           "description": "Fizz's attacks bleed his enemies, dealing magic damage over several seconds. Fizz can empower his next attack to deal bonus damage and empower his further attacks for a short time.",
           "flags": {
-            "hasDamageOverTime": true,
-            "hasAutoAttackReset": true
+            "hasDamageOverTime": true
           }
         },
         "e": {
@@ -2833,8 +2827,7 @@
           "flags": {
             "hasSilence": true,
             "hasSlows": true,
-            "hasAreaOfEffect": true,
-            "hasAutoAttackReset": true
+            "hasAreaOfEffect": true
           }
         },
         "w": {
@@ -3217,7 +3210,6 @@
           "name": "Devastating Charge",
           "description": "Hecarim gains increasing Move Speed and can move through units for a short duration. His next attack knocks the target back and deals additional physical damage based on the distance he has traveled since activating the ability.",
           "flags": {
-            "hasAutoAttackReset": true,
             "hasGhost": true,
             "hasMobility": true
           }
@@ -3794,9 +3786,7 @@
         "w": {
           "name": "Empower",
           "description": "Jax charges his weapon with energy, causing his next attack to deal additional damage.",
-          "flags": {
-            "hasAutoAttackReset": true
-          }
+          "flags": {}
         },
         "e": {
           "name": "Counter Strike",
@@ -4554,9 +4544,7 @@
         "e": {
           "name": "Starfire Spellblade",
           "description": "Passive: Kayle's celestial sword, Virtue, deals bonus magic damage to enemies she attacks.<br><br>Active: Kayle's next attack smites her target with celestial fire, dealing bonus damage proportionate to their missing health.",
-          "flags": {
-            "hasAutoAttackReset": true
-          }
+          "flags": {}
         },
         "r": {
           "name": "Divine Judgment",
@@ -4843,8 +4831,7 @@
           "name": "Wolf's Frenzy",
           "description": "Wolf enrages and attacks enemies around him.  Lamb passively gains stacks by moving and attacking. When fully charged, Lamb's next attack restores health.",
           "flags": {
-            "hasAreaOfEffect": true,
-            "hasAutoAttackReset": true
+            "hasAreaOfEffect": true
           }
         },
         "e": {
@@ -5037,14 +5024,13 @@
         "passive": {
           "name": "Dauntless Instinct",
           "description": "K'Sante's Abilities mark targets to take more damage on his next Attack.<br><br>When All Out, K'Sante deals more damage with all Attacks and Abilities.",
-          "flags": {
-            "hasAutoAttackReset": true
-          }
+          "flags": {}
         },
         "q": {
           "name": "Ntofo Strikes",
           "description": "K'Sante strikes, damaging and slowing enemies in a short line.<br><br>On hit, grants a stack of Ntofo Strikes. At 2 stacks, K'Sante fires a shockwave that pulls enemies in.<br><br>When All Out, cooldown is reduced.",
           "flags": {
+            "hasKnockup": true,
             "hasSlows": true,
             "hasAreaOfEffect": true
           }
@@ -5517,7 +5503,6 @@
           "description": "Whenever Lucian uses an ability, his next attack becomes a double-shot. When Lucian is healed or shielded by an ally, or when a nearby enemy Champion is immobilized, his next 2 basic attacks will deal bonus magic damage.",
           "flags": {
             "hasRoot": true,
-            "hasAutoAttackReset": true,
             "hasShield": true
           }
         },
@@ -5678,8 +5663,7 @@
           "name": "Illumination",
           "description": "Lux's damaging spells charge the target with energy for a few seconds. Lux's next attack ignites the energy, dealing bonus magic damage (depending on Lux's level) to the target.",
           "flags": {
-            "hasDamageOverTime": true,
-            "hasAutoAttackReset": true
+            "hasDamageOverTime": true
           }
         },
         "q": {
@@ -6216,9 +6200,7 @@
         "q": {
           "name": "Crushing Blow",
           "description": "Wukong's next attack gains attack range, deals bonus damage, and reduces the target's armor for a few seconds.",
-          "flags": {
-            "hasAutoAttackReset": true
-          }
+          "flags": {}
         },
         "w": {
           "name": "Warrior Trickster",
@@ -6309,6 +6291,7 @@
           "name": "Death's Grasp",
           "description": "Mordekaiser pulls all enemies in an area.",
           "flags": {
+            "hasKnockup": true,
             "hasAreaOfEffect": true
           }
         },
@@ -6664,7 +6647,9 @@
         "q": {
           "name": "Dredge Line",
           "description": "Nautilus hurls his anchor forward.  Colliding with an enemy pulls them and Nautilus together, dealing magic damage.  Colliding with terrain pulls Nautilus towards it.",
-          "flags": {}
+          "flags": {
+            "hasKnockup": true
+          }
         },
         "w": {
           "name": "Titan's Wrath",
@@ -6819,9 +6804,7 @@
         "q": {
           "name": "Javelin Toss / Takedown",
           "description": "In human form, Nidalee throws a spiked javelin at her target that gains damage as it flies.  As a cougar, her next attack will attempt to fatally wound her target, dealing more damage the less life they have.",
-          "flags": {
-            "hasAutoAttackReset": true
-          }
+          "flags": {}
         },
         "w": {
           "name": "Bushwhack / Pounce",
@@ -6955,8 +6938,7 @@
           "name": "Umbra Blades",
           "description": "Every few seconds, Nocturne's next attack strikes surrounding enemies for bonus physical damage and heals himself. <br><br>Nocturne's basic attacks reduce this cooldown.",
           "flags": {
-            "hasAreaOfEffect": true,
-            "hasAutoAttackReset": true
+            "hasAreaOfEffect": true
           }
         },
         "q": {
@@ -7485,7 +7467,9 @@
         "q": {
           "name": "Bone Skewer",
           "description": "Pyke either stabs an enemy in front of him or pulls an enemy towards him.",
-          "flags": {}
+          "flags": {
+            "hasKnockup": true
+          }
         },
         "w": {
           "name": "Ghostwater Dive",
@@ -7936,9 +7920,7 @@
         "e": {
           "name": "Full Tilt",
           "description": "Passive: Rell gains out of combat Move Speed.<br><br>Active: Rell and an ally gain ramping Move Speed, doubled toward enemies and each other. Her next Attack explodes, dealing magic damage.<br>",
-          "flags": {
-            "hasAutoAttackReset": true
-          }
+          "flags": {}
         },
         "r": {
           "name": "Magnet Storm",
@@ -8144,7 +8126,6 @@
           "name": "Savagery",
           "description": "Rengar's next Attack brutally stabs his target for bonus damage.<br><br>Ferocity effect: deals increased damage and grants Attack Speed.",
           "flags": {
-            "hasAutoAttackReset": true,
             "hasCharges": true
           }
         },
@@ -8308,6 +8289,7 @@
           "name": "Scrap Shield",
           "description": "Rumble pulls up a shield, protecting him from damage and granting him a quick burst of speed. While in Danger Zone, the shield strength and speed bonus is increased.",
           "flags": {
+            "hasKnockup": true,
             "hasAreaOfEffect": true,
             "hasShield": true
           }
@@ -8773,6 +8755,7 @@
           "description": "Sett pulls in all enemies on opposite sides of him, dealing damage and stunning them. If enemies were only on one side, they are slowed instead of stunned.",
           "flags": {
             "hasStun": true,
+            "hasKnockup": true,
             "hasHardCC": true,
             "hasSlows": true
           }
@@ -8993,9 +8976,7 @@
         "q": {
           "name": "Twin Bite",
           "description": "Shyvana strikes twice on her next attack and grants herself Attack Speed for her next attacks. Basic attacks reduce the cooldown of Twin Bite by 0.5 seconds.<br><br><font color='#FF3300'>Dragon Form: </font>Twin Bite cleaves all units in front of Shyvana.",
-          "flags": {
-            "hasAutoAttackReset": true
-          }
+          "flags": {}
         },
         "w": {
           "name": "Burnout",
@@ -9363,16 +9344,13 @@
         "passive": {
           "name": "Power Chord",
           "description": "<passive>Accelerando</passive>: Sona gains non-Ultimate ability haste permanently for her basic abilities as she uses her abilities well, up to a cap. Beyond that cap, further successful uses reduce her ultimate's remaining cooldown instead.<br><br><passive>Power Chord</passive>: Every few spell casts, Sona's next attack will deal bonus magic damage in addition to an additional effect based on what basic Ability Sona last activated.",
-          "flags": {
-            "hasAutoAttackReset": true
-          }
+          "flags": {}
         },
         "q": {
           "name": "Hymn of Valor",
           "description": "Sona plays the Hymn of Valor, sends out bolts of sound, dealing magic damage to two nearby enemies, prioritizing champions and monsters. Sona gains a temporary aura that grants allies tagged by the zone bonus damage on their next attack against enemies.",
           "flags": {
-            "hasAreaOfEffect": true,
-            "hasAutoAttackReset": true
+            "hasAreaOfEffect": true
           }
         },
         "w": {
@@ -10124,7 +10102,9 @@
         "q": {
           "name": "Death Sentence",
           "description": "Thresh binds an enemy in chains and pulls them toward him. Activating this ability a second time pulls Thresh to the enemy.",
-          "flags": {}
+          "flags": {
+            "hasKnockup": true
+          }
         },
         "w": {
           "name": "Dark Passage",
@@ -10420,9 +10400,7 @@
         "w": {
           "name": "Pick a Card",
           "description": "Twisted Fate chooses a magic card from his deck, and uses that for his next attack, causing bonus effects.",
-          "flags": {
-            "hasAutoAttackReset": true
-          }
+          "flags": {}
         },
         "e": {
           "name": "Stacked Deck",
@@ -10798,9 +10776,7 @@
         "q": {
           "name": "Tumble",
           "description": "Vayne tumbles, maneuvering to carefully place her next shot. Her next attack deals bonus damage.",
-          "flags": {
-            "hasAutoAttackReset": true
-          }
+          "flags": {}
         },
         "w": {
           "name": "Silver Bolts",
@@ -11102,7 +11078,6 @@
           "description": "Vi's next attack blasts through her target, dealing damage to enemies behind it.",
           "flags": {
             "hasAreaOfEffect": true,
-            "hasAutoAttackReset": true,
             "hasCharges": true
           }
         },
@@ -11881,6 +11856,7 @@
           "name": "Fate Sealed",
           "description": "Yone blinks behind the last champion in a line with a slash so powerful it pulls all enemies hit towards him.",
           "flags": {
+            "hasKnockup": true,
             "hasAreaOfEffect": true,
             "hasBlink": true,
             "hasMobility": true
@@ -11932,9 +11908,7 @@
         "q": {
           "name": "Last Rites",
           "description": "Yorick deals bonus damage on his next attack and heals himself. If the target dies a grave will be dug.",
-          "flags": {
-            "hasAutoAttackReset": true
-          }
+          "flags": {}
         },
         "w": {
           "name": "Dark Procession",
@@ -12204,8 +12178,7 @@
           "name": "Living Battery",
           "description": "Zeri's Attacks deal magic damage and are treated as Abilities. Moving and casting Burst Fire stores up energy in Zeri's Sparkpack. When fully charged her next Attack deals bonus damage.",
           "flags": {
-            "hasAreaOfEffect": true,
-            "hasAutoAttackReset": true
+            "hasAreaOfEffect": true
           }
         },
         "q": {
