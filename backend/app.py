@@ -69,6 +69,33 @@ game_states = {}
 daily_challenge = None
 daily_challenge_date = None
 
+# Champion ID mapping for special characters
+CHAMPION_ID_MAPPING = {
+    "Aurelion Sol": "AurelionSol",
+    "Bel'Veth": "Belveth",
+    "Cho'Gath": "Chogath",
+    "Dr. Mundo": "DrMundo",
+    "Jarvan IV": "JarvanIV",
+    "Kai'Sa": "Kaisa",
+    "K'Sante": "KSante",
+    "Kha'Zix": "Khazix",
+    "Kog'Maw": "KogMaw",
+    "Lee Sin": "LeeSin",
+    "Master Yi": "MasterYi",
+    "Miss Fortune": "MissFortune",
+    "Nunu & Willump": "Nunu",
+    "Rek'Sai": "RekSai",
+    "Renata Glasc": "Renata",
+    "Tahm Kench": "TahmKench",
+    "Twisted Fate": "TwistedFate",
+    "Vel'Koz": "Velkoz",
+    "Xin Zhao": "XinZhao"
+}
+
+# Get the champion ID for the icon URL
+def get_champion_id(champion_name):
+    return CHAMPION_ID_MAPPING.get(champion_name, champion_name)
+
 def validate_game_state(game_state: Dict) -> bool:
     """Validate that a game state has all required fields and correct structure."""
     try:
@@ -363,7 +390,7 @@ def get_valid_champions():
     champions = [
         {
             'name': champion,
-            'icon': f"/champion_icons/{urllib.parse.quote(champion)}.png"
+            'icon': f"/champion_icons/{urllib.parse.quote(get_champion_id(champion))}"
         }
         for champion in valid_champions
     ]
@@ -375,14 +402,33 @@ def get_valid_champions():
 @app.route('/api/champions', methods=['GET'])
 def get_champions():
     logger.info("API request: get_champions")
-    return jsonify(CHAMPION_NAMES)
+    return jsonify({
+        'champions': CHAMPION_NAMES
+    })
 
 @app.route('/champion_icons/<path:filename>')
 def serve_champion_icon(filename):
     # Decode the URL-encoded filename
     decoded_filename = urllib.parse.unquote(filename)
-    logger.debug(f"Serving champion icon: {decoded_filename}")
-    return send_from_directory(os.path.join(PROJECT_ROOT, 'static', 'champion_icons'), decoded_filename)
+    logger.info(f"Requested champion icon for: {decoded_filename}")
+    
+    # Remove .png extension if it exists
+    clean_filename = decoded_filename.replace('.png', '')
+    
+    # Get the champion ID from the mapping
+    champion_id = get_champion_id(clean_filename)
+    
+    # Add .png extension to the champion ID
+    champion_id = champion_id + '.png'
+    
+    # Check if the file exists
+    icon_path = os.path.join(PROJECT_ROOT, 'static', 'champion_icons', champion_id)
+    if not os.path.exists(icon_path):
+        logger.error(f"Champion icon file not found: {icon_path}")
+        return "Icon not found", 404
+    
+    logger.info(f"Serving champion icon: {champion_id}")
+    return send_from_directory(os.path.join(PROJECT_ROOT, 'static', 'champion_icons'), champion_id)
 
 if __name__ == "__main__":
     app.run(debug=True, port=5001) 

@@ -2,8 +2,31 @@
 
 import React, { useState } from 'react';
 import { GridCell } from '../types/index';
-import { CHAMPION_ICONS_URL } from '../config';
+import { API_URL } from '../config';
 import ChampionSelector from './ChampionSelector';
+
+// Champion ID mapping for special characters
+const CHAMPION_ID_MAPPING: Record<string, string> = {
+  "Aurelion Sol": "AurelionSol",
+  "Bel'Veth": "Belveth",
+  "Cho'Gath": "Chogath",
+  "Dr. Mundo": "DrMundo",
+  "Jarvan IV": "JarvanIV",
+  "Kai'Sa": "Kaisa",
+  "K'Sante": "KSante",
+  "Kha'Zix": "Khazix",
+  "Kog'Maw": "KogMaw",
+  "Lee Sin": "LeeSin",
+  "Master Yi": "MasterYi",
+  "Miss Fortune": "MissFortune",
+  "Nunu & Willump": "Nunu",
+  "Rek'Sai": "RekSai",
+  "Renata Glasc": "Renata",
+  "Tahm Kench": "TahmKench",
+  "Twisted Fate": "TwistedFate",
+  "Vel'Koz": "Velkoz",
+  "Xin Zhao": "XinZhao"
+};
 
 interface ChampionCellProps {
   cell: GridCell;
@@ -26,6 +49,13 @@ const ChampionCell: React.FC<ChampionCellProps> = ({ cell, onGuess, showAnswers 
     return 'bg-red-50';
   };
 
+  // Get the champion ID for the icon URL
+  const getChampionId = (championName: string): string => {
+    // Remove .png extension if it exists
+    const cleanName = championName.replace('.png', '');
+    return CHAMPION_ID_MAPPING[cleanName] || cleanName;
+  };
+
   return (
     <div className="relative">
       <div
@@ -39,7 +69,18 @@ const ChampionCell: React.FC<ChampionCellProps> = ({ cell, onGuess, showAnswers 
       >
         <div className="h-full flex flex-col justify-center items-center text-center">
           {cell.guessedChampion ? (
-            <div className="font-medium">{cell.guessedChampion}</div>
+            <div className="flex flex-col items-center">
+              <img
+                src={`${API_URL}/champion_icons/${encodeURIComponent(getChampionId(cell.guessedChampion))}`}
+                alt={cell.guessedChampion}
+                className="w-12 h-12 rounded-full mb-2"
+                onError={(e) => {
+                  console.error(`Failed to load icon for ${cell.guessedChampion}`);
+                  (e.target as HTMLImageElement).src = '/placeholder-champion.png';
+                }}
+              />
+              <span className="text-sm font-medium">{cell.guessedChampion}</span>
+            </div>
           ) : showAnswers ? (
             <div className="text-sm text-gray-600">
               {cell.correctChampions.slice(0, 3).join(', ')}
@@ -53,10 +94,11 @@ const ChampionCell: React.FC<ChampionCellProps> = ({ cell, onGuess, showAnswers 
           <div className="absolute inset-0 flex items-center justify-center bg-green-50 bg-opacity-50">
             <div className="text-center">
               <img
-                src={`${CHAMPION_ICONS_URL}/${cell.correctChampions[0]}.png`}
+                src={`${API_URL}/champion_icons/${encodeURIComponent(getChampionId(cell.correctChampions[0]))}`}
                 alt={cell.correctChampions[0]}
                 className="w-20 h-20 rounded-full mx-auto"
                 onError={(e) => {
+                  console.error(`Failed to load icon for ${cell.correctChampions[0]}`);
                   // Fallback if image fails to load
                   (e.target as HTMLImageElement).src = '/placeholder-champion.png';
                 }}

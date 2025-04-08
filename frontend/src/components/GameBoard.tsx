@@ -4,6 +4,36 @@ import { useState, useEffect } from 'react';
 import ChampionSelector from './ChampionSelector';
 import { API_URL } from '../config';
 
+// Champion ID mapping for special characters
+const CHAMPION_ID_MAPPING: Record<string, string> = {
+  "Aurelion Sol": "AurelionSol",
+  "Bel'Veth": "Belveth",
+  "Cho'Gath": "Chogath",
+  "Dr. Mundo": "DrMundo",
+  "Jarvan IV": "JarvanIV",
+  "Kai'Sa": "Kaisa",
+  "K'Sante": "KSante",
+  "Kha'Zix": "Khazix",
+  "Kog'Maw": "KogMaw",
+  "Lee Sin": "LeeSin",
+  "Master Yi": "MasterYi",
+  "Miss Fortune": "MissFortune",
+  "Nunu & Willump": "Nunu",
+  "Rek'Sai": "RekSai",
+  "Renata Glasc": "Renata",
+  "Tahm Kench": "TahmKench",
+  "Twisted Fate": "TwistedFate",
+  "Vel'Koz": "Velkoz",
+  "Xin Zhao": "XinZhao"
+};
+
+// Get the champion ID for the icon URL
+const getChampionId = (championName: string): string => {
+  // Remove .png extension if it exists
+  const cleanName = championName.replace('.png', '');
+  return CHAMPION_ID_MAPPING[cleanName] || cleanName;
+};
+
 interface GameBoardProps {
   categories: {
     rows: string[];
@@ -217,7 +247,7 @@ export default function GameBoard({ categories, gameState, setGameState }: GameB
                   {cell.champion ? (
                     <div className="flex flex-col items-center">
                       <img
-                        src={`${API_URL}/champion_icons/${encodeURIComponent(cell.champion)}.png`}
+                        src={`${API_URL}/champion_icons/${encodeURIComponent(getChampionId(cell.champion))}`}
                         alt={cell.champion}
                         className="w-12 h-12 rounded-full mb-2"
                         onError={(e) => {
