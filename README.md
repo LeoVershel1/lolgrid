@@ -14,13 +14,30 @@ A web-based game where players need to identify League of Legends champions that
 
 ## Project Structure
 
-- `app.py` - Flask backend server with grid generation logic
-- `categories.py` - Category definitions and matching logic
-- `grid_generator.py` - Grid generation with difficulty scoring
-- `analyze_categories.py` - Utility for analyzing category difficulties
-- `champions.json` - Champion data
-- `champion_icons.json` - Champion icon mappings
-- `frontend/` - Next.js frontend application
+```
+lolgrid/
+├── backend/           # Backend server and core game logic
+│   ├── app.py        # Flask backend server
+│   ├── categories.py # Category definitions and matching logic
+│   ├── grid_generator.py # Grid generation with difficulty scoring
+│   └── start.sh      # Server startup script
+├── frontend/         # Next.js frontend application
+├── data/            # Data files
+│   ├── champions.json
+│   └── champion_icons.json
+├── scripts/         # Data generation and analysis scripts
+│   ├── generate_champion_data.py
+│   ├── clean_champion_data.py
+│   ├── region_species_updater.py
+│   ├── verify_abilities.py
+│   ├── analyze_categories.py
+│   ├── champion_icons.py
+│   └── query_champions.py
+├── resources/       # Static resources
+│   └── images/     # Image assets
+├── static/         # Web static files
+└── requirements.txt # Python dependencies
+```
 
 ## Grid Generation System
 
