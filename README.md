@@ -1,76 +1,84 @@
-# LoLGrid
+# League of Legends Grid Game
 
-A League of Legends themed grid game inspired by games like Pokedle and NBA Grid.
-
-## Description
-
-LoLGrid is a daily puzzle game where players need to find League of Legends champions that match pairs of categories. The game presents a 3x3 grid where each row and column represents a different category (e.g., region, role, species, etc.). Players must guess champions that fit both the row and column categories for each cell.
+A web-based game where players need to identify League of Legends champions that match specific category combinations.
 
 ## Features
 
-- 3x3 grid with different category combinations each game
-- Multiple possible categories including:
-  - Region (Ionia, Demacia, Piltover, etc.)
-  - Role (Top, Mid, Support, etc.)
-  - Resource Type (Mana, Energy, etc.)
-  - Species (Yordle, Human, Void-being, etc.)
-  - Primary Damage Type (AD, AP, Hybrid)
-  - Range Type (Melee, Short Range, Long Range)
-  - Release Season
-  - And more!
-- Visual feedback for correct and incorrect guesses
-- Post-game analysis showing all possible answers
+- 3x3 grid with category combinations
+- Difficulty-based grid generation
+- Category weighting system
+- Comprehensive category analysis tools
+- Champion icon display
+- Score tracking
+- Game state management
 
-## Setup
+## Project Structure
 
-1. Create a virtual environment:
-```bash
-python3 -m venv venv
-source venv/bin/activate  # On Windows: venv\Scripts\activate
-```
+- `app.py` - Flask backend server with grid generation logic
+- `categories.py` - Category definitions and matching logic
+- `grid_generator.py` - Grid generation with difficulty scoring
+- `analyze_categories.py` - Utility for analyzing category difficulties
+- `champions.json` - Champion data
+- `champion_icons.json` - Champion icon mappings
+- `frontend/` - Next.js frontend application
 
-2. Install dependencies:
+## Grid Generation System
+
+The grid generation system has been improved with:
+
+1. Difficulty Scoring
+   - Each category has a difficulty score based on the number of matching champions
+   - Category pairs are scored based on the intersection of matching champions
+   - Grid difficulty is calculated as the average of all cell difficulties
+
+2. Category Weighting
+   - Categories are weighted based on recency of use
+   - Harder categories are given higher weights to ensure variety
+   - Recently used categories are temporarily excluded
+
+3. Grid Validation
+   - Ensures each cell has at least one valid champion
+   - Maintains target difficulty while generating valid grids
+   - Prevents impossible combinations
+
+## Running the Application
+
+1. Install Python dependencies:
 ```bash
 pip install -r requirements.txt
 ```
 
-## Data Generation
-
-The game uses champion data from multiple sources:
-- Riot Games Data Dragon API
-- League of Legends Wiki
-- Manual verification for certain attributes
-
-To update the champion data:
+2. Start the backend server:
 ```bash
-python3 generate_champion_data.py
+python app.py
 ```
 
-## Project Structure
+3. In a new terminal, start the frontend:
+```bash
+cd frontend
+npm install
+npm run dev
+```
 
-- `generate_champion_data.py`: Script to fetch and compile champion data
-- `champions.json`: Generated champion data used by the game
-- `requirements.txt`: Python dependencies
+4. Open http://localhost:3000 in your browser
 
-## Development Status
+## API Endpoints
 
-Current development is focused on:
-1. Data collection and verification
-2. Grid generation logic
-3. User interface implementation
+- `GET /api/game?difficulty=0.5` - Get a new game state with specified difficulty
+- `POST /api/guess` - Submit a champion guess for a cell
+- `GET /api/champions` - Get list of all champions
+- `GET /champion_icons/<filename>` - Get champion icon image
 
-## Contributing
+## Difficulty Levels
 
-Feel free to contribute by:
-1. Reporting bugs
-2. Suggesting new features
-3. Submitting pull requests
+- 0.0 - Easiest (many champions match each category)
+- 0.5 - Medium (balanced difficulty)
+- 1.0 - Hardest (few champions match each category)
 
-## License
+## Future Improvements
 
-This project is licensed under the MIT License - see the LICENSE file for details.
-
-## Acknowledgments
-
-- Inspired by [Pokedle](https://pokedle.net/) and [NBA Grid](https://www.nbagrids.com/)
-- Champion data from [Riot Games Data Dragon](https://developer.riotgames.com/docs/lol#data-dragon) and [League of Legends Wiki](https://leagueoflegends.fandom.com/) 
+- Add more category types
+- Implement user accounts and high scores
+- Add multiplayer support
+- Improve champion icon loading
+- Add more game modes 

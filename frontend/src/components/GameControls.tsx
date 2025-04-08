@@ -4,14 +4,18 @@ import React from 'react';
 
 interface GameControlsProps {
   guessesRemaining: number;
+  score: number;
   onGiveUp: () => void;
 }
 
-const GameControls: React.FC<GameControlsProps> = ({ guessesRemaining, onGiveUp }) => {
+const GameControls: React.FC<GameControlsProps> = ({ guessesRemaining, score, onGiveUp }) => {
   return (
-    <div className="flex justify-between items-center p-4 bg-white rounded-lg shadow">
-      <div className="text-lg font-semibold">
+    <div className="flex justify-between items-center">
+      <div className="text-sm text-gray-600">
         Guesses remaining: {guessesRemaining}
+      </div>
+      <div className="text-sm text-gray-600">
+        Score: {score}
       </div>
       <button
         onClick={onGiveUp}

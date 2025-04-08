@@ -6,9 +6,13 @@ from flask import Flask, jsonify, request, send_from_directory
 from flask_cors import CORS
 import json
 import random
+import uuid
+from datetime import datetime
 from pathlib import Path
 from typing import Dict, List, Tuple, Optional
-from categories import CATEGORY_TYPES, get_all_categories
+from categories import CATEGORY_TYPES, get_all_categories, get_champions_for_category
+from grid_generator import GridGenerator, load_champions_data
+import urllib.parse
 
 app = Flask(__name__, static_folder='static')
 CORS(app, resources={
@@ -22,8 +26,7 @@ CORS(app, resources={
 })
 
 # Load champion data
-with open("champions.json", "r") as f:
-    CHAMPION_DATA = json.load(f)["champions"]
+CHAMPION_DATA = load_champions_data()
 
 # Load champion icons mapping
 with open("champion_icons.json", "r") as f:
@@ -32,179 +35,114 @@ with open("champion_icons.json", "r") as f:
 # Get list of all champion names for autocomplete
 CHAMPION_NAMES = sorted([champion["name"] for champion in CHAMPION_DATA])
 
+# Initialize grid generator
+grid_generator = GridGenerator(CHAMPION_DATA)
+
+# Store game states for different sessions
+game_states = {}
+
+# Store the daily challenge
+daily_challenge = None
+daily_challenge_date = None
+
 def get_champions_for_categories(category1: str, category2: str) -> List[str]:
     """Get all champions that match both categories."""
-    matching_champions = []
-    
-    for champion in CHAMPION_DATA:
-        matches = True
-        
-        # Check if champion matches category1
-        if category1 in CATEGORY_TYPES["location"]["categories"]:
-            matches = matches and champion["region"] == category1
-        elif category1 in CATEGORY_TYPES["role"]["categories"]:
-            matches = matches and category1 in champion["role"]
-        elif category1 in CATEGORY_TYPES["resource"]["categories"]:
-            matches = matches and champion["resource"] == category1
-        elif category1 in CATEGORY_TYPES["species"]["categories"]:
-            matches = matches and champion["species"] == category1
-        elif category1 in CATEGORY_TYPES["damage_type"]["categories"]:
-            matches = matches and champion["primaryDamageType"] == category1
-        elif category1 in CATEGORY_TYPES["range"]["categories"]:
-            if category1 == "Melee (< 250)":
-                matches = matches and champion["range"] < 250
-            elif category1 == "Short Range (250-499)":
-                matches = matches and 250 <= champion["range"] < 500
-            elif category1 == "Long Range (500+)":
-                matches = matches and champion["range"] >= 500
-        elif category1 in CATEGORY_TYPES["movespeed"]["categories"]:
-            matches = matches and str(champion["baseMovespeed"]) == category1
-        elif category1 in CATEGORY_TYPES["release"]["categories"]:
-            matches = matches and champion["releaseSeason"] == int(category1.split()[-1])
-        elif category1 in CATEGORY_TYPES["model_size"]["categories"]:
-            if category1 == "Small (55-64)":
-                matches = matches and 55 <= champion["modelSize"] <= 64
-            elif category1 == "Medium (65-79)":
-                matches = matches and 65 <= champion["modelSize"] <= 79
-            elif category1 == "Large (80+)":
-                matches = matches and champion["modelSize"] >= 80
-        elif category1 in CATEGORY_TYPES["abilities"]["categories"]:
-            if category1 == "Has Passive E":
-                matches = matches and champion["abilities"]["hasPassiveE"]
-            elif category1 == "Is Shapeshifter":
-                matches = matches and champion["abilities"]["isShapeshifter"]
-            elif category1 == "Has Three-Hit Passive":
-                matches = matches and champion["abilities"]["hasThreeHitPassive"]
-            elif category1 == "Has Auto-Attack Reset":
-                matches = matches and champion["abilities"]["hasAutoAttackReset"]
-            elif category1 == "Has Ability Charges":
-                matches = matches and champion["abilities"]["hasAbilityCharges"]
-            elif category1 == "Has Multiple Hard CC":
-                matches = matches and champion["abilities"]["hasMultipleHardCC"]
-            elif category1 == "Has Changing Abilities":
-                matches = matches and champion["abilities"]["hasChangingAbilities"]
-        
-        # Check if champion matches category2
-        if category2 in CATEGORY_TYPES["location"]["categories"]:
-            matches = matches and champion["region"] == category2
-        elif category2 in CATEGORY_TYPES["role"]["categories"]:
-            matches = matches and category2 in champion["role"]
-        elif category2 in CATEGORY_TYPES["resource"]["categories"]:
-            matches = matches and champion["resource"] == category2
-        elif category2 in CATEGORY_TYPES["species"]["categories"]:
-            matches = matches and champion["species"] == category2
-        elif category2 in CATEGORY_TYPES["damage_type"]["categories"]:
-            matches = matches and champion["primaryDamageType"] == category2
-        elif category2 in CATEGORY_TYPES["range"]["categories"]:
-            if category2 == "Melee (< 250)":
-                matches = matches and champion["range"] < 250
-            elif category2 == "Short Range (250-499)":
-                matches = matches and 250 <= champion["range"] < 500
-            elif category2 == "Long Range (500+)":
-                matches = matches and champion["range"] >= 500
-        elif category2 in CATEGORY_TYPES["movespeed"]["categories"]:
-            matches = matches and str(champion["baseMovespeed"]) == category2
-        elif category2 in CATEGORY_TYPES["release"]["categories"]:
-            matches = matches and champion["releaseSeason"] == int(category2.split()[-1])
-        elif category2 in CATEGORY_TYPES["model_size"]["categories"]:
-            if category2 == "Small (55-64)":
-                matches = matches and 55 <= champion["modelSize"] <= 64
-            elif category2 == "Medium (65-79)":
-                matches = matches and 65 <= champion["modelSize"] <= 79
-            elif category2 == "Large (80+)":
-                matches = matches and champion["modelSize"] >= 80
-        elif category2 in CATEGORY_TYPES["abilities"]["categories"]:
-            if category2 == "Has Passive E":
-                matches = matches and champion["abilities"]["hasPassiveE"]
-            elif category2 == "Is Shapeshifter":
-                matches = matches and champion["abilities"]["isShapeshifter"]
-            elif category2 == "Has Three-Hit Passive":
-                matches = matches and champion["abilities"]["hasThreeHitPassive"]
-            elif category2 == "Has Auto-Attack Reset":
-                matches = matches and champion["abilities"]["hasAutoAttackReset"]
-            elif category2 == "Has Ability Charges":
-                matches = matches and champion["abilities"]["hasAbilityCharges"]
-            elif category2 == "Has Multiple Hard CC":
-                matches = matches and champion["abilities"]["hasMultipleHardCC"]
-            elif category2 == "Has Changing Abilities":
-                matches = matches and champion["abilities"]["hasChangingAbilities"]
-        
-        if matches:
-            matching_champions.append(champion["name"])
-    
+    # This function is kept for backward compatibility
+    # The actual implementation is now in the GridGenerator class
+    difficulty, matching_champions = grid_generator.calculate_pair_difficulty(category1, category2)
     return matching_champions
 
 def generate_valid_grid() -> Tuple[List[str], List[str], List[List[List[str]]]]:
     """Generate a valid 3x3 grid with categories that have at least one solution."""
-    all_categories = get_all_categories()
-    valid_grid = False
-    row_categories = []
-    col_categories = []
-    solutions = []
-    
-    while not valid_grid:
-        # Select 6 random categories (3 for rows, 3 for columns)
-        categories = random.sample(all_categories, 6)
-        row_categories = categories[:3]
-        col_categories = categories[3:]
-        
-        # Check if each cell has at least one valid solution
-        solutions = []
-        valid_grid = True
-        
-        for row_cat in row_categories:
-            row_solutions = []
-            for col_cat in col_categories:
-                cell_solutions = get_champions_for_categories(row_cat, col_cat)
-                if not cell_solutions:
-                    valid_grid = False
-                    break
-                row_solutions.append(cell_solutions)
-            if not valid_grid:
-                break
-            solutions.append(row_solutions)
-    
+    # This function is kept for backward compatibility
+    # The actual implementation is now in the GridGenerator class
+    row_categories, col_categories, solutions, _ = grid_generator.generate_valid_grid()
     return row_categories, col_categories, solutions
 
-def generate_game_state():
-    # Generate a valid grid
-    row_categories, col_categories, solutions = generate_valid_grid()
+def generate_game_state(difficulty: float = 0.5):
+    """Generate a game state with the specified difficulty"""
+    game_state = grid_generator.generate_game_state(difficulty)
+    game_id = str(uuid.uuid4())
+    game_states[game_id] = game_state
+    game_state['gameId'] = game_id
+    return game_state
+
+def generate_daily_challenge():
+    """Generate a daily challenge with medium difficulty."""
+    global daily_challenge, daily_challenge_date
     
-    # Create grid
-    grid = []
-    for i, row_solutions in enumerate(solutions):
-        row = []
-        for j, cell_solutions in enumerate(row_solutions):
-            row.append({
-                'xCategory': col_categories[j],
-                'yCategory': row_categories[i],
-                'correctChampions': cell_solutions,
-                'guessedChampion': None,
-                'isCorrect': None
-            })
-        grid.append(row)
+    # Only generate a new challenge if it's a new day or we don't have one
+    today = datetime.now().date()
+    if daily_challenge_date != today or daily_challenge is None:
+        # Generate a grid with medium difficulty (0.5)
+        row_categories, col_categories, solutions, _ = grid_generator.generate_valid_grid(0.5)
+        
+        # Create the daily challenge format
+        daily_challenge = {
+            'rows': row_categories,
+            'cols': col_categories,
+            'solutions': solutions
+        }
+        daily_challenge_date = today
     
-    # Helper function to get category type from category name
-    def get_category_type(category):
-        for cat_type, info in CATEGORY_TYPES.items():
-            if category in info["categories"]:
-                return cat_type
-        return None
+    return daily_challenge
+
+@app.route('/api/daily', methods=['GET'])
+def get_daily_challenge():
+    """Get today's daily challenge."""
+    challenge = generate_daily_challenge()
+    return jsonify({
+        'rows': challenge['rows'],
+        'cols': challenge['cols']
+    })
+
+@app.route('/api/generate', methods=['POST'])
+def generate_new_grid():
+    data = request.get_json()
+    difficulty = data.get('difficulty', 0.5)  # Default to medium difficulty
     
-    return {
-        'grid': grid,
-        'categories': {
-            'xAxis': [{'name': cat, 'values': list(CATEGORY_TYPES[get_category_type(cat)]["categories"])} for cat in col_categories],
-            'yAxis': [{'name': cat, 'values': list(CATEGORY_TYPES[get_category_type(cat)]["categories"])} for cat in row_categories]
-        },
-        'guessesRemaining': 9,
-        'isGameOver': False,
-        'score': 0
-    }
+    # Use the global CHAMPION_DATA
+    generator = GridGenerator(CHAMPION_DATA)
+    row_categories, col_categories, solutions, _ = generator.generate_valid_grid(target_difficulty=difficulty)
+    
+    return jsonify({
+        'rows': row_categories,
+        'cols': col_categories
+    })
+
+@app.route('/api/daily/verify', methods=['POST'])
+def verify_daily_challenge():
+    data = request.get_json()
+    row = data.get('row')
+    col = data.get('col')
+    champion = data.get('champion')
+    
+    if row is None or col is None or champion is None:
+        return jsonify({'error': 'Missing required fields'}), 400
+    
+    challenge = generate_daily_challenge()
+    row_category = challenge['rows'][row]
+    col_category = challenge['cols'][col]
+    
+    # Get champions that match both categories
+    row_champions = set(get_champions_for_category(CHAMPION_DATA, row_category))
+    col_champions = set(get_champions_for_category(CHAMPION_DATA, col_category))
+    valid_champions = row_champions.intersection(col_champions)
+    
+    is_correct = champion in valid_champions
+    
+    return jsonify({
+        'isCorrect': is_correct
+    })
 
 @app.route('/api/game', methods=['GET'])
 def get_game():
-    return jsonify(generate_game_state())
+    # Get difficulty from query parameters, default to 0.5
+    difficulty = float(request.args.get('difficulty', 0.5))
+    # Clamp difficulty between 0 and 1
+    difficulty = max(0.0, min(1.0, difficulty))
+    
+    return jsonify(generate_game_state(difficulty))
 
 @app.route('/api/guess', methods=['POST'])
 def make_guess():
@@ -212,12 +150,16 @@ def make_guess():
     row = data.get('row')
     col = data.get('col')
     champion = data.get('champion')
+    game_id = data.get('gameId')
     
-    if not all(x is not None for x in [row, col, champion]):
+    if not all(x is not None for x in [row, col, champion, game_id]):
         return jsonify({'error': 'Missing required fields'}), 400
     
     # Get current game state
-    game_state = generate_game_state()  # In a real app, this would be stored in a session
+    if game_id not in game_states:
+        return jsonify({'error': 'Game not found'}), 404
+    
+    game_state = game_states[game_id]
     
     # Check if the guess is correct
     cell = game_state['grid'][row][col]
@@ -238,13 +180,42 @@ def make_guess():
     
     return jsonify(game_state)
 
+@app.route('/api/valid-champions', methods=['POST'])
+def get_valid_champions():
+    data = request.get_json()
+    row_category = data.get('rowCategory')
+    col_category = data.get('colCategory')
+    
+    if not row_category or not col_category:
+        return jsonify({'error': 'Missing required fields'}), 400
+    
+    # Get champions that match both categories
+    row_champions = set(get_champions_for_category(CHAMPION_DATA, row_category))
+    col_champions = set(get_champions_for_category(CHAMPION_DATA, col_category))
+    valid_champions = row_champions.intersection(col_champions)
+    
+    # Format response with champion icons
+    champions = [
+        {
+            'name': champion,
+            'icon': f"/champion_icons/{urllib.parse.quote(champion)}.png"
+        }
+        for champion in valid_champions
+    ]
+    
+    return jsonify({
+        'champions': champions
+    })
+
 @app.route('/api/champions', methods=['GET'])
 def get_champions():
     return jsonify(CHAMPION_NAMES)
 
 @app.route('/champion_icons/<path:filename>')
 def serve_champion_icon(filename):
-    return send_from_directory('static/champion_icons', filename)
+    # Decode the URL-encoded filename
+    decoded_filename = urllib.parse.unquote(filename)
+    return send_from_directory('static/champion_icons', decoded_filename)
 
 if __name__ == "__main__":
     app.run(debug=True, port=5001) 

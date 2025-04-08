@@ -1,12 +1,14 @@
 export interface GridCell {
+  xCategory: string;
+  yCategory: string;
+  correctChampions: string[];
   guessedChampion: string | null;
-  correctChampion: string | null;
-  isCorrect: boolean;
+  isCorrect: boolean | null;
 }
 
 export interface Category {
   name: string;
-  type: string;
+  values: string[];
 }
 
 export interface ChampionAbilities {
@@ -35,4 +37,17 @@ export interface Champion {
 }
 
 // ChampionData is just an array of Champions
-export type ChampionData = Champion[]; 
+export type ChampionData = Champion[];
+
+export interface GameState {
+  grid: GridCell[][];
+  categories: {
+    xAxis: Category[];
+    yAxis: Category[];
+  };
+  guessesRemaining: number;
+  isGameOver: boolean;
+  score: number;
+  gameId: string;
+  difficulty: number;
+} 

@@ -1,8 +1,8 @@
 "use client";
 
-import React, { useState } from 'react';
+import React from 'react';
 import ChampionCell from './ChampionCell';
-import { GridCell, Category } from '../types/index';
+import { GridCell, Category } from '../types';
 
 interface ChampionGridProps {
   grid: GridCell[][];
@@ -18,52 +18,49 @@ const ChampionGrid: React.FC<ChampionGridProps> = ({
   grid,
   categories,
   onGuess,
-  showAnswers,
+  showAnswers
 }) => {
-  const [selectedCell, setSelectedCell] = useState<{ row: number; col: number } | null>(null);
-
-  // Convert 2D grid to 1D array for easier mapping
-  const cells = grid.flatMap((row, rowIndex) =>
-    row.map((cell, colIndex) => ({
-      cell,
-      rowIndex,
-      colIndex,
-    }))
-  );
-
   return (
-    <div className="flex flex-col items-center space-y-6 p-6">
-      {/* X-axis categories */}
-      <div className="grid grid-cols-3 gap-4 w-[600px]">
+    <div className="space-y-4">
+      {/* Column categories */}
+      <div className="grid grid-cols-4 gap-4">
+        <div className="h-12" /> {/* Empty cell for alignment */}
         {categories.xAxis.map((category, index) => (
-          <div key={index} className="text-center font-semibold p-2 text-gray-700">
+          <div
+            key={index}
+            className="h-12 flex items-center justify-center text-center font-medium"
+          >
             {category.name}
           </div>
         ))}
       </div>
 
-      <div className="flex gap-6">
-        {/* Y-axis categories */}
-        <div className="flex flex-col justify-between py-4">
+      {/* Grid with row categories */}
+      <div className="grid grid-cols-4 gap-4">
+        {/* Row categories */}
+        <div className="flex flex-col justify-between">
           {categories.yAxis.map((category, index) => (
-            <div key={index} className="text-center font-semibold p-2 text-gray-700 w-32">
+            <div
+              key={index}
+              className="aspect-square flex items-center justify-center text-center font-medium"
+            >
               {category.name}
             </div>
           ))}
         </div>
 
-        {/* Main grid */}
-        <div className="grid grid-cols-3 grid-rows-3 gap-4 p-4 rounded-lg w-[600px] h-[600px] bg-white shadow-lg">
-          {cells.map(({ cell, rowIndex, colIndex }) => (
-            <ChampionCell
-              key={`${rowIndex}-${colIndex}`}
-              cell={cell}
-              isSelected={selectedCell?.row === rowIndex && selectedCell?.col === colIndex}
-              onSelect={() => setSelectedCell({ row: rowIndex, col: colIndex })}
-              onGuess={(champion) => onGuess(rowIndex, colIndex, champion)}
-              showAnswers={showAnswers}
-            />
-          ))}
+        {/* Grid cells */}
+        <div className="col-span-3 grid grid-cols-3 gap-4">
+          {grid.map((row, rowIndex) =>
+            row.map((cell, colIndex) => (
+              <ChampionCell
+                key={`${rowIndex}-${colIndex}`}
+                cell={cell}
+                onGuess={(champion) => onGuess(rowIndex, colIndex, champion)}
+                showAnswers={showAnswers}
+              />
+            ))
+          )}
         </div>
       </div>
     </div>

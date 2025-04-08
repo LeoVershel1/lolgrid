@@ -15,6 +15,9 @@ interface GameState {
   };
   guessesRemaining: number;
   isGameOver: boolean;
+  score: number;
+  gameId: string;
+  difficulty: number;
 }
 
 const Game: React.FC = () => {
@@ -22,16 +25,20 @@ const Game: React.FC = () => {
   const [showAnswers, setShowAnswers] = useState(false);
   const [isLoading, setIsLoading] = useState(true);
   const [isGuessing, setIsGuessing] = useState(false);
+  const [difficulty, setDifficulty] = useState(0.5);
 
   const fetchNewGame = async () => {
     try {
-      const response = await fetch(`${API_BASE_URL}/api/game`);
+      const response = await fetch(`${API_BASE_URL}/api/game?difficulty=${difficulty}`);
       const data = await response.json();
       setGameState({
         grid: data.grid,
         categories: data.categories,
         guessesRemaining: 9,
         isGameOver: false,
+        score: 0,
+        gameId: data.gameId,
+        difficulty: data.difficulty
       });
     } catch (error) {
       console.error('Error fetching game:', error);
@@ -42,7 +49,7 @@ const Game: React.FC = () => {
 
   useEffect(() => {
     fetchNewGame();
-  }, []);
+  }, [difficulty]);
 
   const handleGuess = async (row: number, col: number, champion: string) => {
     if (!gameState || isGuessing) return;
@@ -54,24 +61,16 @@ const Game: React.FC = () => {
         headers: {
           'Content-Type': 'application/json',
         },
-        body: JSON.stringify({ row, col, champion }),
+        body: JSON.stringify({ 
+          row, 
+          col, 
+          champion,
+          gameId: gameState.gameId 
+        }),
       });
 
       const data = await response.json();
-      const newGrid = [...gameState.grid];
-      newGrid[row][col] = {
-        ...newGrid[row][col],
-        guessedChampion: champion,
-        correctChampion: data.correctChampion,
-        isCorrect: champion === data.correctChampion,
-      };
-
-      setGameState({
-        ...gameState,
-        grid: newGrid,
-        guessesRemaining: gameState.guessesRemaining - 1,
-        isGameOver: gameState.guessesRemaining - 1 === 0,
-      });
+      setGameState(data);
     } catch (error) {
       console.error('Error making guess:', error);
     } finally {
@@ -90,6 +89,11 @@ const Game: React.FC = () => {
     setShowAnswers(false);
   };
 
+  const handleDifficultyChange = (newDifficulty: number) => {
+    setDifficulty(newDifficulty);
+    setIsLoading(true);
+  };
+
   if (isLoading) {
     return <div className="text-center p-4">Loading...</div>;
   }
@@ -100,6 +104,21 @@ const Game: React.FC = () => {
 
   return (
     <div className="container mx-auto p-4">
+      <div className="mb-4">
+        <label className="block text-sm font-medium text-gray-700">Difficulty:</label>
+        <input
+          type="range"
+          min="0"
+          max="1"
+          step="0.1"
+          value={difficulty}
+          onChange={(e) => handleDifficultyChange(parseFloat(e.target.value))}
+          className="w-full"
+        />
+        <div className="text-sm text-gray-600">
+          Current difficulty: {difficulty.toFixed(1)}
+        </div>
+      </div>
       <ChampionGrid
         grid={gameState.grid}
         categories={gameState.categories}
@@ -109,6 +128,7 @@ const Game: React.FC = () => {
       <div className="mt-4">
         <GameControls
           guessesRemaining={gameState.guessesRemaining}
+          score={gameState.score}
           onGiveUp={handleGiveUp}
         />
       </div>
@@ -117,6 +137,8 @@ const Game: React.FC = () => {
           onPlayAgain={handlePlayAgain}
           onShowAnswers={() => setShowAnswers(!showAnswers)}
           showAnswers={showAnswers}
+          score={gameState.score}
+          difficulty={gameState.difficulty}
         />
       )}
     </div>

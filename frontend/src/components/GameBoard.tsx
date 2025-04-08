@@ -84,40 +84,38 @@ export default function GameBoard({ categories }: GameBoardProps) {
     if (!activeCell) return;
 
     try {
-      const response = await fetch(`${API_URL}/api/query`, {
+      const response = await fetch(`${API_URL}/api/daily/verify`, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
         },
         body: JSON.stringify({
-          champion,
-          categories: [
-            categories.rows[activeCell.row],
-            categories.cols[activeCell.col]
-          ]
+          row: activeCell.row,
+          col: activeCell.col,
+          champion
         }),
       });
 
       if (!response.ok) throw new Error('Failed to verify champion');
       const data = await response.json();
-      const isCorrect = data.isValid;
 
-      setCells(prevCells =>
-        prevCells.map(cell =>
+      // Update the cell with the selected champion and verification result
+      setCells(prevCells => 
+        prevCells.map(cell => 
           cell.row === activeCell.row && cell.col === activeCell.col
-            ? { ...cell, champion, isCorrect }
+            ? { ...cell, champion, isCorrect: data.isCorrect }
             : cell
         )
       );
 
-      if (isCorrect) {
+      if (data.isCorrect) {
         setSolvedCount(prev => prev + 1);
       }
-    } catch (error) {
-      console.error('Error verifying champion:', error);
-    } finally {
+
       setShowSelector(false);
       setActiveCell(null);
+    } catch (error) {
+      console.error('Error verifying champion:', error);
     }
   };
 
@@ -168,19 +166,33 @@ export default function GameBoard({ categories }: GameBoardProps) {
             >
               <div className="h-full flex flex-col justify-center items-center text-center">
                 {cell.champion ? (
-                  <div className="font-medium">{cell.champion}</div>
+                  <div className="flex flex-col items-center">
+                    <img
+                      src={`${API_URL}/champion_icons/${encodeURIComponent(cell.champion)}.png`}
+                      alt={cell.champion}
+                      className="w-12 h-12 rounded-full mb-2"
+                      onError={(e) => {
+                        (e.target as HTMLImageElement).src = '/placeholder-champion.png';
+                      }}
+                    />
+                    <span className="text-sm font-medium">{cell.champion}</span>
+                  </div>
                 ) : (
                   <div className="text-gray-400">Click to guess</div>
                 )}
               </div>
+              
+              {/* Champion selector dropdown */}
               {showSelector && activeCell?.row === cell.row && activeCell?.col === cell.col && (
-                <ChampionSelector
-                  onSelect={handleChampionSelect}
-                  onClose={() => {
-                    setShowSelector(false);
-                    setActiveCell(null);
-                  }}
-                />
+                <div className="absolute top-0 left-0 z-10">
+                  <ChampionSelector
+                    onSelect={handleChampionSelect}
+                    onClose={() => {
+                      setShowSelector(false);
+                      setActiveCell(null);
+                    }}
+                  />
+                </div>
               )}
             </div>
           ))}
@@ -197,39 +209,24 @@ export default function GameBoard({ categories }: GameBoardProps) {
         </div>
       )}
 
-      {/* Valid champions modal */}
+      {/* Valid champions display */}
       {showValidChampions && selectedCell && (
-        <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center">
-          <div className="bg-white p-6 rounded-lg max-w-2xl w-full max-h-[80vh] overflow-y-auto">
-            <div className="flex justify-between items-center mb-4">
-              <h2 className="text-xl font-medium">
-                Valid Champions for [{categories.rows[selectedCell.row]}] x [{categories.cols[selectedCell.col]}]
-              </h2>
-              <button
-                onClick={() => {
-                  setShowValidChampions(false);
-                  setSelectedCell(null);
-                }}
-                className="text-gray-500 hover:text-gray-700"
-              >
-                ✕
-              </button>
-            </div>
-            <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4">
-              {validChampions.map((champion) => (
-                <div
-                  key={champion.name}
-                  className="flex flex-col items-center p-2 rounded-lg hover:bg-gray-50"
-                >
-                  <img
-                    src={champion.icon}
-                    alt={champion.name}
-                    className="w-12 h-12 rounded-full mb-2"
-                  />
-                  <span className="text-sm font-medium text-center">{champion.name}</span>
-                </div>
-              ))}
-            </div>
+        <div className="mt-4">
+          <h3 className="text-lg font-medium mb-2">Valid Champions for this Cell:</h3>
+          <div className="grid grid-cols-4 gap-2">
+            {validChampions.map((champion) => (
+              <div key={champion.name} className="flex flex-col items-center">
+                <img
+                  src={champion.icon}
+                  alt={champion.name}
+                  className="w-12 h-12 rounded-full"
+                  onError={(e) => {
+                    (e.target as HTMLImageElement).src = '/placeholder-champion.png';
+                  }}
+                />
+                <span className="text-xs mt-1">{champion.name}</span>
+              </div>
+            ))}
           </div>
         </div>
       )}
