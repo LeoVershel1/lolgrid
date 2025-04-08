@@ -74,7 +74,7 @@ def analyze_ability(ability: Dict) -> Dict[str, bool]:
         'hasRoot': ['root', 'rooted', 'rooting', 'immobilize', 'immobilized'],
         'hasSilence': ['silence', 'silenced', 'silencing'],
         'hasGround': ['ground', 'grounded', 'grounding'],
-        'hasKnockup': ['knockup', 'knock up', 'knocking up', 'into the air', 'airborne'],
+        'hasKnockup': ['knockup', 'knock up', 'knocking up', 'into the air', 'airborne', 'pulls'],
         'hasKnockback': ['knockback', 'knock back', 'knocking back', 'push back', 'pushing back', 'dragged'],
         'hasFear': ['fear', 'feared', 'fearing', 'flee', 'fleeing'],
         'hasCharm': ['charm', 'charmed', 'charming'],
@@ -117,7 +117,7 @@ def analyze_ability(ability: Dict) -> Dict[str, bool]:
         flags['hasAreaOfEffect'] = True
 
     # Check for auto-attack reset
-    if any(phrase in description for phrase in ['reset', 'resets', 'next attack', 'next basic attack']):
+    if any(phrase in description for phrase in ['reset', 'resets', 'next basic attack']):
         flags['hasAutoAttackReset'] = True
 
     # Check for ability charges - only if maxammo is a positive number

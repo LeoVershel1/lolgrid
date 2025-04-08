@@ -169,7 +169,18 @@ CATEGORY_TYPES = {
             "Has Area of Effect Q",
             "Has Area of Effect W",
             "Has Area of Effect E",
-            "Has Area of Effect Ultimate"
+            "Has Area of Effect Ultimate",
+            "Has Mobility",
+            "Has Dash",
+            "Has Blink",
+            "Has Leap",
+            "Has Charge",
+            "Has Ghost",
+            "Has MoveSpeed",
+            "Has Stealth",
+            "Has Invisibility",
+            "Has Camouflage",
+            "Has Untargetable"
         ]
     },
     "skins": {
@@ -338,6 +349,28 @@ def get_champions_for_category(champions_data: Dict, category: str) -> List[str]
                 matches = "e" in champion["abilities"] and champion["abilities"]["e"].get("flags", {}).get("hasAreaOfEffect", False)
             elif category == "Has Area of Effect Ultimate":
                 matches = "r" in champion["abilities"] and champion["abilities"]["r"].get("flags", {}).get("hasAreaOfEffect", False)
+            elif category == "Has Mobility":
+                matches = any(ability.get("flags", {}).get("hasMobility", False) for ability in champion["abilities"].values())
+            elif category == "Has Dash":
+                matches = any(ability.get("flags", {}).get("hasDash", False) for ability in champion["abilities"].values())
+            elif category == "Has Blink":
+                matches = any(ability.get("flags", {}).get("hasBlink", False) for ability in champion["abilities"].values())
+            elif category == "Has Leap":
+                matches = any(ability.get("flags", {}).get("hasLeap", False) for ability in champion["abilities"].values())
+            elif category == "Has Charge":
+                matches = any(ability.get("flags", {}).get("hasCharge", False) for ability in champion["abilities"].values())
+            elif category == "Has Ghost":
+                matches = any(ability.get("flags", {}).get("hasGhost", False) for ability in champion["abilities"].values())
+            elif category == "Has MoveSpeed":
+                matches = any(ability.get("flags", {}).get("hasMoveSpeed", False) for ability in champion["abilities"].values())
+            elif category == "Has Stealth":
+                matches = any(ability.get("flags", {}).get("hasStealth", False) for ability in champion["abilities"].values())
+            elif category == "Has Invisibility":
+                matches = any(ability.get("flags", {}).get("hasInvisibility", False) for ability in champion["abilities"].values())
+            elif category == "Has Camouflage":
+                matches = any(ability.get("flags", {}).get("hasCamouflage", False) for ability in champion["abilities"].values())
+            elif category == "Has Untargetable":
+                matches = any(ability.get("flags", {}).get("hasUntargetable", False) for ability in champion["abilities"].values())
         elif category_type == "skins":
             if category == "Has 2 or Less Skins":
                 matches = len(champion["skinLines"]) <= 2
