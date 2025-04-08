@@ -1,7 +1,10 @@
 requests==2.31.0
-aiohttp==3.9.3
+aiohttp==3.11.16
 tqdm==4.66.2
 flask==3.0.2
 flask-cors==4.0.0
-matplotlib==3.8.3
-numpy==1.26.4 
+matplotlib==3.10.1
+--only-binary :all:
+numpy==2.2.4
+beautifulsoup4==4.12.3
+Pillow==11.1.0
