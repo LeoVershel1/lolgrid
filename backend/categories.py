@@ -4,6 +4,10 @@ Each category type contains a list of specific categories that can be used in th
 """
 
 from typing import List, Dict
+import logging
+
+# Configure logging
+logger = logging.getLogger(__name__)
 
 CATEGORY_TYPES = {
     "location": {
@@ -222,6 +226,8 @@ def get_champions_for_category(champions_data: Dict, category: str) -> List[str]
     matching_champions = []
     category_type = get_category_type(category)
     
+    logger.debug(f"Finding champions for category: '{category}' (type: {category_type})")
+    
     for champion in champions_data:
         matches = False
         
@@ -349,6 +355,11 @@ def get_champions_for_category(champions_data: Dict, category: str) -> List[str]
         
         if matches:
             matching_champions.append(champion["name"])
+            logger.debug(f"Champion '{champion['name']}' matches category '{category}'")
+    
+    logger.info(f"Found {len(matching_champions)} champions matching category '{category}'")
+    if matching_champions:
+        logger.debug(f"Matching champions: {', '.join(matching_champions)}")
     
     return matching_champions
 
@@ -359,10 +370,18 @@ def validate_categories(champions_data):
     """
     empty_categories = {}
     
+    logger.info("Validating all categories to ensure they have at least one champion")
+    
     for category_type, type_data in CATEGORY_TYPES.items():
         for category in type_data["categories"]:
             matching_champions = get_champions_for_category(champions_data, category)
             if not matching_champions:
                 empty_categories[category] = category_type
+                logger.warning(f"Empty category found: '{category}' (type: {category_type})")
+    
+    if empty_categories:
+        logger.warning(f"Found {len(empty_categories)} empty categories")
+    else:
+        logger.info("All categories have at least one champion")
     
     return empty_categories 

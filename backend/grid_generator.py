@@ -6,11 +6,15 @@ from collections import defaultdict
 import math
 import os
 import sys
+import logging
 
 # Get the project root directory
 project_root = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
 from backend.categories import CATEGORY_TYPES, get_all_categories, get_category_type, get_champions_for_category
+
+# Configure logging
+logger = logging.getLogger(__name__)
 
 @dataclass
 class CategoryPair:
@@ -48,6 +52,7 @@ class GridGenerator:
             difficulty = 1.0 - (math.log(len(matching_champions) + 1) / math.log(total_champions + 1))
         
         self.category_difficulty_cache[category] = difficulty
+        logger.debug(f"Category '{category}' difficulty: {difficulty:.3f} ({len(matching_champions)} champions)")
         return difficulty
     
     def calculate_pair_difficulty(self, category1: str, category2: str) -> Tuple[float, List[str]]:
@@ -88,6 +93,11 @@ class GridGenerator:
         
         result = (difficulty, matching_champions)
         self.pair_difficulty_cache[cache_key] = result
+        
+        logger.debug(f"Category pair '{category1}' x '{category2}' difficulty: {difficulty:.3f} ({len(matching_champions)} champions)")
+        if matching_champions:
+            logger.debug(f"Matching champions: {', '.join(matching_champions)}")
+        
         return result
     
     def get_category_weight(self, category: str) -> float:
@@ -147,6 +157,8 @@ class GridGenerator:
         attempts = 0
         max_attempts = 100
         
+        logger.info(f"Generating grid with target difficulty: {target_difficulty}")
+        
         # Pre-filter categories that have at least one champion
         all_categories = get_all_categories()
         valid_categories = []
@@ -156,14 +168,19 @@ class GridGenerator:
                 valid_categories.append(category)
         
         if len(valid_categories) < 6:
+            logger.error(f"Not enough valid categories found. Need at least 6, but only found {len(valid_categories)}")
             raise ValueError(f"Not enough valid categories found. Need at least 6, but only found {len(valid_categories)}")
         
         while not valid_grid and attempts < max_attempts:
             attempts += 1
+            logger.debug(f"Attempt {attempts} to generate valid grid")
             
             # Select 6 random categories (3 for rows, 3 for columns)
             row_categories = self.select_categories(3, valid_categories=valid_categories)
             col_categories = self.select_categories(3, exclude_categories=set(row_categories), valid_categories=valid_categories)
+            
+            logger.debug(f"Selected row categories: {row_categories}")
+            logger.debug(f"Selected column categories: {col_categories}")
             
             # Check if each cell has at least one valid solution
             solutions = []
@@ -176,6 +193,7 @@ class GridGenerator:
                 for col_cat in col_categories:
                     difficulty, cell_solutions = self.calculate_pair_difficulty(row_cat, col_cat)
                     if not cell_solutions:
+                        logger.debug(f"No valid solutions for cell with categories '{row_cat}' x '{col_cat}'")
                         valid_grid = False
                         break
                     row_solutions.append(cell_solutions)
@@ -188,50 +206,64 @@ class GridGenerator:
             if valid_grid:
                 # Calculate average grid difficulty
                 grid_difficulty = total_difficulty / cell_count
+                logger.debug(f"Generated grid with difficulty: {grid_difficulty:.3f}")
                 
                 # If the grid difficulty is too far from target, try again
                 if abs(grid_difficulty - target_difficulty) > 0.3:
+                    logger.debug(f"Grid difficulty {grid_difficulty:.3f} too far from target {target_difficulty:.3f}, trying again")
                     valid_grid = False
         
+        if not valid_grid:
+            logger.error(f"Failed to generate valid grid after {max_attempts} attempts")
+            raise ValueError(f"Failed to generate valid grid after {max_attempts} attempts")
+        
+        logger.info(f"Successfully generated grid with difficulty: {grid_difficulty:.3f}")
         return row_categories, col_categories, solutions, grid_difficulty
     
     def generate_game_state(self, target_difficulty: float = 0.5):
         """Generate a game state with the specified target difficulty"""
-        # Generate a valid grid
-        row_categories, col_categories, solutions, grid_difficulty = self.generate_valid_grid(target_difficulty)
-        
-        # Create grid
-        grid = []
-        for i, row_solutions in enumerate(solutions):
-            row = []
-            for j, cell_solutions in enumerate(row_solutions):
-                row.append({
-                    'xCategory': col_categories[j],
-                    'yCategory': row_categories[i],
-                    'correctChampions': cell_solutions,
-                    'guessedChampion': None,
-                    'isCorrect': None
-                })
-            grid.append(row)
-        
-        # Helper function to get category type from category name
-        def get_category_type(category):
-            for cat_type, info in CATEGORY_TYPES.items():
-                if category in info["categories"]:
-                    return cat_type
-            return None
-        
-        return {
-            'grid': grid,
-            'categories': {
-                'xAxis': [{'name': cat, 'values': list(CATEGORY_TYPES[get_category_type(cat)]["categories"])} for cat in col_categories],
-                'yAxis': [{'name': cat, 'values': list(CATEGORY_TYPES[get_category_type(cat)]["categories"])} for cat in row_categories]
-            },
-            'guessesRemaining': 9,
-            'isGameOver': False,
-            'score': 0,
-            'difficulty': grid_difficulty
-        }
+        try:
+            # Generate a valid grid
+            row_categories, col_categories, solutions, grid_difficulty = self.generate_valid_grid(target_difficulty)
+            
+            # Create grid
+            grid = []
+            for i, row_solutions in enumerate(solutions):
+                row = []
+                for j, cell_solutions in enumerate(row_solutions):
+                    row.append({
+                        'xCategory': col_categories[j],
+                        'yCategory': row_categories[i],
+                        'correctChampions': cell_solutions,
+                        'guessedChampion': None,
+                        'isCorrect': None
+                    })
+                grid.append(row)
+            
+            # Helper function to get category type from category name
+            def get_category_type(category):
+                for cat_type, info in CATEGORY_TYPES.items():
+                    if category in info["categories"]:
+                        return cat_type
+                return None
+            
+            game_state = {
+                'grid': grid,
+                'categories': {
+                    'xAxis': [{'name': cat, 'values': list(CATEGORY_TYPES[get_category_type(cat)]["categories"])} for cat in col_categories],
+                    'yAxis': [{'name': cat, 'values': list(CATEGORY_TYPES[get_category_type(cat)]["categories"])} for cat in row_categories]
+                },
+                'guessesRemaining': 9,
+                'isGameOver': False,
+                'score': 0,
+                'difficulty': grid_difficulty
+            }
+            
+            logger.info("Successfully generated game state")
+            return game_state
+        except Exception as e:
+            logger.error(f"Error generating game state: {str(e)}")
+            raise
 
 def load_champions_data() -> Dict:
     """Load champion data from the JSON file"""
