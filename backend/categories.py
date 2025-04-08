@@ -213,7 +213,24 @@ CATEGORY_TYPES = {
             "Has Staff",
             "Has Shield",
             "Has Claws",
-            "Has Magic"
+            "Has Magic",
+            "Has Axe",
+            "Has Spear",
+            "Has Other"
+        ]
+    },
+    "magic": {
+        "name": "Magic",
+        "description": "Types of magic used by champions",
+        "categories": [
+            "Uses Light Magic",
+            "Uses Elemental Magic",
+            "Uses Arcane Magic",
+            "Uses Summoning Magic",
+            "Uses Force Magic",
+            "Uses Nature Magic",
+            "Uses Dark Magic",
+            "Uses Chaos Magic"
         ]
     }
 }
@@ -384,6 +401,9 @@ def get_champions_for_category(champions_data: Dict, category: str) -> List[str]
         elif category_type == "weapons":
             # We'll keep the weapons categories but they won't match any champions for now
             # This allows for future data to be added without changing the code
+            matches = False
+        elif category_type == "magic":
+            # Magic subcategories will be implemented in a future update
             matches = False
         
         if matches:

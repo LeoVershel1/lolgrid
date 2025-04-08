@@ -1,0 +1,49 @@
+Weapon Analysis Results:
+=======================
+
+Sword (22 champions):
+Aatrox, Darius, Diana, Fiora, Garen, Irelia, Kassadin, Katarina, Kayle, Kayn, Leona, Nilah, Nocturne, Renekton, Riven, Samira, Shen, Sivir, Talon, Viego, Xayah, Yasuo
+
+Axe (3 champions):
+Darius, Draven, Olaf
+
+Spear (8 champions):
+Fizz, Jarvan IV, Kalista, Lissandra, Lulu, Nidalee, Pantheon, Xin Zhao
+
+Bow (6 champions):
+Ashe, Kindred, Twitch, Varus, Vayne, Viego
+
+Gun (12 champions):
+Aphelios, Caitlyn, Corki, Gangplank, Graves, Heimerdinger, Jayce, Jhin, Jinx, Kled, Senna, Tristana
+
+Staff (8 champions):
+Jayce, Kog'Maw, Lux, Wukong, Mordekaiser, Poppy, Sejuani, Yasuo
+
+Claws (3 champions):
+Kha'Zix, Nidalee, Renata Glasc
+
+Magic (142 champions):
+Ahri, Akali, Akshan, Alistar, Amumu, Anivia, Annie, Ashe, Aurelion Sol, Azir, Bard, Bel'Veth, Blitzcrank, Brand, Braum, Briar, Caitlyn, Camille, Cassiopeia, Cho'Gath, Corki, Diana, Dr. Mundo, Ekko, Elise, Evelynn, Ezreal, Fiddlesticks, Fizz, Galio, Garen, Gnar, Gragas, Graves, Gwen, Hecarim, Heimerdinger, Hwei, Irelia, Ivern, Janna, Jarvan IV, Jax, Jayce, Jhin, Jinx, Kai'Sa, Karma, Karthus, Kassadin, Katarina, Kayle, Kayn, Kennen, Kha'Zix, Kindred, Kog'Maw, LeBlanc, Lee Sin, Leona, Lillia, Lissandra, Lucian, Lulu, Lux, Malphite, Malzahar, Maokai, Milio, Mordekaiser, Morgana, Naafiri, Nami, Nasus, Nautilus, Neeko, Nidalee, Nocturne, Nunu & Willump, Olaf, Orianna, Ornn, Pantheon, Poppy, Pyke, Qiyana, Rakan, Rammus, Rell, Renata Glasc, Renekton, Rengar, Riven, Rumble, Ryze, Samira, Sejuani, Senna, Seraphine, Shaco, Shen, Shyvana, Sion, Sivir, Skarner, Sona, Soraka, Swain, Sylas, Syndra, Tahm Kench, Taliyah, Talon, Taric, Teemo, Thresh, Tristana, Trundle, Tryndamere, Twisted Fate, Twitch, Udyr, Varus, Veigar, Vel'Koz, Vex, Vi, Viktor, Vladimir, Volibear, Warwick, Xerath, Yasuo, Yone, Yuumi, Zac, Zed, Zeri, Ziggs, Zilean, Zoe, Zyra
+
+Shield (57 champions):
+Akshan, Annie, Azir, Blitzcrank, Braum, Camille, Diana, Ekko, Galio, Garen, Ivern, Janna, Jarvan IV, Karma, Kassadin, Kled, K'Sante, Lee Sin, Leona, Lucian, Lulu, Malphite, Milio, Mordekaiser, Morgana, Naafiri, Nautilus, Nilah, Olaf, Orianna, Pantheon, Poppy, Rakan, Rell, Renata Glasc, Renekton, Rumble, Senna, Seraphine, Sett, Shen, Sion, Sivir, Skarner, Sona, Tahm Kench, Taric, Thresh, Udyr, Urgot, Vex, Vi, Viktor, Volibear, Yasuo, Yone, Yuumi
+
+Other (32 champions):
+Aatrox, Akshan, Aphelios, Camille, Darius, Evelynn, Gnar, Gwen, Illaoi, Janna, Katarina, Kled, LeBlanc, Lucian, Master Yi, Miss Fortune, Morgana, Naafiri, Neeko, Nilah, Quinn, Rek'Sai, Singed, Sivir, Sylas, Talon, Thresh, Varus, Xayah, Yorick, Zac, Zeri
+
+
+Suggested Category Updates:
+=========================
+# Weapon categories based on champion analysis
+WEAPON_CATEGORIES = [
+    "Has Magic",  # 142 champions
+    "Has Shield",  # 57 champions
+    "Has Other",  # 32 champions
+    "Has Sword",  # 22 champions
+    "Has Gun",  # 12 champions
+    "Has Spear",  # 8 champions
+    "Has Staff",  # 8 champions
+    "Has Bow",  # 6 champions
+    "Has Axe",  # 3 champions
+    "Has Claws",  # 3 champions
+]

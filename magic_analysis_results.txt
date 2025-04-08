@@ -1,0 +1,55 @@
+Magic Category Analysis Results:
+==============================
+
+Light Magic (47 champions):
+Ahri, Amumu, Anivia, Annie, Aurelion Sol, Bard, Brand, Cassiopeia, Cho'Gath, Diana, Elise, Evelynn, Fiddlesticks, Galio, Gragas, Hwei, Ivern, Janna, Karma, Kassadin, LeBlanc, Lillia, Lissandra, Lulu, Lux, Maokai, Morgana, Nami, Neeko, Nidalee, Orianna, Renata Glasc, Rumble, Seraphine, Sona, Soraka, Swain, Sylas, Syndra, Veigar, Vel'Koz, Vex, Viktor, Vladimir, Yuumi, Zilean, Zoe
+
+Elemental Magic (41 champions):
+Ahri, Amumu, Anivia, Annie, Aurelion Sol, Bard, Brand, Cho'Gath, Elise, Fiddlesticks, Galio, Heimerdinger, Hwei, Janna, Karma, Kassadin, Katarina, LeBlanc, Lissandra, Lulu, Lux, Malzahar, Maokai, Morgana, Nami, Neeko, Orianna, Renata Glasc, Rumble, Seraphine, Soraka, Swain, Taliyah, Twisted Fate, Vex, Viktor, Xerath, Yuumi, Zilean, Zoe, Zyra
+
+Arcane Magic (38 champions):
+Ahri, Amumu, Annie, Aurelion Sol, Bard, Brand, Cassiopeia, Cho'Gath, Diana, Evelynn, Galio, Gragas, Ivern, Janna, Karma, Karthus, Kassadin, LeBlanc, Lillia, Lissandra, Lulu, Lux, Malzahar, Maokai, Morgana, Nidalee, Orianna, Rumble, Ryze, Sylas, Twisted Fate, Veigar, Viktor, Vladimir, Xerath, Zilean, Zoe, Zyra
+
+Summoning Magic (23 champions):
+Ahri, Anivia, Annie, Aurelion Sol, Bard, Cassiopeia, Ivern, Janna, Karma, Karthus, Lulu, Malzahar, Maokai, Morgana, Nami, Neeko, Nidalee, Swain, Sylas, Syndra, Vex, Zoe, Zyra
+
+Force Magic (22 champions):
+Ahri, Amumu, Aurelion Sol, Bard, Brand, Diana, Gragas, Karma, Kassadin, Morgana, Nami, Rumble, Ryze, Sona, Swain, Sylas, Syndra, Veigar, Vex, Viktor, Vladimir, Yuumi
+
+Nature Magic (19 champions):
+Cho'Gath, Fiddlesticks, Hwei, Ivern, Janna, Karma, LeBlanc, Lillia, Lissandra, Lulu, Maokai, Neeko, Renata Glasc, Ryze, Soraka, Swain, Twisted Fate, Viktor, Zyra
+
+Dark Magic (16 champions):
+Amumu, Evelynn, Fiddlesticks, Karthus, Kassadin, Katarina, Lissandra, Malzahar, Morgana, Renata Glasc, Swain, Syndra, Veigar, Vel'Koz, Vex, Vladimir
+
+Chaos Magic (11 champions):
+Aurelion Sol, Bard, Brand, Elise, Fiddlesticks, Janna, Lulu, Neeko, Nidalee, Swain, Twisted Fate
+
+
+Suggested Category Updates:
+=========================
+# Weapon and magic categories based on champion analysis
+WEAPON_CATEGORIES = [
+    "Has Shield",  # 57 champions
+    "Has Magic",  # 57 champions
+    "Has Other",  # 56 champions
+    "Has Sword",  # 22 champions
+    "Has Gun",  # 12 champions
+    "Has Spear",  # 8 champions
+    "Has Staff",  # 8 champions
+    "Has Bow",  # 6 champions
+    "Has Axe",  # 3 champions
+    "Has Claws",  # 3 champions
+]
+
+# Magic subcategories with 10+ champions
+MAGIC_CATEGORIES = [
+    "Uses Light Magic",  # 47 champions
+    "Uses Elemental Magic",  # 41 champions
+    "Uses Arcane Magic",  # 38 champions
+    "Uses Summoning Magic",  # 23 champions
+    "Uses Force Magic",  # 22 champions
+    "Uses Nature Magic",  # 19 champions
+    "Uses Dark Magic",  # 16 champions
+    "Uses Chaos Magic",  # 11 champions
+]
